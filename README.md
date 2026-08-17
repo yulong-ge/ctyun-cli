@@ -10,10 +10,10 @@ esx.ctyun.cn（息壤·科研助手）CLI。**2.0 起双通道**：官方 OpenAP
 
 ```sh
 # 从 GitHub 仓库安装（任意机器）
-npm install -g git+https://github.com/Long-louis/ctyun-cli.git
-# 私有仓库需凭据: git+ssh://git@github.com/Long-louis/ctyun-cli.git (需配 SSH key)
+npm install -g git+https://github.com/yulong-ge/ctyun-cli.git
+# 私有仓库需凭据: git+ssh://git@github.com/yulong-ge/ctyun-cli.git (需配 SSH key)
 # 或克隆后本地安装
-git clone https://github.com/Long-louis/ctyun-cli.git && npm install -g ./ctyun-cli
+git clone https://github.com/yulong-ge/ctyun-cli.git && npm install -g ./ctyun-cli
 ```
 
 依赖：Node ≥ 18 + curl（`jexec`/`ssh-setup` 走原生 WebSocket 需 **Node ≥ 22**）；npm 依赖仅 `commander`。
