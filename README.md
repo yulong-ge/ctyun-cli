@@ -36,6 +36,20 @@ ctyun logout              # 清除控制台会话与凭据；官方密钥用 cty
 - 控制台登录流程与网页一致（纯 HTTP 无浏览器，密码 3DES 加密），登录后自动业务验证；`login --import-monitor` 可从 gpu-platform-monitor 一次性导入会话
 - 每个命令接受 `--channel official|console` 强制指定通道（排障用）
 
+## 用户默认配置（create/pool 缺省值）
+
+仓库不含任何内部项目名；本机默认值存 `~/.ctyun/config`（KEY=VALUE，600 权限），环境变量 `CTYUN_*` 优先于文件，命令行参数最终覆盖：
+
+```sh
+ctyun config          # 查看生效配置与来源 (env/file)
+```
+
+可配置键：`CTYUN_PROJECT_NAME` `CTYUN_REGION` `CTYUN_QUEUE` `CTYUN_GPU_MODEL` `CTYUN_GPU_CARDS`
+`CTYUN_IMAGE` `CTYUN_STORAGE` `CTYUN_SPACE` `CTYUN_LOCAL_GB` `CTYUN_LOCAL_MOUNT`
+`CTYUN_SSH_KEY` `CTYUN_USED_GPU_THRESHOLD` `CTYUN_AUTO_STOP`
+
+新机器安装后：复制一份你的 config（或手填需要的键），`ctyun pool` / `ctyun create` 即恢复抢卡默认值。
+
 ## 命令
 
 ```
@@ -54,7 +68,7 @@ ctyun keys [--json]            # SSH 公钥
 ctyun jobs [--json]            # 训练作业列表
 ctyun pvc <ideId> [--json]     # 开发机存储卷 〔console〕
 ctyun metrics <uuid> [--json]  # CPU/内存/GPU 利用率（官方通道 --minutes N 时间窗）
-ctyun create [选项] [--dry-run|--yes] # 创建开发机（默认复制监控配置）〔console〕
+ctyun create [选项] [--dry-run|--yes] # 创建开发机（默认=用户配置 ~/.ctyun/config）〔console〕
 ctyun jexec <ideId> <代码|文件.py|cmd:...> # 经 Jupyter kernel 免 SSH 执行代码
 ctyun ssh-setup <ideId> [--key <公钥>]     # 注入 SSH 公钥（幂等）
 ctyun raw METHOD path [json]   # 任意控制台端点（退出码反映业务码）〔console〕
@@ -100,7 +114,7 @@ ctyun infers ; ctyun infer <id> ; ctyun infer-start|infer-stop <id> ; ctyun infe
 ctyun batch-start|batch-stop <id...> ; ctyun my-ip ; ctyun events
 ```
 
-### create 选项（全部可选，缺省=监控项目的抢卡配置）
+### create 选项（全部可选，缺省=用户配置文件 ~/.ctyun/config）
 
 ```
 --projectName X  项目名          --region X       可用区 (zj-pinghu-1)
@@ -114,7 +128,7 @@ ctyun batch-start|batch-stop <id...> ; ctyun my-ip ; ctyun events
 --count N        创建台数
 ```
 
-示例：复制监控配置抢卡 → `ctyun create --dry-run`（核对）→ `ctyun create --yes`；
+示例：复制用户默认配置抢卡 → `ctyun create --dry-run`（核对）→ `ctyun create --yes`；
 换 2 卡 + 小盘 → `ctyun create --cards 2 --local-gb 900 --yes`。提交前会自动按最新本地盘库存钳制扩容值（库存收缩时下调，不丢单）。
 
 ## Jupyter 通道（免 SSH 操作开发机）
