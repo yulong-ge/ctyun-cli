@@ -1,0 +1,416 @@
+[
+ {
+  "en": "createResourceAndQueueByOneClick",
+  "cn": "一键初始化",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/createResourceAndQueueByOneClick",
+  "approve": "否",
+  "capacityId": 17253
+ },
+ {
+  "en": "deleteQueue",
+  "cn": "删除队列",
+  "cat": "队列",
+  "method": "POST",
+  "path": "/api/bc/v2/deleteQueue",
+  "approve": "否",
+  "capacityId": 21553
+ },
+ {
+  "en": "launchIde",
+  "cn": "启动开发机",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/launchIde",
+  "approve": "否",
+  "capacityId": 17300
+ },
+ {
+  "en": "stopIde",
+  "cn": "停止开发机",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/stopIde",
+  "approve": "否",
+  "capacityId": 17301
+ },
+ {
+  "en": "listPublicImages",
+  "cn": "开发机公共镜像列表",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/listPublicImages",
+  "approve": "否",
+  "capacityId": 17295
+ },
+ {
+  "en": "saveIdeImage",
+  "cn": "保存开发机镜像",
+  "cat": "镜像",
+  "method": "POST",
+  "path": "/api/bc/v2/saveIdeImage",
+  "approve": "否",
+  "capacityId": 21040
+ },
+ {
+  "en": "resizeStorageResearch",
+  "cn": "科研文件扩容",
+  "cat": "科研文件",
+  "method": "POST",
+  "path": "/api/bc/v2/resizeStorageResearch",
+  "approve": "否",
+  "capacityId": 20729
+ },
+ {
+  "en": "queryTrainingJobLogs",
+  "cn": "并行计算任务日志",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/queryTrainingJobLogs",
+  "approve": "否",
+  "capacityId": 21024
+ },
+ {
+  "en": "getStorageResearchDetail",
+  "cn": "获取科研文件详情",
+  "cat": "科研文件",
+  "method": "POST",
+  "path": "/api/bc/v2/getStorageResearchDetail",
+  "approve": "否",
+  "capacityId": 21416
+ },
+ {
+  "en": "createResource",
+  "cn": "创建资源池",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/createResource",
+  "approve": "否",
+  "capacityId": 21548
+ },
+ {
+  "en": "deleteResource",
+  "cn": "删除资源池",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/deleteResource",
+  "approve": "否",
+  "capacityId": 21550
+ },
+ {
+  "en": "createQueue",
+  "cn": "创建队列",
+  "cat": "队列",
+  "method": "POST",
+  "path": "/api/bc/v2/createQueue",
+  "approve": "否",
+  "capacityId": 21552
+ },
+ {
+  "en": "deleteIde",
+  "cn": "删除开发机",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/deleteIde",
+  "approve": "否",
+  "capacityId": 17299
+ },
+ {
+  "en": "updateQueue",
+  "cn": "更新队列",
+  "cat": "队列",
+  "method": "POST",
+  "path": "/api/bc/v2/updateQueue",
+  "approve": "否",
+  "capacityId": 21554
+ },
+ {
+  "en": "listSharedClusterQuotas",
+  "cn": "查看当前共享资源池的共享集群信息、租户配额信息",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/listSharedClusterQuotas",
+  "approve": "否",
+  "capacityId": 21551
+ },
+ {
+  "en": "listUserBillDetail",
+  "cn": "查询子账号账单明细",
+  "cat": "项目空间",
+  "method": "POST",
+  "path": "/api/bc/v2/listUserBillDetail",
+  "approve": "否",
+  "capacityId": 21825
+ },
+ {
+  "en": "getResourceUsageRate",
+  "cn": "查询资源使用率",
+  "cat": "监控",
+  "method": "POST",
+  "path": "/api/bc/v2/getResourceUsageRate",
+  "approve": "否",
+  "capacityId": 22068
+ },
+ {
+  "en": "getInstancesAndQuota",
+  "cn": "查询实例和配额",
+  "cat": "队列",
+  "method": "POST",
+  "path": "/api/bc/v2/getInstancesAndQuota",
+  "approve": "否",
+  "capacityId": 22067
+ },
+ {
+  "en": "createPublicKey",
+  "cn": "SSH创建公钥",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/createPublicKey",
+  "approve": "否",
+  "capacityId": 22361
+ },
+ {
+  "en": "deletePublicKey",
+  "cn": "SSH删除公钥",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/deletePublicKey",
+  "approve": "否",
+  "capacityId": 22363
+ },
+ {
+  "en": "listPublicKeys",
+  "cn": "SSH公钥列表",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/listPublicKeys",
+  "approve": "否",
+  "capacityId": 22362
+ },
+ {
+  "en": "querySpecLocalStorageInventory",
+  "cn": "获取本地盘存储余量",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/querySpecLocalStorageInventory",
+  "approve": "否",
+  "capacityId": 22957
+ },
+ {
+  "en": "updateSSHClientIPs",
+  "cn": "更新开发机SSH客户端IP白名单",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/updateSSHClientIPs",
+  "approve": "否",
+  "capacityId": 23448
+ },
+ {
+  "en": "updateIdeImage",
+  "cn": "更新开发机镜像",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/updateIdeImage",
+  "approve": "否",
+  "capacityId": 23447
+ },
+ {
+  "en": "stopTrainingJob",
+  "cn": "停止并行计算作业",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/stopTrainingJob",
+  "approve": "否",
+  "capacityId": 20647
+ },
+ {
+  "en": "listResources",
+  "cn": "资源池列表",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/listResources",
+  "approve": "否",
+  "capacityId": 17290
+ },
+ {
+  "en": "getResourceDetail",
+  "cn": "资源池详情",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/getResourceDetail",
+  "approve": "否",
+  "capacityId": 17291
+ },
+ {
+  "en": "listResourceRegions",
+  "cn": "资源池可用区列表",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/listResourceRegions",
+  "approve": "否",
+  "capacityId": 17292
+ },
+ {
+  "en": "listResourceSpecs",
+  "cn": "资源池规格列表",
+  "cat": "资源池",
+  "method": "POST",
+  "path": "/api/bc/v2/listResourceSpecs",
+  "approve": "否",
+  "capacityId": 17293
+ },
+ {
+  "en": "listQueues",
+  "cn": "队列列表",
+  "cat": "队列",
+  "method": "POST",
+  "path": "/api/bc/v2/listQueues",
+  "approve": "否",
+  "capacityId": 17294
+ },
+ {
+  "en": "createStorageResearch",
+  "cn": "创建科研文件",
+  "cat": "科研文件",
+  "method": "POST",
+  "path": "/api/bc/v2/createStorageResearch",
+  "approve": "否",
+  "capacityId": 18803
+ },
+ {
+  "en": "deleteStorageResearch",
+  "cn": "删除科研文件",
+  "cat": "科研文件",
+  "method": "POST",
+  "path": "/api/bc/v2/deleteStorageResearch",
+  "approve": "否",
+  "capacityId": 18804
+ },
+ {
+  "en": "listStorageResearch",
+  "cn": "科研文件列表",
+  "cat": "科研文件",
+  "method": "POST",
+  "path": "/api/bc/v2/listStorageResearch",
+  "approve": "否",
+  "capacityId": 18805
+ },
+ {
+  "en": "listStorageResearchSpecs",
+  "cn": "科研文件存储规格列表",
+  "cat": "科研文件",
+  "method": "POST",
+  "path": "/api/bc/v2/listStorageResearchSpecs",
+  "approve": "否",
+  "capacityId": 18806
+ },
+ {
+  "en": "createTrainingJob",
+  "cn": "创建并行计算作业",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/createTrainingJob",
+  "approve": "否",
+  "capacityId": 20644
+ },
+ {
+  "en": "listIdes",
+  "cn": "开发机列表",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/listIdes",
+  "approve": "否",
+  "capacityId": 17298
+ },
+ {
+  "en": "deleteTrainingJob",
+  "cn": "删除并行计算作业",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/deleteTrainingJob",
+  "approve": "否",
+  "capacityId": 20648
+ },
+ {
+  "en": "startTrainingJob",
+  "cn": "启动并行计算作业",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/startTrainingJob",
+  "approve": "否",
+  "capacityId": 20649
+ },
+ {
+  "en": "listTrainingJobs",
+  "cn": "并行计算作业列表",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/listTrainingJobs",
+  "approve": "否",
+  "capacityId": 20650
+ },
+ {
+  "en": "getTrainingJob",
+  "cn": "并行计算作业详情",
+  "cat": "并行计算",
+  "method": "POST",
+  "path": "/api/bc/v2/getTrainingJob",
+  "approve": "否",
+  "capacityId": 20653
+ },
+ {
+  "en": "listCustomerImageOrgRegions",
+  "cn": "自定义镜像组织区域列表",
+  "cat": "镜像",
+  "method": "POST",
+  "path": "/api/bc/v2/listCustomerImageOrgRegions",
+  "approve": "否",
+  "capacityId": 20690
+ },
+ {
+  "en": "listCustomerImageOrgs",
+  "cn": "自定义镜像组织列表",
+  "cat": "镜像",
+  "method": "POST",
+  "path": "/api/bc/v2/listCustomerImageOrgs",
+  "approve": "否",
+  "capacityId": 20694
+ },
+ {
+  "en": "listCustomerIdeImages",
+  "cn": "自定义开发机镜像列表",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/listCustomerIdeImages",
+  "approve": "否",
+  "capacityId": 20727
+ },
+ {
+  "en": "deleteCustomerIdeImage",
+  "cn": "删除自定义开发机镜像",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/deleteCustomerIdeImage",
+  "approve": "否",
+  "capacityId": 20728
+ },
+ {
+  "en": "createIde",
+  "cn": "创建开发机",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/createIde",
+  "approve": "否",
+  "capacityId": 17296
+ },
+ {
+  "en": "getIdeDetail",
+  "cn": "开发机详情",
+  "cat": "开发机",
+  "method": "POST",
+  "path": "/api/bc/v2/getIdeDetail",
+  "approve": "否",
+  "capacityId": 17297
+ }
+]

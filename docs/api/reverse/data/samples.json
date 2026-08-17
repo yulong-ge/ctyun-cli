@@ -1,0 +1,3383 @@
+{
+ "project.list": {
+  "verb": "POST",
+  "route": "/bc/v1/bc/project/list",
+  "http": 200,
+  "json": {
+   "requestId": "fc94a210a117c738f275c320f22fc345",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "projects": [
+    {
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "status": 1
+    }
+   ]
+  }
+ },
+ "region.list": {
+  "verb": "GET",
+  "route": "/bc/v1/bc/ops/region/list",
+  "http": 200,
+  "json": {
+   "requestId": "8c21ef7cc571b0e51e7b278cf92bd560",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "opsRegionInfo": [
+    {
+     "regionName": "<CAMPUS>专属2",
+     "regionNameEng": "zj-pinghu-1",
+     "clusterId": 10025,
+     "version": "0",
+     "id": 180,
+     "providerType": 0,
+     "capabilities": [
+      "0000000000010000",
+      "0000000001000000",
+      "0000000000100000"
+     ],
+     "resourceId": 34364,
+     "assistQueueId": 0,
+     "arch": 1,
+     "nodeCode": "",
+     "resourcePoolName": "pool-001",
+     "capabilitiesName": [
+      "学术加速",
+      "本地盘",
+      "对外端口"
+     ],
+     "isOffline": 0,
+     "storageNetworkState": "none",
+     "networkId": "0",
+     "networkName": "",
+     "professionalQueues": [
+      {
+       "id": 53200,
+       "name": "q-2012401-pool01",
+       "projectId": "f47384fb066041998ae0bd158168d796",
+       "projectName": "2012401-脑机接口精准解码多模态大模型",
+       "exclusivePoolUuid": ""
+      },
+      {
+       "id": 53167,
+       "name": "q-2012402-pool01",
+       "projectId": "ed1d171d07814829ac5ab5c41e808dd0",
+       "projectName": "2012402-人工智能算法安全性研究与应用",
+       "exclusivePoolUuid": ""
+      },
+      {
+       "id": 53166,
+       "name": "q-2012403-pool01",
+       "projectId": "568d35f6ff3244c49639aa4e4ba758c4",
+       "projectName": "2012403-离散优化基础大模型构建技术及应用验证",
+       "exclusivePoolUuid": ""
+      }
+     ],
+     "regionCapabilityConfig": [
+      {
+       "capabilityName": "学术加速",
+       "capabilityCode": "0000000000010000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 67
+      },
+      {
+       "capabilityName": "本地盘",
+       "capabilityCode": "0000000001000000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 68
+      },
+      {
+       "capabilityName": "对外端口",
+       "capabilityCode": "0000000000100000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 69
+      }
+     ],
+     "offlineTime": ""
+    },
+    {
+     "regionName": "<CAMPUS>专属1",
+     "regionNameEng": "js-changshu-1",
+     "clusterId": 10025,
+     "version": "0",
+     "id": 181,
+     "providerType": 0,
+     "capabilities": [
+      "0000000000010000",
+      "0000000000100000",
+      "0000000001000000"
+     ],
+     "resourceId": 34364,
+     "assistQueueId": 0,
+     "arch": 1,
+     "nodeCode": "",
+     "resourcePoolName": "pool-001",
+     "capabilitiesName": [
+      "学术加速",
+      "对外端口",
+      "本地盘"
+     ],
+     "isOffline": 0,
+     "storageNetworkState": "none",
+     "networkId": "0",
+     "networkName": "",
+     "professionalQueues": [
+      {
+       "id": 53200,
+       "name": "q-2012401-pool01",
+       "projectId": "f47384fb066041998ae0bd158168d796",
+       "projectName": "2012401-脑机接口精准解码多模态大模型",
+       "exclusivePoolUuid": ""
+      },
+      {
+       "id": 53167,
+       "name": "q-2012402-pool01",
+       "projectId": "ed1d171d07814829ac5ab5c41e808dd0",
+       "projectName": "2012402-人工智能算法安全性研究与应用",
+       "exclusivePoolUuid": ""
+      },
+      {
+       "id": 53166,
+       "name": "q-2012403-pool01",
+       "projectId": "568d35f6ff3244c49639aa4e4ba758c4",
+       "projectName": "2012403-离散优化基础大模型构建技术及应用验证",
+       "exclusivePoolUuid": ""
+      }
+     ],
+     "regionCapabilityConfig": [
+      {
+       "capabilityName": "学术加速",
+       "capabilityCode": "0000000000010000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 64
+      },
+      {
+       "capabilityName": "对外端口",
+       "capabilityCode": "0000000000100000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 65
+      },
+      {
+       "capabilityName": "本地盘",
+       "capabilityCode": "0000000001000000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 66
+      }
+     ],
+     "offlineTime": ""
+    },
+    {
+     "regionName": "<CAMPUS>专属3",
+     "regionNameEng": "sc-neijiang-1",
+     "clusterId": 10022,
+     "version": "0",
+     "id": 187,
+     "providerType": 0,
+     "capabilities": [
+      "0000000000100000",
+      "0000000001000000",
+      "0000000010000000"
+     ],
+     "resourceId": 33909,
+     "assistQueueId": 0,
+     "arch": 1,
+     "nodeCode": "",
+     "resourcePoolName": "pool-003",
+     "capabilitiesName": [
+      "对外端口",
+      "本地盘",
+      "端口服务"
+     ],
+     "isOffline": 0,
+     "storageNetworkState": "none",
+     "networkId": "0",
+     "networkName": "",
+     "professionalQueues": [
+      {
+       "id": 85245,
+       "name": "q-2012501-pool03",
+       "projectId": "0db796323f304e04a6b8eafd7794cf66",
+       "projectName": "2012501-科学大模型构建理论方法及应用验证",
+       "exclusivePoolUuid": ""
+      },
+      {
+       "id": 77536,
+       "name": "q-c20250302-pool03",
+       "projectId": "ef6f52ee08664c21bdd68f92ef1772b3",
+       "projectName": "C20250302-高效通用跨尺度空间智能世界模型",
+       "exclusivePoolUuid": ""
+      },
+      {
+       "id": 79942,
+       "name": "q-c2025040-pool03",
+       "projectId": "85db088862c945829ff36de8bedbb4d8",
+       "projectName": "C20250401-大模型驱动的科研智能体关键技术研究",
+       "exclusivePoolUuid": ""
+      }
+     ],
+     "regionCapabilityConfig": [
+      {
+       "capabilityName": "对外端口",
+       "capabilityCode": "0000000000100000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 73
+      },
+      {
+       "capabilityName": "本地盘",
+       "capabilityCode": "0000000001000000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 75
+      },
+      {
+       "capabilityName": "端口服务",
+       "capabilityCode": "0000000010000000",
+       "capabilityConfig": "",
+       "enableStatus": "Open",
+       "capabilityId": 82
+      }
+     ],
+     "offlineTime": ""
+    }
+   ]
+  }
+ },
+ "queue.list": {
+  "verb": "GET",
+  "route": "/bc/v1/queue/list",
+  "http": 200,
+  "json": {
+   "requestId": "b4d8b6f8d85dda6c2d3060ad3e27a1e0",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "queues": [
+    {
+     "id": "53192",
+     "userId": "4162",
+     "queueName": "q-<PROJECT>-pool02",
+     "clusterId": "10025",
+     "weight": 0,
+     "resourceId": "34364",
+     "resourcePoolName": "pool-002",
+     "createTime": "2026-01-05T10:18:46+08:00",
+     "description": "<PROJECT_NAME>-<CAMPUS>专属2专属队列",
+     "reclaimable": false,
+     "capabilityCpu": "192",
+     "capabilityMem": "1920",
+     "capabilityGpu": "16",
+     "guaranteeCpu": "",
+     "guaranteeMem": "",
+     "guaranteeGpu": "",
+     "state": "Open",
+     "actualProportion": "",
+     "deservedCpu": "",
+     "deservedMem": "",
+     "deservedGpu": "",
+     "realCpu": "",
+     "realMem": "",
+     "realGpu": "",
+     "resourcePool": {
+      "id": "34364",
+      "userId": "0",
+      "poolName": "pool-002",
+      "state": 1,
+      "clusterId": "10025",
+      "createTime": "",
+      "modifyTime": "",
+      "k8sVersion": "",
+      "description": "",
+      "nodeNum": 0,
+      "nodeReadyNum": 0,
+      "poolType": 1,
+      "clusterName": "huadong004-949",
+      "clusterJumpUrl": "",
+      "nodeCode": "",
+      "sourceClusterId": "0",
+      "svcCapability": "",
+      "assistType": 0,
+      "clusterNameCn": "华东四区"
+     },
+     "svcCapability": "0000000000010011",
+     "priority": 0,
+     "deservedExt": [],
+     "guaranteeExt": [],
+     "capabilityExt": [],
+     "assistType": 0,
+     "regionNameEngList": [],
+     "opsQuotaDeleted": false,
+     "tenantPriority": 100,
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "allocated": {
+      "cpu": 192,
+      "mem": 1920,
+      "gpu": 16,
+      "isDisplayed": true,
+      "extInfo": []
+     },
+     "exclusivePoolUuid": "2677d5822e3b469785699940b4e9f374",
+     "visibleType": "All"
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 1
+   }
+  }
+ },
+ "queue.check.share": {
+  "verb": "POST",
+  "route": "/bc/v1/queue/check/share",
+  "http": 200,
+  "json": {
+   "requestId": "7b3767a9dbbebb173ef68bc92f059979",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "meetNeed": 1,
+   "restCpu": 48,
+   "restGpu": 0,
+   "restMem": 480,
+   "notEnoughRes": []
+  }
+ },
+ "spec.list": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/pool/spec/list",
+  "http": 200,
+  "json": {
+   "requestId": "90e18de02b4c8b869d7e50a509ad1826",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "specs": [
+    {
+     "id": "3207",
+     "resourceId": "34364",
+     "quotaCpu": 12,
+     "quotaGpu": 1,
+     "quotaMem": 120,
+     "specType": 1,
+     "gpuModel": "NVIDIA-A100-SXM4-80GB",
+     "description": "中关村A100-80G",
+     "k8sGpuModel": "NVIDIA-A100-SXM4-80GB",
+     "sellout": 2,
+     "sfsIoType": 0,
+     "lowCudaVersion": "11.3",
+     "highCudaVersion": "13.0",
+     "alias": "NVIDIA-A100-SXM4-80GB",
+     "cpuAlias": "",
+     "singlePrecisionParam": "19.5 TFLOPS",
+     "halfPrecisionParam": "312 Tensor TFLOPS",
+     "gpuMem": 80,
+     "infiniBand": 0,
+     "inventory": 3,
+     "quotaLocalStorage": 1000,
+     "available": 0,
+     "cpuClockSpeed": "",
+     "cpuL3Cache": "",
+     "cpuCompId": 172,
+     "memCompId": 173,
+     "availableRegion": [
+      {
+       "regionNameCN": "<CAMPUS>专属3",
+       "regionNameEng": "sc-neijiang-1",
+       "inventory": 96
+      },
+      {
+       "regionNameCN": "<CAMPUS>专属2",
+       "regionNameEng": "zj-pinghu-1",
+       "inventory": 3
+      },
+      {
+       "regionNameCN": "<CAMPUS>专属1",
+       "regionNameEng": "js-changshu-1",
+       "inventory": 0
+      }
+     ],
+     "availableRegionNum": 4,
+     "k8sCpuModel": ""
+    },
+    {
+     "id": "3208",
+     "resourceId": "34364",
+     "quotaCpu": 24,
+     "quotaGpu": 2,
+     "quotaMem": 240,
+     "specType": 1,
+     "gpuModel": "NVIDIA-A100-SXM4-80GB",
+     "description": "中关村A100-80G",
+     "k8sGpuModel": "NVIDIA-A100-SXM4-80GB",
+     "sellout": 2,
+     "sfsIoType": 0,
+     "lowCudaVersion": "11.3",
+     "highCudaVersion": "13.0",
+     "alias": "NVIDIA-A100-SXM4-80GB",
+     "cpuAlias": "",
+     "singlePrecisionParam": "19.5 TFLOPS",
+     "halfPrecisionParam": "312 Tensor TFLOPS",
+     "gpuMem": 80,
+     "infiniBand": 0,
+     "inventory": 1,
+     "quotaLocalStorage": 2000,
+     "available": 0,
+     "cpuClockSpeed": "",
+     "cpuL3Cache": "",
+     "cpuCompId": 172,
+     "memCompId": 173,
+     "availableRegion": [
+      {
+       "regionNameCN": "<CAMPUS>专属3",
+       "regionNameEng": "sc-neijiang-1",
+       "inventory": 48
+      },
+      {
+       "regionNameCN": "<CAMPUS>专属2",
+       "regionNameEng": "zj-pinghu-1",
+       "inventory": 1
+      },
+      {
+       "regionNameCN": "<CAMPUS>专属1",
+       "regionNameEng": "js-changshu-1",
+       "inventory": 0
+      }
+     ],
+     "availableRegionNum": 4,
+     "k8sCpuModel": ""
+    },
+    {
+     "id": "3209",
+     "resourceId": "34364",
+     "quotaCpu": 48,
+     "quotaGpu": 4,
+     "quotaMem": 480,
+     "specType": 1,
+     "gpuModel": "NVIDIA-A100-SXM4-80GB",
+     "description": "中关村A100-80G",
+     "k8sGpuModel": "NVIDIA-A100-SXM4-80GB",
+     "sellout": 2,
+     "sfsIoType": 0,
+     "lowCudaVersion": "11.3",
+     "highCudaVersion": "13.0",
+     "alias": "NVIDIA-A100-SXM4-80GB",
+     "cpuAlias": "",
+     "singlePrecisionParam": "19.5 TFLOPS",
+     "halfPrecisionParam": "312 Tensor TFLOPS",
+     "gpuMem": 80,
+     "infiniBand": 0,
+     "inventory": 0,
+     "quotaLocalStorage": 4000,
+     "available": 0,
+     "cpuClockSpeed": "",
+     "cpuL3Cache": "",
+     "cpuCompId": 172,
+     "memCompId": 173,
+     "availableRegion": [
+      {
+       "regionNameCN": "<CAMPUS>专属3",
+       "regionNameEng": "sc-neijiang-1",
+       "inventory": 23
+      },
+      {
+       "regionNameCN": "<CAMPUS>专属2",
+       "regionNameEng": "zj-pinghu-1",
+       "inventory": 0
+      },
+      {
+       "regionNameCN": "<CAMPUS>专属1",
+       "regionNameEng": "js-changshu-1",
+       "inventory": 0
+      }
+     ],
+     "availableRegionNum": 4,
+     "k8sCpuModel": ""
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 999,
+    "totalRecord": 4
+   }
+  }
+ },
+ "spec.sellout": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/pool/spec/sellout",
+  "http": 200,
+  "json": {
+   "requestId": "8e58f904bc1d4dce514809ec603af07b",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "sellout": 2
+  }
+ },
+ "spec.localStorageInventory": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/getSpecLocalStorageInventory",
+  "http": 200,
+  "json": {
+   "requestId": "109cce0e280e7640f2e4b7a122a9bf67",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "inventoryLocalStorage": 5350,
+   "limitLocalStorage": 365122
+  }
+ },
+ "resource.batchCheckQuota": {
+  "verb": "POST",
+  "route": "/bc/v1/resource/batchCheckQuota",
+  "http": 200,
+  "json": {
+   "requestId": "f0493b9998839bd6e9a2ea77441ac1e8",
+   "status": {
+    "code": "NotFound",
+    "message": "Not Found"
+   }
+  }
+ },
+ "image.list": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/image/list",
+  "http": 200,
+  "json": {
+   "requestId": "874b8513fd9912c5eedc5b1f309b0b1f",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "images": [
+    {
+     "name": "jupyter-ubuntu22",
+     "ideType": 2,
+     "arch": 1,
+     "aiFramework": 4,
+     "cudaVersion": "-",
+     "imageAddr": "ehub-bc.ctcdn.cn/esx-batchcom/jupyter-ubuntu22:latest",
+     "createTime": "2025-06-03T10:56:37+08:00",
+     "updateTime": "2026-08-03T15:53:09+08:00",
+     "imageId": 290,
+     "imageSize": "",
+     "imageVersion": "",
+     "imageType": 0,
+     "descr": "纯净基于Ubuntu22.04的Jupyter镜像",
+     "features": [
+      "jupyter"
+     ],
+     "labels": [
+      "ubuntu:22.04"
+     ],
+     "productType": [
+      1,
+      2,
+      6
+     ]
+    },
+    {
+     "name": "jupyter-vllm0.26.0-openai-cuda13.0-ubuntu22.04",
+     "ideType": 2,
+     "arch": 1,
+     "aiFramework": 2,
+     "cudaVersion": "cuda13.0-pytorch2.11.0",
+     "imageAddr": "ehub.ctcdn.cn/esx-batchcom/jupyter-vllm0.26.0-openai-cuda13.0-ubuntu22.04:latest",
+     "createTime": "2026-07-30T16:02:06+08:00",
+     "updateTime": "2026-07-30T16:02:46+08:00",
+     "imageId": 370,
+     "imageSize": "",
+     "imageVersion": "",
+     "imageType": 0,
+     "descr": "Vllm0.26.0 OpenAI Cuda13.0模型推理环境",
+     "features": [
+      "jupyter"
+     ],
+     "labels": [
+      "cuda:13.0",
+      "pytorch:2.11.0",
+      "vllm:0.26.0"
+     ],
+     "productType": [
+      2,
+      1
+     ]
+    },
+    {
+     "name": "jupyter-vllm0.24.0-openai-cuda13.0-ubuntu22.04",
+     "ideType": 2,
+     "arch": 1,
+     "aiFramework": 2,
+     "cudaVersion": "cuda13.0-pytorch2.11.0",
+     "imageAddr": "ehub.ctcdn.cn/esx-batchcom/jupyter-vllm0.24.0-openai-cuda13.0-ubuntu22.04:latest",
+     "createTime": "2026-07-10T15:49:08+08:00",
+     "updateTime": "2026-07-10T15:49:17+08:00",
+     "imageId": 367,
+     "imageSize": "",
+     "imageVersion": "",
+     "imageType": 0,
+     "descr": "Vllm0.24.0 Cuda13.0模型推理环境",
+     "features": [
+      "jupyter"
+     ],
+     "labels": [
+      "cuda:13.0",
+      "pytorch:2.11.0",
+      "vllm:0.24.0"
+     ],
+     "productType": [
+      1,
+      2
+     ]
+    }
+   ],
+   "paging": {
+    "totalPage": 6,
+    "page": 1,
+    "perPage": 5,
+    "totalRecord": 28
+   }
+  }
+ },
+ "storage.research.list": {
+  "verb": "GET",
+  "route": "/bc/v2/storage/research/list",
+  "http": 200,
+  "json": {
+   "requestId": "12133591e1ba46b65fe9a742283958cf",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "storageResearches": [
+    {
+     "id": "7018",
+     "storageName": "pool02-<PROJECT>",
+     "volumeSize": 10000,
+     "resourceId": "34364",
+     "resourceName": "huadong004-949",
+     "regionId": "180",
+     "regionName": "<CAMPUS>专属2",
+     "regionNameEng": "zj-pinghu-1",
+     "state": "Created",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "specId": 3206,
+     "specName": "科研文件基础性能版",
+     "accessUrl": "https://hd4bc.esx.ctyun.cn:1443/dataset/f49784ce-0cc8-4795-85e8-26fb145f56a0/",
+     "urlReady": true,
+     "token": "<REDACTED>",
+     "isFreeze": false,
+     "isOffline": false,
+     "createTime": "2026-02-08T09:54:55+08:00",
+     "applicationType": "general",
+     "provider": "OceanDisk",
+     "creatorId": 4162,
+     "creatorName": "北京<CAMPUS>",
+     "usedVolumeSize": 491000,
+     "uuid": "f49784ce-0cc8-4795-85e8-26fb145f56a0",
+     "spaceEnable": true,
+     "chunkSize": 1048576,
+     "qps": 5,
+     "billingMode": 0,
+     "periodExpireTime": "0",
+     "fsState": "Running",
+     "fsVersion": "v1.1.3",
+     "canUpgrade": true,
+     "storagePoolName": "默认",
+     "ordApplyType": "ORD_100_04_0002"
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 999,
+    "totalRecord": 1
+   }
+  }
+ },
+ "storage.research.space.list": {
+  "verb": "GET",
+  "route": "/bc/v2/storage/research/space/list",
+  "http": 200,
+  "json": {
+   "requestId": "2e60a78be936990ef9c7b7ad09a48451",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "storageSpaces": [
+    {
+     "spaceId": "1275",
+     "storageId": "7018",
+     "spaceName": "默认空间",
+     "visibility": "project",
+     "creatorId": 4162,
+     "creatorName": "",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "",
+     "accessToken": "<REDACTED>",
+     "spaceFolder": "default_space",
+     "readOnly": false
+    },
+    {
+     "spaceId": "4093",
+     "storageId": "7018",
+     "spaceName": "<USER>",
+     "visibility": "private",
+     "creatorId": 30802,
+     "creatorName": "",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "",
+     "accessToken": "<REDACTED>",
+     "spaceFolder": "23693c3d-afab-4649-a99e-b4b29a3625f3",
+     "readOnly": false
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 999,
+    "totalRecord": 2
+   }
+  }
+ },
+ "storage.pvc.list": {
+  "verb": "GET",
+  "route": "/bc/v2/storage/pvc/list",
+  "http": 200,
+  "json": {
+   "requestId": "9c11be30861a283e9c3bf867c15522f5",
+   "status": {
+    "code": "PermissionDenied",
+    "message": "权限不足，请联系管理员授权后重试!"
+   }
+  }
+ },
+ "eip.list": {
+  "verb": "GET",
+  "route": "/bc/v1/eip/list",
+  "http": 200,
+  "json": {
+   "requestId": "4df96cb3a830ff1e380da9f4701b9c93",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "eips": [],
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 50,
+    "totalRecord": 0
+   }
+  }
+ },
+ "secret.list": {
+  "verb": "GET",
+  "route": "/bc/v1/secret/list",
+  "http": 200,
+  "json": {
+   "requestId": "30fbbe897a873845bc882a1d1a9908f4",
+   "status": {
+    "code": "InvalidArgument",
+    "message": "invalid field QueueId: 队列id{queue_id}的值需要大于0"
+   }
+  }
+ },
+ "ide.list": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/list",
+  "http": 200,
+  "json": {
+   "requestId": "a2ba1ac9714dbeb35859fbf290dd6288",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "ides": [
+    {
+     "ideName": "dev-env-gr039",
+     "states": 3,
+     "imageAddr": "jupyter-vllm0.24.0-openai-cuda13.0-ubuntu22.04",
+     "description": "",
+     "openLink": "https://hd4bc.esx.ctyun.cn:1443/bc/v1/Jupyter/a99143a428d241b6ba1e3f4cb3be6efa/?token=<REDACTED>",
+     "createTime": "2026-07-27T14:03:15+08:00",
+     "resourceSpecific": {
+      "quotaCpu": 24,
+      "quotaGpu": 2,
+      "quotaMem": 240,
+      "gpuModel": "NVIDIA-A100-SXM4-80GB",
+      "specType": 1,
+      "lowCudaVersion": "11.3",
+      "highCudaVersion": "13.0",
+      "alias": "NVIDIA-A100-SXM4-80GB",
+      "cpuAlias": "",
+      "quotaLocalStorage": 0
+     },
+     "id": 10031883,
+     "poolType": 2,
+     "autoStop": 2,
+     "stopDuration": 0,
+     "imageId": 367,
+     "specId": 3208,
+     "resourceId": 34364,
+     "leftTime": "0",
+     "token": "<REDACTED>",
+     "ideType": 2,
+     "queueId": 53192,
+     "queueName": "q-<PROJECT>-pool02",
+     "activeDuration": "1808211",
+     "regionName": "<CAMPUS>专属2",
+     "regionNameEng": "zj-pinghu-1",
+     "isFreeze": false,
+     "urlReady": true,
+     "eventContent": "",
+     "cleanLeftTime": 0,
+     "arch": 1,
+     "svcCapability": "0000000000010011",
+     "billingMode": 4,
+     "periodExpireTime": "0",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "statesString": "Running",
+     "isOffline": 0,
+     "imageCudaVersion": "13.0",
+     "isPendingTooLong": 0,
+     "imageSource": 0,
+     "sshCommand": "ssh -p 30285 batchcom@<IP>",
+     "sshEnabled": true,
+     "sshKeys": [
+      {
+       "name": "<USER>-macbookair",
+       "id": 2784,
+       "creatorName": "葛*龙"
+      }
+     ],
+     "sshClientIps": "<IPS>",
+     "creatorId": 30802,
+     "creatorName": "葛煜龙",
+     "pushProgress": "",
+     "pushRetryCount": 0,
+     "ideAlias": "",
+     "uuid": "a99143a428d241b6ba1e3f4cb3be6efa",
+     "servicePortEnabled": true,
+     "servicePortMap": {
+      "8000": "<IP>"
+     },
+     "servicePortClientIps": "<IPS>",
+     "ideVersion": "v2",
+     "enableVisibilitySwitch": true,
+     "ideVisibility": "PERSONAL",
+     "aoneEduEnable": false,
+     "dindInfo": {
+      "quotaCpu": 0,
+      "quotaGpu": 0,
+      "quotaMem": 0
+     },
+     "dindEnabled": false,
+     "idleState": 0,
+     "idleTimeLength": 0,
+     "idleStopTime": "",
+     "idleDelayTime": "",
+     "idleStateString": "",
+     "sshShareType": "Shared",
+     "sshEipId": 0,
+     "sshEipName": "",
+     "servicePortShareType": "Shared",
+     "stopLog": null,
+     "exclusivePoolUuid": "2677d5822e3b469785699940b4e9f374",
+     "cpuCompId": 172,
+     "memCompId": 173,
+     "useIdleResource": 0,
+     "errMessage": "",
+     "ordApplyType": "ORD_100_04_0002",
+     "specUpdateEnabled": false,
+     "servicePortEipConfig": [],
+     "startMode": "",
+     "email": "l-gyl@bza.edu.cn"
+    },
+    {
+     "ideName": "dev-env-dg9ol",
+     "states": 3,
+     "imageAddr": "jupyter-ubuntu22-cudatoolkit13.0",
+     "description": "",
+     "openLink": "https://hb3bc.esx.ctyun.cn:1443/bc/v1/Jupyter/fc2e0edb82a2451eb3c4e857f23937f4/?token=<REDACTED>",
+     "createTime": "2026-06-29T17:13:55+08:00",
+     "resourceSpecific": {
+      "quotaCpu": 96,
+      "quotaGpu": 8,
+      "quotaMem": 960,
+      "gpuModel": "NVIDIA-A100-SXM4-80GB",
+      "specType": 1,
+      "lowCudaVersion": "11.3",
+      "highCudaVersion": "13.0",
+      "alias": "NVIDIA-A100-SXM4-80GB",
+      "cpuAlias": "",
+      "quotaLocalStorage": 0
+     },
+     "id": 10030973,
+     "poolType": 2,
+     "autoStop": 2,
+     "stopDuration": 1,
+     "imageId": 338,
+     "specId": 3210,
+     "resourceId": 34365,
+     "leftTime": "0",
+     "token": "<REDACTED>",
+     "ideType": 2,
+     "queueId": 79401,
+     "queueName": "q-<PROJECT>-pool04",
+     "activeDuration": "4142379",
+     "regionName": "<CAMPUS>专属4",
+     "regionNameEng": "hb-qinhuangdao-1",
+     "isFreeze": false,
+     "urlReady": true,
+     "eventContent": "",
+     "cleanLeftTime": 0,
+     "arch": 1,
+     "svcCapability": "0000000000010011",
+     "billingMode": 4,
+     "periodExpireTime": "0",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "statesString": "Running",
+     "isOffline": 0,
+     "imageCudaVersion": "13.0",
+     "isPendingTooLong": 0,
+     "imageSource": 0,
+     "sshCommand": "ssh -p 30174 batchcom@<IP>",
+     "sshEnabled": true,
+     "sshKeys": [
+      {
+       "name": "<USER>-macbookair",
+       "id": 2784,
+       "creatorName": "葛*龙"
+      }
+     ],
+     "sshClientIps": "<IPS>",
+     "creatorId": 30802,
+     "creatorName": "葛煜龙",
+     "pushProgress": "",
+     "pushRetryCount": 0,
+     "ideAlias": "",
+     "uuid": "fc2e0edb82a2451eb3c4e857f23937f4",
+     "servicePortEnabled": false,
+     "servicePortMap": {},
+     "servicePortClientIps": "<IPS>",
+     "ideVersion": "v2",
+     "enableVisibilitySwitch": true,
+     "ideVisibility": "PERSONAL",
+     "aoneEduEnable": false,
+     "dindInfo": {
+      "quotaCpu": 0,
+      "quotaGpu": 0,
+      "quotaMem": 0
+     },
+     "dindEnabled": false,
+     "idleState": 0,
+     "idleTimeLength": 0,
+     "idleStopTime": "",
+     "idleDelayTime": "",
+     "idleStateString": "",
+     "sshShareType": "Shared",
+     "sshEipId": 0,
+     "sshEipName": "",
+     "servicePortShareType": "",
+     "stopLog": null,
+     "exclusivePoolUuid": "2280ab136f944b53ad21df9140b2e3eb",
+     "cpuCompId": 172,
+     "memCompId": 173,
+     "useIdleResource": 0,
+     "errMessage": "",
+     "ordApplyType": "ORD_100_04_0002",
+     "specUpdateEnabled": false,
+     "servicePortEipConfig": [],
+     "startMode": "",
+     "email": "l-gyl@bza.edu.cn"
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 10,
+    "totalRecord": 2
+   }
+  }
+ },
+ "ide.get": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/get",
+  "http": 200,
+  "json": {
+   "name": "dev-env-gr039",
+   "states": 3,
+   "poolType": 2,
+   "poolName": "huadong004-949",
+   "description": "",
+   "autoStop": 2,
+   "createTime": "2026-07-27T14:03:15+08:00",
+   "modifyTime": "2026-08-16T14:29:12+08:00",
+   "imageAddr": "jupyter-vllm0.24.0-openai-cuda13.0-ubuntu22.04",
+   "resourceSpecific": {
+    "quotaCpu": 24,
+    "quotaGpu": 2,
+    "quotaMem": 240,
+    "gpuModel": "NVIDIA-A100-SXM4-80GB",
+    "specType": 1,
+    "lowCudaVersion": "11.3",
+    "highCudaVersion": "13.0",
+    "alias": "NVIDIA-A100-SXM4-80GB",
+    "cpuAlias": "",
+    "quotaLocalStorage": 0
+   },
+   "storageInfo": [],
+   "stopDuration": 0,
+   "requestId": "47e69645dd18ee2afc2a947790df8bbb",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "imageId": 367,
+   "specId": 3208,
+   "resourceId": 34364,
+   "leftTime": "0",
+   "queueId": 53192,
+   "queueName": "q-<PROJECT>-pool02",
+   "openLink": "https://hd4bc.esx.ctyun.cn:1443/bc/v1/Jupyter/a99143a428d241b6ba1e3f4cb3be6efa/?token=<REDACTED>",
+   "token": "<REDACTED>",
+   "ideType": 2,
+   "activeDuration": "1808212",
+   "regionName": "<CAMPUS>专属2",
+   "regionNameEng": "zj-pinghu-1",
+   "isFreeze": false,
+   "urlReady": true,
+   "localPv": 0,
+   "localPvPath": "",
+   "arch": 1,
+   "svcCapability": "0000000000010011",
+   "billingMode": 4,
+   "periodExpireTime": "0",
+   "projectId": "<PROJECT_UUID>",
+   "projectName": "<PROJECT_NAME>",
+   "vncInfo": {
+    "userName": "batchcom",
+    "password": "<REDACTED>"
+   },
+   "statesString": "Running",
+   "isOffline": 0,
+   "imageCudaVersion": "13.0",
+   "isPendingTooLong": 0,
+   "researchStorageInfo": [
+    {
+     "type": "OceanDisk",
+     "storageName": "pool02-<PROJECT>",
+     "mountPath": "/home/dataset-assist-0/research",
+     "subPath": "",
+     "storageId": "7018",
+     "spaceId": "4093",
+     "spaceFolder": "23693c3d-afab-4649-a99e-b4b29a3625f3",
+     "spaceName": "<USER>",
+     "readOnly": false
+    }
+   ],
+   "sshEnabled": true,
+   "sshKeys": [
+    {
+     "name": "<USER>-macbookair",
+     "id": 2784,
+     "creatorName": "葛*龙"
+    }
+   ],
+   "sshCommand": "ssh -p 30285 batchcom@<IP>",
+   "sshClientIps": "<IPS>",
+   "pushProgress": "",
+   "pushRetryCount": 0,
+   "ideAlias": "",
+   "localStorageInfo": {
+    "pvSize": 2000,
+    "releasePolicy": "Delete",
+    "mountPath": "/home/dataset-local",
+    "subPath": "ide_data"
+   },
+   "servicePortEnabled": true,
+   "servicePortMap": {
+    "8000": "<IP>"
+   },
+   "servicePortClientIps": "<IPS>",
+   "ideVersion": "v2",
+   "monitorId": "ide-a99143a428d241b6ba1e3f4cb3be6efa",
+   "enableVisibilitySwitch": true,
+   "ideVisibility": "PERSONAL",
+   "userName": "葛煜龙",
+   "userEmail": "<REDACTED>",
+   "aoneEduEnable": false,
+   "dindInfo": {
+    "quotaCpu": 0,
+    "quotaGpu": 0,
+    "quotaMem": 0
+   },
+   "dindEnabled": false,
+   "uuid": "a99143a428d241b6ba1e3f4cb3be6efa",
+   "idleState": 0,
+   "idleTimeLength": 0,
+   "idleStopTime": "",
+   "idleDelayTime": "",
+   "idleStateString": "Abnormal",
+   "localStorageStatus": null,
+   "sshShareType": "Shared",
+   "sshEipId": 0,
+   "sshEipName": "",
+   "servicePortShareType": "Shared",
+   "exclusivePoolUuid": "2677d5822e3b469785699940b4e9f374",
+   "cpuCompId": 172,
+   "memCompId": 173,
+   "useIdleResource": 0,
+   "ordApplyType": "ORD_100_04_0002",
+   "specUpdateEnabled": false,
+   "servicePortEipConfig": [],
+   "startMode": ""
+  }
+ },
+ "monitor.metrics": {
+  "verb": "POST",
+  "route": "/bc/v1/monitor/getResourceUsageRateMetrics",
+  "http": 200,
+  "json": {
+   "requestId": "e493b9931a867b254cb211cefe52f722",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "metricDataInfo": [
+    {
+     "metricName": "cpu_usage_rate",
+     "usageRate": 1.5835093
+    },
+    {
+     "metricName": "mem_usage_rate",
+     "usageRate": 96.2394
+    },
+    {
+     "metricName": "gpu_usage_rate",
+     "usageRate": 0
+    }
+   ]
+  }
+ },
+ "storage.pvc.list.byId": {
+  "verb": "GET",
+  "route": "/bc/v2/storage/pvc/list",
+  "http": 200,
+  "json": {
+   "requestId": "6709a80b054955c213101b90e14230ab",
+   "status": {
+    "code": "PermissionDenied",
+    "message": "权限不足，请联系管理员授权后重试!"
+   }
+  }
+ },
+ "ide.summary": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/summary",
+  "http": 200,
+  "json": {
+   "requestId": "b22968c3b0d4f563ac1ec4dff064b638",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "demandSummary": {
+    "otherNum": 0,
+    "creatingNum": 0,
+    "pendingNum": 0,
+    "runningNum": 0,
+    "suspendNum": 0,
+    "successNum": 0,
+    "failNum": 0,
+    "imageSavingNum": 0,
+    "totalNum": 0
+   },
+   "periodSummary": {
+    "otherNum": 0,
+    "creatingNum": 0,
+    "pendingNum": 0,
+    "runningNum": 0,
+    "suspendNum": 0,
+    "successNum": 0,
+    "failNum": 0,
+    "imageSavingNum": 0,
+    "totalNum": 0
+   }
+  }
+ },
+ "ide.toRemove": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/toRemove",
+  "http": 200,
+  "json": {
+   "requestId": "2333346613ed69843b478c994f21a9fb",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "ideInfos": []
+  }
+ },
+ "ide.user_image.list": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/user_image/list",
+  "http": 200,
+  "json": {
+   "requestId": "90daa297d0249c8709259793341fb7df",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "images": [
+    {
+     "name": "zhangchen0706",
+     "ideType": 1,
+     "arch": 1,
+     "aiFramework": 2,
+     "cudaVersion": "cuda12.1-pytorch2.3.1",
+     "imageAddr": "ehub-sh15.ctxirang.cn:2443/pool01/zhangchen0706:zhangchen0706",
+     "createTime": "2026-07-06T16:04:35+08:00",
+     "updateTime": "2026-07-06T16:22:01+08:00",
+     "imageId": 6831,
+     "state": 2,
+     "orgName": "pool01",
+     "imageTag": "zhangchen0706",
+     "errorMsg": "",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "features": [
+      "vscode网页版"
+     ],
+     "labels": [
+      "pytorch:2.3.1",
+      "cuda:12.1"
+     ],
+     "productType": [
+      2,
+      1
+     ],
+     "orgId": 496,
+     "orgClusterId": 5,
+     "orgClusterName": "华东一区"
+    },
+    {
+     "name": "zhangchen0520",
+     "ideType": 1,
+     "arch": 1,
+     "aiFramework": 2,
+     "cudaVersion": "cuda12.1-pytorch2.3.1",
+     "imageAddr": "ehub-sh15.ctxirang.cn:2443/pool02/zhangchen0520:zhangchen0520",
+     "createTime": "2026-05-20T11:52:20+08:00",
+     "updateTime": "2026-05-20T12:09:40+08:00",
+     "imageId": 6065,
+     "state": 2,
+     "orgName": "pool02",
+     "imageTag": "zhangchen0520",
+     "errorMsg": "",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "features": [
+      "vscode网页版"
+     ],
+     "labels": [
+      "pytorch:2.3.1",
+      "cuda:12.1"
+     ],
+     "productType": [
+      2,
+      1
+     ],
+     "orgId": 497,
+     "orgClusterId": 5,
+     "orgClusterName": "华东一区"
+    },
+    {
+     "name": "zhangchen0428",
+     "ideType": 1,
+     "arch": 1,
+     "aiFramework": 2,
+     "cudaVersion": "cuda12.1-pytorch2.3.1",
+     "imageAddr": "ehub-hb2.ctxirang.cn:2443/pool04/zhangchen0428:zhangchen0428",
+     "createTime": "2026-04-28T21:40:39+08:00",
+     "updateTime": "2026-04-28T21:55:56+08:00",
+     "imageId": 5830,
+     "state": 2,
+     "orgName": "pool04",
+     "imageTag": "zhangchen0428",
+     "errorMsg": "",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "features": [
+      "vscode网页版"
+     ],
+     "labels": [
+      "pytorch:2.3.1",
+      "cuda:12.1"
+     ],
+     "productType": [
+      2,
+      1
+     ],
+     "orgId": 498,
+     "orgClusterId": 6,
+     "orgClusterName": "华北一区"
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 10,
+    "totalRecord": 8
+   }
+  }
+ },
+ "ide.image.shareRecord": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/image/shareRecord",
+  "http": 200,
+  "json": {
+   "requestId": "841780027608bc1ca8c19f5aeaaa3056",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "shareInfos": [
+    {
+     "shareImageId": 646,
+     "shareTime": "2026-04-25T19:44:15+08:00",
+     "shareUserId": "2012407-智能机器人自主演进技术及系统",
+     "userId": "智能机器人自主演进技术及系统",
+     "sourceType": "project"
+    },
+    {
+     "shareImageId": 645,
+     "shareTime": "2026-04-25T19:44:00+08:00",
+     "shareUserId": "2012407-智能机器人自主演进技术及系统",
+     "userId": "智能机器人自主演进技术及系统",
+     "sourceType": "project"
+    },
+    {
+     "shareImageId": 355,
+     "shareTime": "2026-01-22T19:42:56+08:00",
+     "shareUserId": "AI实践营-周旷奇项目",
+     "userId": "2012408-遥感多模态语言大模型关键技术研究",
+     "sourceType": "project"
+    }
+   ],
+   "paging": {
+    "totalPage": 3,
+    "page": 1,
+    "perPage": 10,
+    "totalRecord": 22
+   }
+  }
+ },
+ "ide.image.shareImage.list": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/image/shareImage/list",
+  "http": 200,
+  "json": {
+   "requestId": "cf3b69718dae13d07ef70f8c1414900f",
+   "status": {
+    "code": "InvalidArgument",
+    "message": "parsing field \"arch\": strconv.ParseInt: parsing \"x86\": invalid syntax"
+   }
+  }
+ },
+ "ide.overview.recommendedImage": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/overview/recommendedImage/list",
+  "http": 200,
+  "json": {
+   "requestId": "056a08cc1c5c466c920bede09c17c426",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "imageInfo": [
+    {
+     "name": "多内核WebIDE开发框架",
+     "frameName": "pytorch-jupyter:cuda11.1-torch1.9.0-multi-kernel",
+     "descr": "使用Jupyter Notebook进行代码开发，支持Python、C/C++、Octave、R语言",
+     "logo": "PyTorch",
+     "rank": 1,
+     "index": 870,
+     "imageID": 137,
+     "imageType": 0,
+     "id": 37,
+     "productInfo": [
+      {
+       "productID": 3117,
+       "priority": 2,
+       "regionNameEng": []
+      }
+     ],
+     "features": [
+      "jupyter",
+      "多内核",
+      "octave"
+     ],
+     "labels": [
+      "cuda:11.1",
+      "pytorch:1.9.0"
+     ],
+     "arch": 1,
+     "imageCategory": []
+    },
+    {
+     "name": "基础模型开发框架",
+     "frameName": "jupyter-pytorch2.3.1-cuda12.1-cudnn8",
+     "descr": "基于Jupyter Notebook进行模型开发，内置Pytorch、Cuda等模型开发所需的前置",
+     "logo": "PyTorch",
+     "rank": 2,
+     "index": 1711,
+     "imageID": 221,
+     "imageType": 0,
+     "id": 35,
+     "productInfo": [
+      {
+       "productID": 3117,
+       "priority": 2,
+       "regionNameEng": []
+      }
+     ],
+     "features": [
+      "jupyter"
+     ],
+     "labels": [
+      "cuda:12.1",
+      "pytorch:2.3.1"
+     ],
+     "arch": 1,
+     "imageCategory": []
+    },
+    {
+     "name": "VNC带Pytorch和CUDA",
+     "frameName": "vnc-pytorch1.12.1-cuda11.3",
+     "descr": "带有模型开发框架的VNC镜像。",
+     "logo": "VNC",
+     "rank": 3,
+     "index": 287,
+     "imageID": 222,
+     "imageType": 0,
+     "id": 38,
+     "productInfo": [
+      {
+       "productID": 3117,
+       "priority": 2,
+       "regionNameEng": []
+      }
+     ],
+     "features": [
+      "vnc",
+      "vscode桌面版",
+      "pycharm"
+     ],
+     "labels": [
+      "cuda:11.3",
+      "pytorch:1.12.1"
+     ],
+     "arch": 1,
+     "imageCategory": []
+    }
+   ],
+   "paging": {
+    "totalPage": 2,
+    "page": 1,
+    "perPage": 5,
+    "totalRecord": 9
+   }
+  }
+ },
+ "ide.publicKey.list": {
+  "verb": "POST",
+  "route": "/bc/v1/ide/publicKey/list",
+  "http": 200,
+  "json": {
+   "requestId": "26a302d6b0e074d8abe1b50c2de3525f",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "publicKeyInfo": [
+    {
+     "publicKey": "c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUUyWHRkSWpZdjFIOTdWTFRrdjJZb3JmTkNHYVU0WW1pTDduSzhQNWVMNWYgcm9vdEBsb25nLU5INTU=",
+     "id": "3036",
+     "name": "<USER>-server-ed25519",
+     "createTime": "2026-08-16T15:45:43+08:00",
+     "modifyTime": "2026-08-16T15:45:43+08:00",
+     "email": "-",
+     "bindingIdeInfo": []
+    },
+    {
+     "publicKey": "c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFDQVFDV1A3LzRoMi9wd29VSDUvSWRETXhheTlaNW5HNWZlS1dFd3BGZGcwZ2ZqUW5sOFVpZEo5MVpVVWZlTkhkUitZNGx2TWxBSGxubkRydGVvSVQ2U1RaMW80Y05RdmhhaEZXNWc2em8zYkxuVTU3Rm9rVU5nZDRPTE1CUXdibG1rSktzTTgzeSs3MDEzS2dkQUp2ajAwSDZ3bGxMRTY0d1pXeFZiSmN0ZUtjbEE0OWZ3UEJLVGdKK0JKKzkrT3RDSndRMFpoSmxvN3J3TDdZUmNpejl6NlZBcVNtZzFFMm8xTnovWENVak1SUXZuMTd0OEQ1YnQrY1ltdU9ReTlYMWhBSjZZaVkxZ0VSQXZiNXNkeENFdDFpOUZjQm1UT3l3VGI1SitMQUNvbUk3UHpoWmZUdUU1L2crdGpYa1pEOTFJVkNud09vQ2RLRlNvYXNOazZmcXpTRDIrcmpnOENmcjNnUmx6eFV2ZGY2N2F6RGZmTitJYjU3VHpCS3dVSVhDTzh3eXJzY3JUVWFRbzU2cVJvSVlickVwWSt3QmxlUzVLenU4SW9DWDd4OHlUelFuNnRoc213eERXRERrejJGMkoySzIyMHZ4VWtDUXVMSi9qR2JBdWJyaG1JT0hKaG4zdkE0MGovTWZYelRvWUpiSlplMXROV2FVdEFvTG1hR3RGdHhvcmRjOGtZOG1JR2FFRFQvbVZtQzBGeEkyd3ZqTmY5TUR3Q0JINEdEb2NKMVZQRHN0T2xRNzBISEdCcUIrN1RHQW1QSUVERmdhQ2FWYXpGcThDV2RKcnBiL3daai90aG53SS9nNVhtbUhzNG8vNkhyNmN6WklsM3ZLTFpWVFc4MkNRZlB0ZS9UVzIvNWtlV2lSV0lkWk9ndXZkZjVjYkJHclJFeDFzcWFhdlE9PSBtYWNib29rYWlyQE1hY0Jvb2tBaXJkZU1hY0Jvb2stQWlyLmxvY2Fs",
+     "id": "2784",
+     "name": "<USER>-macbookair",
+     "createTime": "2026-06-29T17:12:03+08:00",
+     "modifyTime": "2026-06-29T17:12:03+08:00",
+     "email": "-",
+     "bindingIdeInfo": [
+      {
+       "ideId": "10030973",
+       "ideName": "dev-env-dg9ol"
+      },
+      {
+       "ideId": "10031883",
+       "ideName": "dev-env-gr039"
+      }
+     ]
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 10,
+    "totalRecord": 2
+   }
+  }
+ },
+ "ide.image.featLabels": {
+  "verb": "POST",
+  "route": "/bc/v1/ide/image/featLabels/list",
+  "http": 200,
+  "json": {
+   "requestId": "7675f1ee285972f1afceafab9b08e867",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "features": [
+    "jupyter",
+    "多内核",
+    "octave"
+   ],
+   "labels": [
+    {
+     "name": "cuda",
+     "value": "11.1"
+    },
+    {
+     "name": "pytorch",
+     "value": "1.9.0"
+    },
+    {
+     "name": "pytorch",
+     "value": "1.12.1"
+    }
+   ]
+  }
+ },
+ "job.list": {
+  "verb": "GET",
+  "route": "/bc/v1/job/list",
+  "http": 200,
+  "json": {
+   "requestId": "c0cda32641fea67291b1abda3b880fe9",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "jobs": [],
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 5,
+    "totalRecord": 0
+   }
+  }
+ },
+ "job.describeTrainingJobs": {
+  "verb": "POST",
+  "route": "/bc/v1/job/describeTrainingJobs",
+  "http": 200,
+  "json": {
+   "requestId": "7f7eb9e70400a631a7a3987c9d0b3b56",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 0
+   },
+   "trainingJobs": [],
+   "isFreeze": false
+  }
+ },
+ "job.summary": {
+  "verb": "GET",
+  "route": "/bc/v1/job/summary",
+  "http": 200,
+  "json": {
+   "requestId": "df41a4f55d5241ac1a9a716031b06e13",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "summary": {
+    "runningNum": 0,
+    "deletingNum": 0,
+    "successNum": 3,
+    "failNum": 1,
+    "waitingNum": 0,
+    "otherNum": 0,
+    "stopNum": 4,
+    "suspendNum": 0,
+    "totalNum": 8
+   }
+  }
+ },
+ "job.template.list": {
+  "verb": "GET",
+  "route": "/bc/v1/job/template/list",
+  "http": 200,
+  "json": {
+   "requestId": "929af2bddda469e54f45ce897e07a415",
+   "status": {
+    "code": "Internal",
+    "message": "runtime error: invalid memory address or nil pointer dereference"
+   }
+  }
+ },
+ "infer_service.list": {
+  "verb": "GET",
+  "route": "/bc/v1/infer_service/list",
+  "http": 200,
+  "json": {
+   "requestId": "0cc7e58318ba00f853dc309dd09ef653",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "info": [],
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 5,
+    "totalRecord": 0
+   },
+   "isFreeze": false
+  }
+ },
+ "infer_service.summary": {
+  "verb": "GET",
+  "route": "/bc/v1/infer_service/summary",
+  "http": 200,
+  "json": {
+   "requestId": "66a7c9a1d8d9db7f17a8c63018d3dbc7",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "inferServiceTotalCount": 0,
+   "inferServiceUsingCount": 0,
+   "inferServiceSummary": []
+  }
+ },
+ "infer_service.framework.list": {
+  "verb": "GET",
+  "route": "/bc/v1/infer_service/framework/list",
+  "http": 200,
+  "json": {
+   "requestId": "44106b516c114a861571e154b912a7c9",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "infos": [
+    {
+     "id": "112",
+     "imageName": "tritonserver22.08-py3-cuda11.7:v1.1",
+     "imageAddr": "ehub.ctcdn.cn/bc-ops/tritonserver-22.08-py3-cuda11.7:v1.1",
+     "features": [],
+     "labels": []
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 1
+   }
+  }
+ },
+ "model_repo.list": {
+  "verb": "GET",
+  "route": "/bc/v1/model_repo/list",
+  "http": 200,
+  "json": {
+   "requestId": "0b3ee8160025d97a9a7ebeb6f05b17c3",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "modelRepos": [],
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 5,
+    "totalRecord": 0
+   }
+  }
+ },
+ "model_repo.framework.list": {
+  "verb": "GET",
+  "route": "/bc/v1/model_repo/framework/list",
+  "http": 200,
+  "json": {
+   "requestId": "8af591f7e645945f749994044dce6298",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "infos": [
+    {
+     "name": "PyTorch",
+     "formats": [
+      "TorchScript"
+     ]
+    }
+   ]
+  }
+ },
+ "resource.summary": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/summary",
+  "http": 200,
+  "json": {
+   "requestId": "af97dfe8b7867157e7601c72edd48a57",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "summary": {
+    "runningNum": 4,
+    "unNormalNum": 0,
+    "sleepNum": 0,
+    "otherNum": 0,
+    "initialNum": 0,
+    "deletingNum": 0
+   }
+  }
+ },
+ "resource.pool.list": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/pool/list",
+  "http": 200,
+  "json": {
+   "requestId": "8bbbab7d99217770f26e20a4a33d6a25",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "resources": [
+    {
+     "id": "34365",
+     "userId": "4162",
+     "poolName": "huabei003-838",
+     "state": 1,
+     "clusterId": "10026",
+     "createTime": "2026-01-03T23:12:53+08:00",
+     "modifyTime": "2026-01-05T20:28:10+08:00",
+     "k8sVersion": "",
+     "description": "该资源池由一键初始化创建",
+     "nodeNum": 0,
+     "nodeReadyNum": 0,
+     "poolType": 2,
+     "clusterName": "华北三区",
+     "clusterJumpUrl": "",
+     "nodeCode": "",
+     "sourceClusterId": "0",
+     "svcCapability": "0000000000010011",
+     "assistType": 1,
+     "clusterNameCn": ""
+    },
+    {
+     "id": "34364",
+     "userId": "4162",
+     "poolName": "huadong004-949",
+     "state": 1,
+     "clusterId": "10025",
+     "createTime": "2026-01-03T23:12:45+08:00",
+     "modifyTime": "2026-04-06T23:21:32+08:00",
+     "k8sVersion": "",
+     "description": "该资源池由一键初始化创建",
+     "nodeNum": 0,
+     "nodeReadyNum": 0,
+     "poolType": 2,
+     "clusterName": "华东四区",
+     "clusterJumpUrl": "",
+     "nodeCode": "",
+     "sourceClusterId": "0",
+     "svcCapability": "0000000000010011",
+     "assistType": 1,
+     "clusterNameCn": ""
+    },
+    {
+     "id": "33909",
+     "userId": "4162",
+     "poolName": "xina03-985",
+     "state": 1,
+     "clusterId": "10022",
+     "createTime": "2025-12-19T10:02:59+08:00",
+     "modifyTime": "2025-12-19T10:03:00+08:00",
+     "k8sVersion": "",
+     "description": "该资源池由科研助手初始化创建",
+     "nodeNum": 0,
+     "nodeReadyNum": 0,
+     "poolType": 2,
+     "clusterName": "西南3区",
+     "clusterJumpUrl": "",
+     "nodeCode": "",
+     "sourceClusterId": "0",
+     "svcCapability": "0000000000010011",
+     "assistType": 1,
+     "clusterNameCn": ""
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 4
+   }
+  }
+ },
+ "resource.welfare": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/welfare",
+  "http": 200,
+  "json": {
+   "requestId": "a0f6ce2053623b0e646973695c368d56",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "freeInfo": [
+    {
+     "id": 0,
+     "welfareType": "freeTrial",
+     "specId": 3080,
+     "startTime": "2026-08-17T12:20:40+08:00",
+     "expireTime": "2027-08-17T12:20:40+08:00",
+     "isUsed": false
+    }
+   ],
+   "isTrial": false
+  }
+ },
+ "resource.billing.access": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/billing/access",
+  "http": 200,
+  "json": {
+   "requestId": "6c5811d6b7fe05eaf6dc7b3637527b09",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "demandAccess": 1,
+   "periodAccess": 1,
+   "packageAccess": 0
+  }
+ },
+ "resource.research.storage.inquiry": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/research/storage/inquiry",
+  "http": 200,
+  "json": {
+   "requestId": "e6349cd58dbb364b1872f6f14a206d48",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "storagePrices": []
+  }
+ },
+ "ide.trialIdeParams": {
+  "verb": "GET",
+  "route": "/bc/v1/ide/trialIdeParams",
+  "http": 200,
+  "json": {
+   "requestId": "568da64c0a47dde12aa96926461f470c",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "params": {
+    "resourceId": 0,
+    "poolType": 0,
+    "poolName": "",
+    "autoStop": 1,
+    "stopDuration": 604800,
+    "specId": 0,
+    "imageId": 248,
+    "imageAddr": "ehub-bc.ctcdn.cn/esx-batchcom/openwebui-deepseek-r1:v2",
+    "imageName": "open-webui-deepseek-r1-cuda11.3-cps",
+    "imageSource": 1,
+    "regionId": 144,
+    "regionName": "扬州7",
+    "regionNameEng": "js-yangzhou-7",
+    "projectId": "0",
+    "queueId": 0,
+    "specDetail": {
+     "id": "0",
+     "resourceId": "0",
+     "quotaCpu": 10,
+     "quotaGpu": 1,
+     "quotaMem": 20,
+     "specType": 1,
+     "gpuModel": "BC_GPU.RTX-3060_体验版",
+     "description": "免费体验包",
+     "k8sGpuModel": "",
+     "sellout": 0,
+     "sfsIoType": 0,
+     "lowCudaVersion": "",
+     "highCudaVersion": "",
+     "alias": "gn3.m1.12gb-free",
+     "cpuAlias": "",
+     "singlePrecisionParam": "",
+     "halfPrecisionParam": "",
+     "gpuMem": 12,
+     "infiniBand": 0,
+     "inventory": 0,
+     "quotaLocalStorage": 0,
+     "available": 0,
+     "cpuClockSpeed": "",
+     "cpuL3Cache": "",
+     "cpuCompId": 0,
+     "memCompId": 0,
+     "availableRegion": [],
+     "availableRegionNum": 0,
+     "k8sCpuModel": ""
+    },
+    "clusterName": "华南一区"
+   }
+  }
+ },
+ "account.type": {
+  "verb": "POST",
+  "route": "/bc/v1/account/type",
+  "http": 200,
+  "json": {
+   "requestId": "31e6193d8b0a046a72fa4f03387bee7d",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "accountType": "child",
+   "originChannel": 1,
+   "isAdminGroup": false,
+   "auditStatus": 3
+  }
+ },
+ "config.frontend": {
+  "verb": "POST",
+  "route": "/bc/v1/config/frontend",
+  "http": 200,
+  "json": {
+   "requestId": "e473fed3b9d086af8735116e8024a986",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "config": {
+    "ctiamConf": {
+     "ctiamHostPort": "https://iam.ctyun.cn",
+     "createProjectUri": "https://iam.ctyun.cn/enterpriseManagement"
+    }
+   }
+  }
+ },
+ "permission.user.policy": {
+  "verb": "GET",
+  "route": "/bc/v1/permission/user/policy",
+  "http": 200,
+  "json": {
+   "requestId": "fdbf53e75d9c8bf9e7056d84184922e1",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "allowPolicyList": [
+    "bc:res:queueCheckShare",
+    "bc:res:queueCheckShareV2",
+    "bc:storage:fileDownloadV2"
+   ],
+   "denyPolicyList": [
+    "bc:pub:resourcePoolTaskListV2",
+    "bc:scheduling:schedulingCreate",
+    "bc:scheduling:schedulingConfig"
+   ]
+  }
+ },
+ "permission.business": {
+  "verb": "POST",
+  "route": "/bc/v1/permission/business",
+  "http": 200,
+  "json": {
+   "requestId": "c937b58e40a2cf53d573248aa17e372c",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "isAccess": false
+  }
+ },
+ "cluster.getTenantQuotaInfo": {
+  "verb": "POST",
+  "route": "/bc/v1/cluster/getTenantQuotaInfo",
+  "http": 200,
+  "json": {
+   "requestId": "5a41fcfe4691fe380298a385a0fdcfba",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "totalQuota": {
+    "additionalExternalServicePort": "0"
+   },
+   "ext": []
+  }
+ },
+ "cluster.shared_quota": {
+  "verb": "GET",
+  "route": "/bc/v1/cluster/shared_quota",
+  "http": 200,
+  "json": {
+   "requestId": "2ab40e98cf579dcf2f71f16a33683897",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "sharedCluster": [
+    {
+     "clusterId": "10026",
+     "clusterName": "华北三区",
+     "clusterUsedState": 2
+    },
+    {
+     "clusterId": "10025",
+     "clusterName": "华东四区",
+     "clusterUsedState": 2
+    },
+    {
+     "clusterId": "10022",
+     "clusterName": "西南3区",
+     "clusterUsedState": 2
+    }
+   ],
+   "tenantQuota": [
+    {
+     "clusterId": "10026",
+     "totalQuota": {
+      "cpu": "10000",
+      "memory": "50000",
+      "gpu": "500",
+      "gpuMem": "0",
+      "storage": "0",
+      "updateTime": "0",
+      "ext": [
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB",
+        "number": "500",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       }
+      ],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     },
+     "usedQuota": {
+      "cpu": "2353.00",
+      "memory": "23521.00",
+      "gpu": "196.00",
+      "gpuMem": "0.00",
+      "storage": "0.00",
+      "updateTime": "0",
+      "ext": [],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     },
+     "idleQuota": {
+      "cpu": "7647.00",
+      "memory": "26479.00",
+      "gpu": "304.00",
+      "gpuMem": "0.00",
+      "storage": "0.00",
+      "updateTime": "0",
+      "ext": [
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB",
+        "number": "500",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       }
+      ],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     }
+    },
+    {
+     "clusterId": "10025",
+     "totalQuota": {
+      "cpu": "1000000",
+      "memory": "50000000",
+      "gpu": "1000",
+      "gpuMem": "0",
+      "storage": "0",
+      "updateTime": "0",
+      "ext": [
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB",
+        "number": "1000",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       }
+      ],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     },
+     "usedQuota": {
+      "cpu": "8737.00",
+      "memory": "87361.00",
+      "gpu": "728.00",
+      "gpuMem": "0.00",
+      "storage": "0.00",
+      "updateTime": "0",
+      "ext": [],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     },
+     "idleQuota": {
+      "cpu": "991263.00",
+      "memory": "49912639.00",
+      "gpu": "272.00",
+      "gpuMem": "0.00",
+      "storage": "0.00",
+      "updateTime": "0",
+      "ext": [
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB",
+        "number": "1000",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       }
+      ],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     }
+    },
+    {
+     "clusterId": "10022",
+     "totalQuota": {
+      "cpu": "10000",
+      "memory": "50000",
+      "gpu": "1000",
+      "gpuMem": "0",
+      "storage": "0",
+      "updateTime": "0",
+      "ext": [
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB-InfiniBand",
+        "number": "500",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       },
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB",
+        "number": "500",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       }
+      ],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     },
+     "usedQuota": {
+      "cpu": "1729.00",
+      "memory": "17281.00",
+      "gpu": "144.00",
+      "gpuMem": "0.00",
+      "storage": "0.00",
+      "updateTime": "0",
+      "ext": [],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     },
+     "idleQuota": {
+      "cpu": "8271.00",
+      "memory": "32719.00",
+      "gpu": "856.00",
+      "gpuMem": "0.00",
+      "storage": "0.00",
+      "updateTime": "0",
+      "ext": [
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB-InfiniBand",
+        "number": "500",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       },
+       {
+        "type": "1",
+        "model": "NVIDIA-A100-SXM4-80GB",
+        "number": "500",
+        "k8sMatchResource": "NVIDIA-A100-SXM4-80GB"
+       }
+      ],
+      "jfsStorage": "",
+      "hpfsStorage": "",
+      "researchStorage": "",
+      "localStorage": "",
+      "exclusivePublicIp": "",
+      "exclusivePublicIpPort": "",
+      "additionalExternalServicePort": ""
+     }
+    }
+   ]
+  }
+ },
+ "scheduling.list": {
+  "verb": "GET",
+  "route": "/bc/v1/scheduling/list",
+  "http": 200,
+  "json": {
+   "requestId": "a4f5811ab0854186c0d4fb4031febc24",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "schedule": [],
+   "paging": null
+  }
+ },
+ "scheduling.plugin.list": {
+  "verb": "GET",
+  "route": "/bc/v1/scheduling/plugin/list",
+  "http": 200,
+  "json": {
+   "requestId": "cdf0a56633d4340dd0cd47b48cb6679d",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "plugins": []
+  }
+ },
+ "scheduling.action.list": {
+  "verb": "GET",
+  "route": "/bc/v1/scheduling/action/list",
+  "http": 200,
+  "json": {
+   "requestId": "d12c1653f6ca09d160f0600a84497edd",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "actions": []
+  }
+ },
+ "project_space.list": {
+  "verb": "GET",
+  "route": "/bc/v1/project_space/list",
+  "http": 200,
+  "json": {
+   "requestId": "772d107a4140c6288ef0fb259591c67e",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "paging": {
+    "totalPage": 1,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 1
+   },
+   "spaces": [
+    {
+     "id": 459,
+     "tenantId": "4162",
+     "ctyunUserId": "8aff9fdaf5924a489b5332d72b73bece",
+     "creatorId": "4162",
+     "creatorName": "北京<CAMPUS>",
+     "name": "<PROJECT_NAME>",
+     "state": "enable",
+     "projectId": "<PROJECT_UUID>",
+     "projectName": "<PROJECT_NAME>",
+     "uuid": "5adca086-43f4-4a87-a8b6-46c94dfc2abf",
+     "memberNum": 12,
+     "groupNum": 2,
+     "totalBudget": "",
+     "monthUsedBudget": "",
+     "yearUsedBudget": "",
+     "description": "<PROJECT_NAME>",
+     "createTime": "2026-01-06T18:29:46+08:00",
+     "modifyTime": "2026-08-17T05:14:09+08:00",
+     "needSync": true,
+     "remindPercent": 0,
+     "ideDefaultDuration": "0"
+    }
+   ]
+  }
+ },
+ "project_space.user_groups": {
+  "verb": "GET",
+  "route": "/bc/v1/project_space/user_groups",
+  "http": 200,
+  "json": {
+   "requestId": "7fdd133ee1c7aab1b9508108d4eea55b",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "userGroups": [
+    {
+     "id": "5abf473683d04e929bd04bd975076122",
+     "groupName": "project_100156",
+     "accountId": "552499da302d42639cbeb21090f20588",
+     "groupIntro": "自由探索-100156项目",
+     "isRoot": 0,
+     "isValid": 1,
+     "hwGroupId": "3f243e67312b4fc4a02fc1bc07ff3ed4",
+     "userCount": 1,
+     "CreateTime": "2026-08-12 08:45:14"
+    },
+    {
+     "id": "5337312333ef46f599324d190ca5b1fe",
+     "groupName": "project_WZQ2026720",
+     "accountId": "552499da302d42639cbeb21090f20588",
+     "groupIntro": "<OPERATOR>-测试项目",
+     "isRoot": 0,
+     "isValid": 1,
+     "hwGroupId": "514ca47f863f4eb68fb6a9430e79691c",
+     "userCount": 1,
+     "CreateTime": "2026-07-20 17:10:10"
+    },
+    {
+     "id": "58da3b3bb8724fcfaf82a5b226f452cd",
+     "groupName": "project_<ORG2>",
+     "accountId": "552499da302d42639cbeb21090f20588",
+     "groupIntro": "AutoCreated",
+     "isRoot": 0,
+     "isValid": 1,
+     "hwGroupId": "7183a0daea6a414faaa4ff81de751748",
+     "userCount": 6,
+     "CreateTime": "2026-07-09 13:59:44"
+    }
+   ],
+   "paging": {
+    "totalPage": 7,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 132
+   }
+  }
+ },
+ "packages.purchased": {
+  "verb": "GET",
+  "route": "/bc/v1/packages/purchased/list",
+  "http": 200,
+  "json": {
+   "requestId": "be67244f7fa3798c9876c5b0f8487880",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "packageOrder": [],
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 0
+   }
+  }
+ },
+ "packages.purchasable": {
+  "verb": "GET",
+  "route": "/bc/v1/packages/purchasable/list",
+  "http": 200,
+  "json": {
+   "requestId": "a16f2b3afcee1c8233af0eea4d55af44",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "packages": [
+    {
+     "id": 119,
+     "packageId": 0,
+     "name": "BC_GPU.GN4.2xl1_资源包",
+     "flag": 3,
+     "state": 0,
+     "stateString": "",
+     "cpuUsed": 0,
+     "cpuUsage": 0,
+     "memUsed": 0,
+     "memUsage": 0,
+     "gpuUsed": 0,
+     "gpuUsage": 360,
+     "npuUsed": 0,
+     "npuUsage": 0,
+     "storageUsage": 0,
+     "instanceCnt": 0,
+     "masterOrderId": "",
+     "orderResourceIds": [],
+     "errMsg": "",
+     "effectTime": "0",
+     "expireTime": "0",
+     "priceDetail": {
+      "totalPrice": 975.6,
+      "finalPrice": 244.45
+     },
+     "specType": 3,
+     "saleSpec": ""
+    },
+    {
+     "id": 123,
+     "packageId": 0,
+     "name": "BC_GPU.Ascend-910B_资源包",
+     "flag": 3,
+     "state": 0,
+     "stateString": "",
+     "cpuUsed": 0,
+     "cpuUsage": 0,
+     "memUsed": 0,
+     "memUsage": 0,
+     "gpuUsed": 0,
+     "gpuUsage": 360,
+     "npuUsed": 0,
+     "npuUsage": 0,
+     "storageUsage": 0,
+     "instanceCnt": 0,
+     "masterOrderId": "",
+     "orderResourceIds": [],
+     "errMsg": "",
+     "effectTime": "0",
+     "expireTime": "0",
+     "priceDetail": {
+      "totalPrice": 3110.4,
+      "finalPrice": 779.35
+     },
+     "specType": 3,
+     "saleSpec": ""
+    },
+    {
+     "id": 116,
+     "packageId": 0,
+     "name": "BC_GPU.NVIDIA-A100-40G_资源包",
+     "flag": 3,
+     "state": 0,
+     "stateString": "",
+     "cpuUsed": 0,
+     "cpuUsage": 0,
+     "memUsed": 0,
+     "memUsage": 0,
+     "gpuUsed": 0,
+     "gpuUsage": 360,
+     "npuUsed": 0,
+     "npuUsage": 0,
+     "storageUsage": 0,
+     "instanceCnt": 0,
+     "masterOrderId": "",
+     "orderResourceIds": [],
+     "errMsg": "",
+     "effectTime": "0",
+     "expireTime": "0",
+     "priceDetail": {
+      "totalPrice": 3674.16,
+      "finalPrice": 920.6
+     },
+     "specType": 3,
+     "saleSpec": ""
+    }
+   ]
+  }
+ },
+ "packages.billing.list": {
+  "verb": "POST",
+  "route": "/bc/v1/packages/billing/list",
+  "http": 200,
+  "json": {
+   "requestId": "a1a289c0d9a1f92949d234549a69fba0",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 100,
+    "totalRecord": 0
+   },
+   "data": []
+  }
+ },
+ "ecx.clusterList": {
+  "verb": "GET",
+  "route": "/bc/v1/ecx/clusterList",
+  "http": 200,
+  "json": {
+   "requestId": "48d66a653993aa2f50dc90c7fea602f0",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "data": []
+  }
+ },
+ "eck.k8sCluster.list": {
+  "verb": "GET",
+  "route": "/bc/v1/eck/k8sCluster/list",
+  "http": 200,
+  "json": {
+   "requestId": "c77375f0dcc750fc2210a164dda849c5",
+   "status": {
+    "code": "NotFound",
+    "message": "Not Found"
+   }
+  }
+ },
+ "storage.public.dataset.list": {
+  "verb": "POST",
+  "route": "/bc/v1/storage/public/dataset/list",
+  "http": 200,
+  "json": {
+   "requestId": "626105bf4a6e6937f5011a3fc9afe8bd",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "publicDatasets": [],
+   "paging": null
+  }
+ },
+ "bcProxy.dataset.typeList": {
+  "verb": "POST",
+  "route": "/bc/v1/bcProxy/ops/dataset/typeList",
+  "http": 200,
+  "json": {
+   "bcDatasetTypeList": [
+    {
+     "name": "生命科学",
+     "uuid": "3e58318b-afa7-421e-ab06-9f3ee1fc9844"
+    },
+    {
+     "name": "流体力学",
+     "uuid": "00e52fbd-ea28-4c78-9f6a-cc93d62a1f42"
+    },
+    {
+     "name": "具身智能",
+     "uuid": "87f92a5c-0a7a-4cdd-b5b7-7c31a6cf2375"
+    }
+   ],
+   "requestId": "74fefecf4ae787ee09e8608d5fde0990",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   }
+  }
+ },
+ "bcProxy.displayItem.list": {
+  "verb": "POST",
+  "route": "/bc/v1/bcProxy/ops/displayItem/list",
+  "http": 200,
+  "json": {
+   "list": [
+    {
+     "categoryCode": "category",
+     "categoryID": 1,
+     "categoryName": "类型",
+     "categoryUUID": "8298dbab-06d6-42a7-9243-0ba69cabb64a",
+     "itemList": [
+      {
+       "icon": "https://esx.ctyun.cn/bc/v1/bcProxy/ops/file/public/icon-type/LLM.svg",
+       "id": 8,
+       "name": "大模型",
+       "operator": {
+        "email": "",
+        "id": 101,
+        "name": ""
+       },
+       "rank": "0",
+       "updateTime": "2025-04-09 00:39:54"
+      },
+      {
+       "icon": "https://esx.ctyun.cn/bc/v1/bcProxy/ops/file/public/icon-type/NLP.svg",
+       "id": 9,
+       "name": "自然语言处理",
+       "operator": {
+        "email": "",
+        "id": 101,
+        "name": ""
+       },
+       "rank": "1",
+       "updateTime": "2025-04-09 00:39:59"
+      },
+      {
+       "icon": "https://esx.ctyun.cn/bc/v1/bcProxy/ops/file/public/icon-type/CV.svg",
+       "id": 10,
+       "name": "计算机视觉",
+       "operator": {
+        "email": "",
+        "id": 101,
+        "name": ""
+       },
+       "rank": "2",
+       "updateTime": "2025-04-09 00:40:06"
+      }
+     ]
+    },
+    {
+     "categoryCode": "subject",
+     "categoryID": 2,
+     "categoryName": "学科",
+     "categoryUUID": "a071b5c8-390d-4a5f-b268-d8531634c922",
+     "itemList": [
+      {
+       "icon": "https://esx.ctyun.cn/bc/v1/bcProxy/ops/file/public/icon-subject/sci_computing.svg",
+       "id": 1,
+       "name": "科学计算",
+       "operator": {
+        "email": "",
+        "id": 101,
+        "name": ""
+       },
+       "rank": "0",
+       "updateTime": "2025-04-09 00:40:37"
+      },
+      {
+       "icon": "https://esx.ctyun.cn/bc/v1/bcProxy/ops/file/public/icon-subject/3D.svg",
+       "id": 2,
+       "name": "3D渲染与处理",
+       "operator": {
+        "email": "",
+        "id": 101,
+        "name": ""
+       },
+       "rank": "1",
+       "updateTime": "2025-04-09 00:40:41"
+      },
+      {
+       "icon": "135db541-df5c-4234-8532-a637ac433130.svg",
+       "id": 20,
+       "name": "流体力学",
+       "operator": {
+        "email": "",
+        "id": 932,
+        "name": ""
+       },
+       "rank": "10",
+       "updateTime": "2025-11-12 19:13:57"
+      }
+     ]
+    }
+   ],
+   "requestId": "14151445bafff0a38d1b19b3c389db42",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   }
+  }
+ },
+ "bcProxy.advert.list": {
+  "verb": "POST",
+  "route": "/bc/v1/bc/ops/advert/list",
+  "http": 200,
+  "json": {
+   "requestId": "a8dd48e8bef0e1476101474935297678",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "adverts": [
+    {
+     "id": 2,
+     "uuid": "499bc233-8a54-4a5a-abd1-35eb2db284f9",
+     "title": "免费体验套餐包",
+     "desc": "限时0元体验专业开发资源\n内含GPU、CPU和内存等资源\n可直接抵扣您创建的按需实例用量",
+     "background": "yellow",
+     "iconUrl": "",
+     "status": 2,
+     "actionType": "Purchase",
+     "purchaseType": "Package",
+     "redirectUrl": "",
+     "freeTrial": "Free",
+     "regionName": "",
+     "regionNameEng": "",
+     "regionId": 0,
+     "imageName": "",
+     "imageId": 0,
+     "imageAddr": "",
+     "imageType": 0,
+     "clusterId": "0",
+     "clusterName": "",
+     "orderInfo": {
+      "specDetail": null,
+      "packageDetail": {
+       "id": 94,
+       "packageId": 94,
+       "name": "BC_GPU.gn3.m1_免费体验套餐",
+       "flag": 2,
+       "state": 1,
+       "stateString": "",
+       "cpuUsed": 0,
+       "cpuUsage": 4032,
+       "memUsed": 0,
+       "memUsage": 18144,
+       "gpuUsed": 0,
+       "gpuUsage": 168,
+       "npuUsed": 0,
+       "npuUsage": 0,
+       "storageUsage": 0,
+       "instanceCnt": 0,
+       "masterOrderId": "",
+       "orderResourceIds": [],
+       "errMsg": "",
+       "effectTime": "0",
+       "expireTime": "0",
+       "priceDetail": null,
+       "specType": 3,
+       "saleSpec": "GPU.RTX-3060"
+      }
+     },
+     "displayArgs": "[]",
+     "resourceId": 0,
+     "poolType": 0,
+     "poolName": "",
+     "queueId": 0,
+     "autoStop": 0,
+     "stopDuration": 0
+    },
+    {
+     "id": 1,
+     "uuid": "7aa1bc25-ec6a-4ffa-b037-8ba8abd59a30",
+     "title": "新客见面礼",
+     "desc": "",
+     "background": "blue",
+     "iconUrl": "",
+     "status": 2,
+     "actionType": "Purchase",
+     "purchaseType": "Period",
+     "redirectUrl": "",
+     "freeTrial": "Free",
+     "regionName": "重庆两江1",
+     "regionNameEng": "beibei-hpc-xinan-3",
+     "regionId": 172,
+     "imageName": "vnc-ubuntu22.04",
+     "imageId": 359,
+     "imageAddr": "ehub-bc.ctcdn.cn/esx-batchcom/vnc-ubuntu22.04:latest",
+     "imageType": 1,
+     "clusterId": "10022",
+     "clusterName": "西南3区",
+     "orderInfo": {
+      "specDetail": {
+       "id": "3243",
+       "resourceId": "0",
+       "quotaCpu": 10,
+       "quotaGpu": 1,
+       "quotaMem": 20,
+       "specType": 1,
+       "gpuModel": "BC_GPU.RTX-3060_体验版",
+       "description": "免费体验包",
+       "k8sGpuModel": "",
+       "sellout": 0,
+       "sfsIoType": 0,
+       "lowCudaVersion": "",
+       "highCudaVersion": "",
+       "alias": "gn3.m1.12gb-free",
+       "cpuAlias": "",
+       "singlePrecisionParam": "",
+       "halfPrecisionParam": "",
+       "gpuMem": 12,
+       "infiniBand": 0,
+       "inventory": 0,
+       "quotaLocalStorage": 0,
+       "available": 0,
+       "cpuClockSpeed": "",
+       "cpuL3Cache": "",
+       "cpuCompId": 0,
+       "memCompId": 0,
+       "availableRegion": [],
+       "availableRegionNum": 0,
+       "k8sCpuModel": ""
+      },
+      "packageDetail": null
+     },
+     "displayArgs": "[]",
+     "resourceId": 33909,
+     "poolType": 2,
+     "poolName": "xina03-985",
+     "queueId": 52513,
+     "autoStop": 2,
+     "stopDuration": 604800
+    }
+   ],
+   "paging": {
+    "totalPage": 1,
+    "page": 0,
+    "perPage": 0,
+    "totalRecord": 2
+   }
+  }
+ },
+ "bcProxy.region.user.list": {
+  "verb": "POST",
+  "route": "/bc/v1/bcProxy/ops/region/user/list",
+  "http": 200,
+  "json": {
+   "regionList": [
+    {
+     "clusterArch": 1,
+     "clusterId": 10025,
+     "clusterState": 1,
+     "cnName": "上海1",
+     "engName": "shanghai-1-huadong-4",
+     "id": 190,
+     "initState": "",
+     "regionCapabilityConfigList": [
+      {
+       "capabilityName": "对外端口",
+       "capability_code": "0000000000100000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 108,
+       "region_id": 190
+      },
+      {
+       "capabilityName": "端口服务",
+       "capability_code": "0000000010000000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 107,
+       "region_id": 190
+      },
+      {
+       "capabilityName": "本地盘",
+       "capability_code": "0000000001000000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 106,
+       "region_id": 190
+      }
+     ]
+    },
+    {
+     "clusterArch": 1,
+     "clusterId": 10025,
+     "clusterState": 1,
+     "cnName": "<CAMPUS>专属2",
+     "engName": "zj-pinghu-1",
+     "id": 180,
+     "initState": "",
+     "regionCapabilityConfigList": [
+      {
+       "capabilityName": "端口服务",
+       "capability_code": "0000000010000000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 89,
+       "region_id": 180
+      },
+      {
+       "capabilityName": "本地盘",
+       "capability_code": "0000000001000000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 68,
+       "region_id": 180
+      },
+      {
+       "capabilityName": "对外端口",
+       "capability_code": "0000000000100000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 69,
+       "region_id": 180
+      }
+     ]
+    },
+    {
+     "clusterArch": 1,
+     "clusterId": 10025,
+     "clusterState": 1,
+     "cnName": "<CAMPUS>专属1",
+     "engName": "js-changshu-1",
+     "id": 181,
+     "initState": "",
+     "regionCapabilityConfigList": [
+      {
+       "capabilityName": "端口服务",
+       "capability_code": "0000000010000000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 88,
+       "region_id": 181
+      },
+      {
+       "capabilityName": "本地盘",
+       "capability_code": "0000000001000000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 66,
+       "region_id": 181
+      },
+      {
+       "capabilityName": "对外端口",
+       "capability_code": "0000000000100000",
+       "capability_config": "",
+       "enable_status": "Open",
+       "id": 65,
+       "region_id": 181
+      }
+     ]
+    }
+   ],
+   "requestId": "94c4132348da359a85a076bbfb304f7d",
+   "request_id": "",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   }
+  }
+ },
+ "bcProxy.productSpec.availableList": {
+  "verb": "POST",
+  "route": "/bc/v1/bcProxy/ops/productSpec/availableList",
+  "http": 200,
+  "json": {
+   "acceleratorInfoList": [
+    {
+     "alias": "",
+     "k8sMatchModel": "",
+     "modelName": "CPU"
+    },
+    {
+     "alias": "",
+     "k8sMatchModel": "huawei.com/Ascend910",
+     "modelName": "Ascend-910B"
+    },
+    {
+     "alias": "",
+     "k8sMatchModel": "NVIDIA-H800-NVLINK",
+     "modelName": "BC_GPU.NVIDIA-H800-NVLINK"
+    }
+   ],
+   "list": [],
+   "modelNameList": [
+    "CPU",
+    "Ascend-910B",
+    "BC_GPU.NVIDIA-H800-NVLINK"
+   ],
+   "requestId": "0d627aa8d095e6eb0cd0d7f9b86a4447",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   }
+  }
+ },
+ "bs.activity.listActivities": {
+  "verb": "POST",
+  "route": "/bc/v1/bs/activity/listActivities",
+  "http": 200,
+  "json": {
+   "requestId": "f9bd19338750b44cda6d001933daf7f6",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "items": [],
+   "paging": {
+    "totalPage": 0,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 0
+   }
+  }
+ },
+ "resource.pool.list.weight": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/pool/list/weight",
+  "http": 200,
+  "json": {
+   "requestId": "6bad8bce23c9667d5e8c4b89a27a8156",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "resources": []
+  }
+ },
+ "resource.pool.az.init.list": {
+  "verb": "GET",
+  "route": "/bc/v1/resource/pool/az/init/list",
+  "http": 200,
+  "json": {
+   "requestId": "4defdd3602751c14e15005f26169296d",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "initInfos": {
+    "clusterID": "0",
+    "infos": []
+   }
+  }
+ },
+ "v2.storage.listLocalStorage": {
+  "verb": "POST",
+  "route": "/bc/v2/storage/listLocalStorage",
+  "http": 200,
+  "json": {
+   "requestId": "18b11ee233e9eef1da3ff8380da99eb4",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "storages": [
+    {
+     "storageId": 325,
+     "state": "Released",
+     "uuid": "ac0c92ce-3387-45a9-b799-b9d8c23ef3f5",
+     "name": "ls-ac0c92ce-3387-45a9-b799-b9d8c23ef3f5",
+     "volumeSize": 800,
+     "ideUuid": "59df38f604fa42b4ba18a6b4489a686c",
+     "ideId": 10022972,
+     "ideName": "dev-<COLLEAGUE>",
+     "createTime": "2026-01-05T21:48:15+08:00",
+     "regionNameEng": "hb-qinhuangdao-1"
+    },
+    {
+     "storageId": 348,
+     "state": "Released",
+     "uuid": "df8918da-0f94-4a57-89e5-bc8fe645f152",
+     "name": "ls-df8918da-0f94-4a57-89e5-bc8fe645f152",
+     "volumeSize": 8000,
+     "ideUuid": "9fd80c57fd694b2e94fb77edee22492e",
+     "ideId": 10023029,
+     "ideName": "embo-master",
+     "createTime": "2026-01-06T15:05:45+08:00",
+     "regionNameEng": "js-changshu-1"
+    },
+    {
+     "storageId": 357,
+     "state": "Bound",
+     "uuid": "38c6ff33-3f60-431a-8fc4-d3d6ccbed782",
+     "name": "ls-38c6ff33-3f60-431a-8fc4-d3d6ccbed782",
+     "volumeSize": 8000,
+     "ideUuid": "5c75961245a34568a1f3b71c1ce88a0c",
+     "ideId": 10023044,
+     "ideName": "dev-env-qave",
+     "createTime": "2026-01-06T17:00:21+08:00",
+     "regionNameEng": "js-changshu-1"
+    }
+   ],
+   "paging": {
+    "totalPage": 13,
+    "page": 1,
+    "perPage": 20,
+    "totalRecord": 244
+   }
+  }
+ },
+ "v2.storage.getDataSyncConfig": {
+  "verb": "POST",
+  "route": "/bc/v2/storage/getDataSyncConfig",
+  "http": 200,
+  "json": {
+   "requestId": "ee250ddb8b92ad32ffaedce4f0bce969",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "totalQuota": 10,
+   "usedQuota": 0,
+   "resetTime": "2026-08-18 00:00:00 +0800 CST"
+  }
+ },
+ "v2.resource.enumGpuModels": {
+  "verb": "POST",
+  "route": "/bc/v2/resource/enumGpuModels",
+  "http": 200,
+  "json": {
+   "requestId": "355f11a22b559380fd33cab67d59ec2e",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "specs": {
+    "gpuModels": [
+     {
+      "gpuAlias": "NVIDIA-A800-SXM4-80GB-InfiniBand",
+      "specIds": [
+       3255,
+       3255,
+       3292
+      ]
+     },
+     {
+      "gpuAlias": "NVIDIA-A800-SXM4-80GB",
+      "specIds": [
+       3256,
+       3257,
+       3258
+      ]
+     },
+     {
+      "gpuAlias": "NVIDIA-A800-SXM4-InfiniBand",
+      "specIds": [
+       3166
+      ]
+     }
+    ],
+    "quotaGpus": [
+     1,
+     2,
+     4
+    ],
+    "regionInfos": [
+     {
+      "regionNameCn": "<CAMPUS>专属2",
+      "regionNameEng": "zj-pinghu-1",
+      "isInit": true,
+      "clusterId": 10025
+     },
+     {
+      "regionNameCn": "<CAMPUS>专属1",
+      "regionNameEng": "js-changshu-1",
+      "isInit": true,
+      "clusterId": 10025
+     },
+     {
+      "regionNameCn": "<CAMPUS>专属3",
+      "regionNameEng": "sc-neijiang-1",
+      "isInit": true,
+      "clusterId": 10022
+     }
+    ]
+   }
+  }
+ },
+ "v2.resource.listGpuSpecs": {
+  "verb": "POST",
+  "route": "/bc/v2/resource/listGpuSpecs",
+  "http": 200,
+  "json": {
+   "requestId": "e204e386181115975b962aeb72a44848",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "specs": [
+    {
+     "specId": 3157,
+     "regionName": "北京11",
+     "regionNameEng": "bj-beijing-11",
+     "quotaCpu": 12,
+     "quotaMem": 108,
+     "quotaGpu": 1,
+     "gpuAlias": "NVIDIA-A800-SXM4",
+     "gpuMemory": 40,
+     "singlePrecisionParam": "19.5 TFLOPS",
+     "halfPrecisionParam": "312 Tensor TFLOPS",
+     "inventory": 8,
+     "totalPrice": 15.29,
+     "finalPrice": 3.831066,
+     "specType": 1
+    },
+    {
+     "specId": 3158,
+     "regionName": "北京11",
+     "regionNameEng": "bj-beijing-11",
+     "quotaCpu": 24,
+     "quotaMem": 216,
+     "quotaGpu": 2,
+     "gpuAlias": "NVIDIA-A800-SXM4",
+     "gpuMemory": 40,
+     "singlePrecisionParam": "19.5 TFLOPS",
+     "halfPrecisionParam": "312 Tensor TFLOPS",
+     "inventory": 4,
+     "totalPrice": 30.58,
+     "finalPrice": 7.662132,
+     "specType": 1
+    },
+    {
+     "specId": 3159,
+     "regionName": "北京11",
+     "regionNameEng": "bj-beijing-11",
+     "quotaCpu": 48,
+     "quotaMem": 432,
+     "quotaGpu": 4,
+     "gpuAlias": "NVIDIA-A800-SXM4",
+     "gpuMemory": 40,
+     "singlePrecisionParam": "19.5 TFLOPS",
+     "halfPrecisionParam": "312 Tensor TFLOPS",
+     "inventory": 2,
+     "totalPrice": 61.16,
+     "finalPrice": 15.324264,
+     "specType": 1
+    }
+   ]
+  }
+ },
+ "v2.resource.compute.spec.enum": {
+  "verb": "POST",
+  "route": "/bc/v2/resource/compute/spec/enum",
+  "http": 200,
+  "json": {
+   "requestId": "48c05046c578e3562ac5fe1678b0c4c4",
+   "status": {
+    "code": "ok",
+    "message": "操作成功"
+   },
+   "modelInfo": [
+    {
+     "modelType": "Gpu",
+     "modelName": "NVIDIA-T4",
+     "modelId": 140,
+     "modelDesc": "",
+     "modelAlias": ""
+    },
+    {
+     "modelType": "Gpu",
+     "modelName": "NVIDIA-A10",
+     "modelId": 141,
+     "modelDesc": "",
+     "modelAlias": ""
+    },
+    {
+     "modelType": "Gpu",
+     "modelName": "NVIDIA-A100",
+     "modelId": 142,
+     "modelDesc": "",
+     "modelAlias": "NVIDIA-A100 (双精度FP64: 9.7 TFLOPS）"
+    }
+   ]
+  }
+ },
+ "portal.Current": {
+  "verb": "GET",
+  "route": "https://www.ctyun.cn/gw/auth/Current",
+  "http": 200,
+  "json": {
+   "duration": "326729861",
+   "reason": "服务调用成功",
+   "code": "core.ok",
+   "data": {
+    "pwdState": "10001",
+    "property": {
+     "consumptionLevel": "V7",
+     "loginId": "23862407",
+     "city": "8110100",
+     "isVirtualAccount": "CUS_136_01_0002",
+     "defaultzoneid": "200000003795",
+     "sign": "<REDACTED>",
+     "channel": "1",
+     "isSubNoMobile": "false",
+     "ctyunUserId": "5bba493b81b143e682b5753360f368da",
+     "loginTime": "1786930303151",
+     "province": "8110000",
+     "isPostpaid": "1",
+     "loginIp": "240e:604:76b::6f9",
+     "bizId": "ACMB8110100005227687",
+     "userMobilePhone": "156****6628",
+     "ctyunAcctId": "552499da302d42639cbeb21090f20588",
+     "state": "active",
+     "registerEntrance": "1",
+     "ctyunRootUserId": "8aff9fdaf5924a489b5332d72b73bece",
+     "email": "l**yl@bza.edu.cn",
+     "registerDate": "1730002886000",
+     "avatarPath": "https://www.ctyun.cn/share/q04sv38ZSzTBF4mEHo-3dVsyWITNHb2AHhoKmmcfMQvFLURsx3V4aSkOuRaeJwzV_gWW6KsOfQzljF83BOvXCZNVswU6LTNzn3p6hW0K2SP1gAmiyqGjdKn4Ng6vnf7O",
+     "mobile": "<REDACTED>",
+     "avatar": "user.default",
+     "accessToken": "<REDACTED>",
+     "userId": "23862407",
+     "realname": "authzed",
+     "mafAuthMode": "false",
+     "saleChannel": "1",
+     "name": "葛*龙",
+     "userType": "enterprise",
+     "vipFlag": "5"
+    },
+    "isLoggedIn": true,
+    "id": "de6e25b7-a300-43d5-abd0-ba0a4784766a",
+    "privilege": [
+     "t.order.view,23862407",
+     "t.team.view,23862407",
+     "t.acct.view,23862407"
+    ],
+    "accountEmailVerify": "false"
+   },
+   "serial": "c5ab8f3c40feb31c5ba16506a30d652b",
+   "advise": "OK",
+   "host": "*.*.*.149:9800"
+  }
+ }
+}

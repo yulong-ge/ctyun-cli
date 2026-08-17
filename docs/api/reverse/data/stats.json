@@ -1,0 +1,124 @@
+{
+ "merged": 369,
+ "domains": {
+  "account": {
+   "total": 8,
+   "ok": 6,
+   "exists": 8,
+   "denied": 0,
+   "warn": 0
+  },
+  "activity": {
+   "total": 20,
+   "ok": 4,
+   "exists": 5,
+   "denied": 1,
+   "warn": 14
+  },
+  "agent": {
+   "total": 7,
+   "ok": 0,
+   "exists": 0,
+   "denied": 0,
+   "warn": 0
+  },
+  "cluster": {
+   "total": 18,
+   "ok": 8,
+   "exists": 9,
+   "denied": 0,
+   "warn": 9
+  },
+  "ide": {
+   "total": 55,
+   "ok": 12,
+   "exists": 37,
+   "denied": 16,
+   "warn": 2
+  },
+  "image": {
+   "total": 21,
+   "ok": 7,
+   "exists": 16,
+   "denied": 5,
+   "warn": 0
+  },
+  "inference": {
+   "total": 20,
+   "ok": 5,
+   "exists": 15,
+   "denied": 0,
+   "warn": 5
+  },
+  "job": {
+   "total": 24,
+   "ok": 4,
+   "exists": 16,
+   "denied": 4,
+   "warn": 4
+  },
+  "misc": {
+   "total": 11,
+   "ok": 0,
+   "exists": 3,
+   "denied": 4,
+   "warn": 2
+  },
+  "monitor": {
+   "total": 4,
+   "ok": 0,
+   "exists": 4,
+   "denied": 0,
+   "warn": 0
+  },
+  "network": {
+   "total": 15,
+   "ok": 3,
+   "exists": 9,
+   "denied": 3,
+   "warn": 3
+  },
+  "packages": {
+   "total": 6,
+   "ok": 3,
+   "exists": 5,
+   "denied": 0,
+   "warn": 1
+  },
+  "platform": {
+   "total": 17,
+   "ok": 11,
+   "exists": 14,
+   "denied": 0,
+   "warn": 3
+  },
+  "portal": {
+   "total": 4,
+   "ok": 0,
+   "exists": 0,
+   "denied": 0,
+   "warn": 2
+  },
+  "project": {
+   "total": 32,
+   "ok": 5,
+   "exists": 17,
+   "denied": 12,
+   "warn": 1
+  },
+  "resource": {
+   "total": 68,
+   "ok": 21,
+   "exists": 34,
+   "denied": 25,
+   "warn": 9
+  },
+  "storage": {
+   "total": 39,
+   "ok": 6,
+   "exists": 28,
+   "denied": 8,
+   "warn": 3
+  }
+ }
+}

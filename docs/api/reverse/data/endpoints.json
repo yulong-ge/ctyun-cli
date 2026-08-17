@@ -1,0 +1,5123 @@
+[
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateAlias",
+  "services": [
+   "updateIdeAlias"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/list",
+  "services": [
+   "getDevelopEnvList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/get",
+  "services": [
+   "getDevelopEnvInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/create",
+  "services": [
+   "createDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/batch/create",
+  "services": [
+   "batchCreateDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/createTrial",
+  "services": [
+   "createTrialDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/submitPeriod",
+  "services": [
+   "submitPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/renewPeriod",
+  "services": [
+   "renewPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/refundPeriod",
+  "services": [
+   "refundPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/stop",
+  "services": [
+   "stopDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/launch",
+  "services": [
+   "launchDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/batchStop",
+  "services": [
+   "batchStopDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/batchLaunch",
+  "services": [
+   "batchLaunchDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateActiveTime",
+  "services": [
+   "updateActiveTime"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "DELETE",
+  "baseURL": "/bc/v1",
+  "path": "/ide/delete/:_",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "t"
+  ],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/list",
+  "services": [
+   "getImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateImage",
+  "services": [
+   "updateImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateIDEConfig",
+  "services": [
+   "updateIDEConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/spec/list",
+  "services": [
+   "getResourcePoolSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateSpecific",
+  "services": [
+   "updateSpecific"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateVolume",
+  "services": [
+   "updateVolume"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/saveImage",
+  "services": [
+   "saveDevelopEnvImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/stopSavingImage",
+  "services": [
+   "stopSavingDevelopEnvImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/user_image/list",
+  "services": [
+   "getUserImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/sshClientIPs/update",
+  "services": [
+   "updateSSHClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/servicePortIPs/update",
+  "services": [
+   "updateServicePortIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/summary",
+  "services": [
+   "getIdeSummary"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/toRemove",
+  "services": [
+   "getAboutToBeDeletedIde"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/featLabels/list",
+  "services": [
+   "getFeatLabels"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/featLabels/get",
+  "services": [
+   "getFeatLabelsById"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/welfare",
+  "services": [
+   "getWelfare"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/trialIdeParams",
+  "services": [
+   "getTrialIdeParams"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/cluster/resource/events",
+  "services": [
+   "getEventsList",
+   "getInferEvents"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js",
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/bc/ops/region/list",
+  "services": [
+   "getRegionOptions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/regionInfo/list",
+  "services": [
+   "getIdeRegionOptions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/az/init",
+  "services": [
+   "initPoolAz"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/az/init/list",
+  "services": [
+   "getInitProcess"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/publicKey/list",
+  "services": [
+   "getPublicKeyList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/listIDEPublicKeyBind",
+  "services": [
+   "getPublicKeyBindList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/publicKey/create",
+  "services": [
+   "createPublicKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/publicKey/delete",
+  "services": [
+   "deletePublicKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateSSHKeys",
+  "services": [
+   "updatePublicKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateSSHKey",
+  "services": [
+   "updateSSHKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/permission/business",
+  "services": [
+   "getPermissionBusiness"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/dict/list",
+  "services": [
+   "getDictList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/region/user/list",
+  "services": [
+   "getRegionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/productSpec/availableList",
+  "services": [
+   "getSpecAvailableList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/updateVisibility",
+  "services": [
+   "updateVisibility"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/getSpecLocalStorageInventory",
+  "services": [
+   "getSpecLocalStorageInventory"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/calculate/dindQuota",
+  "services": [
+   "getDockerResourceQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/preCheckLocalStorageIDELaunch",
+  "services": [
+   "preCheckLocalStorageIDELaunch"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/user/listCreator",
+  "services": [
+   "getCreatorInfoList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/publicKey/email",
+  "services": [
+   "getEmailSuggestions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/changeQueueForIDE",
+  "services": [
+   "changeQueueForIDE"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/cluster/getTenantQuotaInfo",
+  "services": [
+   "getTenantQuotaInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/predefClientIPs/getClientIP",
+  "services": [
+   "detectClientIP"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/secret/list",
+  "services": [
+   "getSecretList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/secret/ecr/check",
+  "services": [
+   "getEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/secret/create",
+  "services": [
+   "createEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/secret/delete",
+  "services": [
+   "deleteEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/userFavor/set",
+  "services": [
+   "setUserFavor"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/userFavor/get",
+  "services": [
+   "getUserFavor"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bc/ops/claimCustomer",
+  "services": [
+   "claimCustomer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/monitor/getResourceMetrics",
+  "services": [
+   "getResourceMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/monitor/getResourceUsageRateMetrics",
+  "services": [
+   "getResourceUsageRateMetrics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/monitor/getResourceUsageRateGraph",
+  "services": [
+   "getResourceUsageRateGraph"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/monitor/getMultipleResourceMetrics",
+  "services": [
+   "getMultipleResourceMetrics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bc/ops/advert/list",
+  "services": [
+   "getAdvertList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/serviceAuthorization/verify",
+  "services": [
+   "verifyAuthority"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/serviceAuthorization/create",
+  "services": [
+   "authorizeService"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/agent/chat",
+  "services": [
+   "sendMessage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/agent/conversation/stop",
+  "services": [
+   "stopConversation"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/agent/conversation/list",
+  "services": [
+   "getHistoryConversations"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/agent/conversation/detail",
+  "services": [
+   "getConversationDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/agent/conversation/top",
+  "services": [
+   "topConversation"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/agent/conversation/updateTitle",
+  "services": [
+   "updateConversationTitle"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/agent/conversation/delete",
+  "services": [
+   "deleteConversation"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/user_image/delete",
+  "services": [
+   "deleteUserImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/share",
+  "services": [
+   "shareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/unshare",
+  "services": [
+   "unshareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/shareRecord",
+  "services": [
+   "imageShareRecord"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/shareImage/list",
+  "services": [
+   "imageShareImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/imagewall/list",
+  "services": [
+   "getImageWallList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/displayItem/list",
+  "services": [
+   "getImageWallAttr"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/imagewall/detail",
+  "services": [
+   "getImageDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/recommendedSpec",
+  "services": [
+   "getImageSpec"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/overview/recommendedImage/list",
+  "services": [
+   "getRecommendedImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ide/image/pushProgress",
+  "services": [
+   "getImagePushProgress"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/listActivities",
+  "services": [
+   "listActivities"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/describeActivityDetail",
+  "services": [
+   "describeActivityDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/createActivity",
+  "services": [
+   "createActivity"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/updateActivity",
+  "services": [
+   "updateActivity"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/removeActivity",
+  "services": [
+   "removeActivity"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/publishTemplate",
+  "services": [
+   "publishTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/updateTemplate",
+  "services": [
+   "updateTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/removeTemplate",
+  "services": [
+   "removeTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/listTemplates",
+  "services": [
+   "listTemplates"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/describeTemplateDetail",
+  "services": [
+   "describeTemplateDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/describeMultiChildAccount",
+  "services": [
+   "describeMultiChildAccount"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/bindUsers",
+  "services": [
+   "bindUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/removeUsers",
+  "services": [
+   "removeUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/createBatchResources",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/listResources",
+  "services": [
+   "listResources"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/queryOperationLogs",
+  "services": [
+   "queryOperationLogs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/removeLog",
+  "services": [
+   "removeLog"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/listActivityUsers",
+  "services": [
+   "listActivityUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/queryFailedTaskDetail",
+  "services": [
+   "queryFailedTaskDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bs/activity/retryFailedTask",
+  "services": [
+   "retryFailedTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/inquiry",
+  "services": [
+   "getResourcePoolInquiry"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/billing/access",
+  "services": [
+   "billingAccess"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/permission/user/policy",
+  "services": [
+   "getUserPolicy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/account/type",
+  "services": [
+   "getUserType"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/submit/nonOrder/open",
+  "services": [
+   "submitBCOrder"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/submit/trial_order",
+  "services": [
+   "submitTrialBCOrder"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bc/ops/getGrayFeature",
+  "services": [
+   "getGrayFeature"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/public/dataset/list",
+  "services": [
+   "getPublicDatasetList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/dataset/typeList",
+  "services": [
+   "getDatasetTypeList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/pvc/list",
+  "services": [
+   "getPVCList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/pvc/create",
+  "services": [
+   "createPVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/sfs/precheck",
+  "services": [
+   "SFSpreCheck"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/pvc/delete",
+  "services": [
+   "deletePVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/pvc/resize",
+  "services": [
+   "resizePVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/resource/list",
+  "services": [
+   "getStorageSourceList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/resource/get",
+  "services": [
+   "getStorageDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/resource/resize",
+  "services": [
+   "expandStorage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/cluster/storage_quota",
+  "services": [
+   "getClusterStorageQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/resource/create",
+  "services": [
+   "createStorageResource"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/resource/delete",
+  "services": [
+   "deleteStorageResource"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/storage/spec/list",
+  "services": [
+   "getStorageSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/region/list",
+  "services": [
+   "getClusterRegionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/v1/ops/tenant/region/list",
+  "services": [
+   "getRegionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/util/baidu/accessToken",
+  "services": [
+   "getAccessToken"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/storage/network/list",
+  "services": [
+   "getNetworkList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/storage/network/create",
+  "services": [
+   "creatNetwork"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/research/storage/inquiry",
+  "services": [
+   "getAssistStorageInquiry"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/summary",
+  "services": [
+   "getAssistStorageSummary"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/describe",
+  "services": [
+   "getAssistStorageDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/space/list",
+  "services": [
+   "getExclusiveSpaces"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/space/create",
+  "services": [
+   "createExclusiveSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/space/edit",
+  "services": [
+   "updateExclusiveSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/space/delete",
+  "services": [
+   "deleteExclusiveSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/listDataSyncTasks",
+  "services": [
+   "getMigrationTaskList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/describeDataSyncTask",
+  "services": [
+   "getMigrationTasInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/createDataSyncTask",
+  "services": [
+   "createMigrationTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/deleteDataSyncTask",
+  "services": [
+   "deleteMigrationTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/stopDataSyncTask",
+  "services": [
+   "stopMigrationTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/listLocalStorage",
+  "services": [
+   "getMigrationDevList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/getDataSyncConfig",
+  "services": [
+   "getMigrationQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/upgradeFSServer",
+  "services": [
+   "upgradeFSServer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/list",
+  "services": [
+   "getProprietaryResourcePoolList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/list/weight",
+  "services": [
+   "getProprietaryResourcePoolWeightList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/detail",
+  "services": [
+   "getProprietaryResourcePoolInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/cluster/shared_quota",
+  "services": [
+   "getSharedClusterRegion"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/edit",
+  "services": [
+   "getProprietaryResourcePoolEditInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/create",
+  "services": [
+   "createProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/update",
+  "services": [
+   "updateProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/delete",
+  "services": [
+   "deleteProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/delete/batch",
+  "services": [
+   "batchDeleteProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/summary",
+  "services": [
+   "getResourcePoolSummaryInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/init/info",
+  "services": [
+   "getInitLogs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/oneclick",
+  "services": [
+   "oneClickCreateResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/pool/spec/sellout",
+  "services": [
+   "checkSellout"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/getExclusivePoolQuota",
+  "services": [
+   "getSharedExclusivePoolQuota",
+   "getExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js",
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/describeProjectDeserveQuota",
+  "services": [
+   "getProjectExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/batchCheckQuota",
+  "services": [
+   "batchCheckQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/idleRule/get",
+  "services": [
+   "getIdleConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/idleRule/on",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/idleRule/off",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/idleRule/policy/list",
+  "services": [
+   "getIdlePolicyList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/idleRule/policy/save",
+  "services": [
+   "saveIdleExcludePolicy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/idleRule/save",
+  "services": [
+   "saveIdleRule"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/resource/pool/oneclick",
+  "services": [
+   "initEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/resource/pool/task/list",
+  "services": [
+   "getInitEnvFlow"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/list",
+  "services": [
+   "getDevelopEnvList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/get",
+  "services": [
+   "getDevelopEnvInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/create",
+  "services": [
+   "createDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/stop",
+  "services": [
+   "stopDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/launch",
+  "services": [
+   "launchDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/updateActiveTime",
+  "services": [
+   "updateActiveTime"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "DELETE",
+  "baseURL": "/bc/v2",
+  "path": "/ide/delete/:_",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "t"
+  ],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/image/list",
+  "services": [
+   "getImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/updateImage",
+  "services": [
+   "updateImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/resource/pool/spec/list",
+  "services": [
+   "getResourcePoolSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/resource/storage/spec/list",
+  "services": [
+   "getStorageSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/updateSpecific",
+  "services": [
+   "updateSpecific"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/saveImage",
+  "services": [
+   "saveDevelopEnvImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/delay",
+  "services": [
+   "delayStop"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/user_image/list",
+  "services": [
+   "getUserImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/summary",
+  "services": [
+   "getIdeSummary"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/toRemove",
+  "services": [
+   "getAboutToBeDeletedIde"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/pvc/list",
+  "services": [
+   "getPVCList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/pvc/create",
+  "services": [
+   "createPVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/pvc/delete",
+  "services": [
+   "deletePVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/secret/ecr/check",
+  "services": [
+   "getEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/bc/ops/region/list",
+  "services": [
+   "getRegionOptions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/bc/ops/region/filter",
+  "services": [
+   "getRegionListNew"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/resource/compute/spec/enum",
+  "services": [
+   "getSpecTypeList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/resource/pool/spec/sellout",
+  "services": [
+   "checkSellout"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/user_image/delete",
+  "services": [
+   "deleteUserImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/image/share",
+  "services": [
+   "shareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/image/unshare",
+  "services": [
+   "unshareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/image/shareRecord",
+  "services": [
+   "imageShareRecord"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/image/shareImage/list",
+  "services": [
+   "imageShareImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/cluster/storage_quota",
+  "services": [
+   "getClusterStorageQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/submitPeriod",
+  "services": [
+   "submitPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/renewPeriod",
+  "services": [
+   "renewPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/refundPeriod",
+  "services": [
+   "refundPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/ide/overview/recommendedImage/list",
+  "services": [
+   "getRecommendedImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/resource/pool/az/init",
+  "services": [
+   "initPoolAz"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/resource/pool/az/init/list",
+  "services": [
+   "getInitProcess"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/image/featLabels/list",
+  "services": [
+   "getFeatLabels"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/list",
+  "services": [
+   "getAssistList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/create",
+  "services": [
+   "createAssist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/delete",
+  "services": [
+   "deleteAssist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/renew",
+  "services": [
+   "renewAssist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/spec/list",
+  "services": [
+   "getAssistSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/resize",
+  "services": [
+   "expandStorage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/resource/compute/spec/list",
+  "services": [
+   "getComputeSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/ide/resource/metric",
+  "services": [
+   "getIdeResourceMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/describeBindingResource",
+  "services": [
+   "getBindingResourceList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/storage/research/releaseStorageBinding",
+  "services": [
+   "releaseStorageBinding"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/resource/enumGpuModels",
+  "services": [
+   "enumGpuModels"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v2",
+  "path": "/resource/listGpuSpecs",
+  "services": [
+   "listGpuSpecs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bc/project/list",
+  "services": [
+   "getProjectList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/config/frontend",
+  "services": [
+   "getFrontendConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/queue/list",
+  "services": [
+   "getList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/queue/get",
+  "services": [
+   "getQueueInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/queue/create",
+  "services": [
+   "createQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/queue/update",
+  "services": [
+   "updateQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/queue/delete",
+  "services": [
+   "deleteQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/queue/delete/batch",
+  "services": [
+   "batchDeleteQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/queue/check/share",
+  "services": [
+   "checkQueueQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project/list",
+  "services": [
+   "getProjectlist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/list",
+  "services": [
+   "getProjectSpacelist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/list_un_sync_project",
+  "services": [
+   "checkProjectSpaceSync"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/edit",
+  "services": [
+   "editProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/create",
+  "services": [
+   "createProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/get",
+  "services": [
+   "getProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/check_delegate",
+  "services": [
+   "checkDelegate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/create_delegate_role",
+  "services": [
+   "createDelegateRole"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/list_project_group",
+  "services": [
+   "getProjectGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/group_users",
+  "services": [
+   "getGroupUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/users",
+  "services": [
+   "getUserList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/project_users",
+  "services": [
+   "getProjectUserList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/remove_user_out_group",
+  "services": [
+   "postRemoveUserOutGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/attach_user_to_group",
+  "services": [
+   "postAttachUserToGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/remove_project_from_group",
+  "services": [
+   "postRemoveProjectFromGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/attach_project_to_group",
+  "services": [
+   "postAttachProjectToGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/user_groups",
+  "services": [
+   "getUserGroups"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/eventlog/list",
+  "services": [
+   "getOperationLogs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/query_budget_trend_metrics",
+  "services": [
+   "getComsumeTrend"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/list_user_bill_detail",
+  "services": [
+   "getUserBillList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/download_user_bill_detail",
+  "services": [
+   "exportBilling",
+   "downloadUserBillDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/delete",
+  "services": [
+   "deleteProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/export_user_bill_detail",
+  "services": [
+   "exportUserBillDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/list_project_bill_record",
+  "services": [
+   "getProjectBillList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/delete_project_bill_record",
+  "services": [
+   "deleteFile"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/get_all_users",
+  "services": [
+   "getProjectUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/set_user_policy",
+  "services": [
+   "setUserPolicy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/predefClientIPs/setPredefClientIPs",
+  "services": [
+   "setPredefClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/predefClientIPs/unsetPredefClientIPs",
+  "services": [
+   "closePredefClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/predefClientIPs/getPredefClientIPs",
+  "services": [
+   "getPredefClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/ide/duration",
+  "services": [
+   "updateAutoStop"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/getConfig",
+  "services": [
+   "getConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/GetUserExclusivePoolGpuSpecEnum ",
+  "services": [
+   "getExclusivePoolGpuSpecEnum"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/setUserExclusivePoolQuota",
+  "services": [
+   "setUserExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/getUserExclusivePoolQuota",
+  "services": [
+   "getUserExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/queryProjectUsageStatistics",
+  "services": [
+   "queryProjectUsageStatistics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/project_space/queryUserUsageStatistics",
+  "services": [
+   "queryUserUsageStatistics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "index-esm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/packages/purchased/list",
+  "services": [
+   "getPurchasedList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/packages/purchasable/list",
+  "services": [
+   "getPurchasableList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/packages/billing/list",
+  "services": [
+   "getBillinglist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/packages/billing/download",
+  "services": [
+   "exportBilling"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/submit/package",
+  "services": [
+   "submitPackage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/submit/trialPackage",
+  "services": [
+   "submitTrialPackage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/resource/refund/package",
+  "services": [
+   "unsubscribePackage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/packages/purchased/updateAlias",
+  "services": [
+   "updateAlias"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/packages/purchased/delete",
+  "services": [
+   "deletePackageOrder"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ChargingSimple-uyK-pXs4.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/template/list",
+  "services": [
+   "getJobTemplateList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "DrawerShowMixin-WFV4HeBm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/template/create",
+  "services": [
+   "createJobTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "DrawerShowMixin-WFV4HeBm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/template/delete",
+  "services": [
+   "deleteJobTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "DrawerShowMixin-WFV4HeBm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/template/detail",
+  "services": [
+   "getJobTemplateDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "DrawerShowMixin-WFV4HeBm.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/arguments",
+  "services": [
+   "getJobArguments"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "DrawerShowMixin-WFV4HeBm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/ecx/clusterList",
+  "services": [
+   "getClusterList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "DrawerShowMixin-WFV4HeBm.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eck/k8sCluster/list",
+  "services": [
+   "getK8sClusterList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eck/k8sCluster/getK8s",
+  "services": [
+   "getK8sCluster"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eck/k8sCluster/get",
+  "services": [
+   "getK8sClusterInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eck/k8sCluster/listRegions",
+  "services": [
+   "getRegionClusters"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/list",
+  "services": [
+   "getSchedulingList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/get",
+  "services": [
+   "getSchedulingInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/create",
+  "services": [
+   "createSchedulingStategy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/update",
+  "services": [
+   "updateSchedulingStategy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/delete",
+  "services": [
+   "deleteSchedulingStategy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/action/list",
+  "services": [
+   "getSchedulingActionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/scheduling/plugin/list",
+  "services": [
+   "getSchedulingPluginList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "EditorResourcePoolDialog-yr0F2jF9.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/describeMultiExclusivePools",
+  "services": [
+   "getList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/describeExclusivePoolDetail",
+  "services": [
+   "getDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/describeExclusivePoolUsage",
+  "services": [
+   "getResourceUsage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/listOrderItems",
+  "services": [
+   "listOrderItems"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/refundOrderItem",
+  "services": [
+   "refundOrderItem"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/createExclusivePool",
+  "services": [
+   "create"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/purchaseOrderItem",
+  "services": [
+   "purchaseOrderItem"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/renewOrderItem",
+  "services": [
+   "renewOrderItem"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/describeExclusivePoolWorkload",
+  "services": [
+   "getWorkload"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/listProjectDeserveQuota",
+  "services": [
+   "getProjectQuotaList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/deleteExclusivePool",
+  "services": [
+   "deleteExclusivePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/createProjectDeserveQuota",
+  "services": [
+   "createProjectQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/exclusivePool/updateProjectDeserveQuota",
+  "services": [
+   "updateProjectDeserveQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "exclusivePool-CIA1W-sz.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/cluster/page",
+  "services": [
+   "getGroupCluster"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/project/page",
+  "services": [
+   "searchProject"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/image/page",
+  "services": [
+   "searchImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/imagetag/page",
+  "services": [
+   "searchImageTag"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/check/login",
+  "services": [
+   "checkCRSLogin"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/register/user",
+  "services": [
+   "registerUser"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/crs/project/usage",
+  "services": [
+   "checkCRSUsage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "imageRepository-C6BFabGu.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/list",
+  "services": [
+   "getInferList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/detail",
+  "services": [
+   "getInferDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/create",
+  "services": [
+   "createInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/launch",
+  "services": [
+   "startInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/stop",
+  "services": [
+   "stopInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "DELETE",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/delete/:_",
+  "services": [
+   "deleteInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "e.id"
+  ],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/secret",
+  "services": [
+   "getInferSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/framework/list",
+  "services": [
+   "getInferFrames"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/cert/sync",
+  "services": [
+   "syncCert"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/model_repo/list",
+  "services": [
+   "getModelList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/model_repo/create",
+  "services": [
+   "createModel"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/model_repo/framework/list",
+  "services": [
+   "getModelFrameList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "DELETE",
+  "baseURL": "/bc/v1",
+  "path": "/model_repo/delete/:_",
+  "services": [
+   "deleteModel"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "e.id"
+  ],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/model_repo/detail",
+  "services": [
+   "getModelDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/model/list",
+  "services": [
+   "getModelVersionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/model/create",
+  "services": [
+   "createModelVersion"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "DELETE",
+  "baseURL": "/bc/v1",
+  "path": "/model/delete/:_",
+  "services": [
+   "deleteModelVersion"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "e.id"
+  ],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/model/checkModelUpload",
+  "services": [
+   "checkModelVersionUpload"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/model/finishModelUpload",
+  "services": [
+   "finishModelUpload"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/infer_service/summary",
+  "services": [
+   "summaryInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "inference-DyOmnwZN.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eip/list",
+  "services": [
+   "getList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/eip/create",
+  "services": [
+   "create"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/eip/delete",
+  "services": [
+   "unsubscribe"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eip/regionInfo/list",
+  "services": [
+   "getRegionInfoList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/resource/eip/inquiry",
+  "services": [
+   "inquiry"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/eip/updateClientIPs",
+  "services": [
+   "updateClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/eip/get",
+  "services": [
+   "get"
+  ],
+  "params": [
+   "uuid"
+  ],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "ipHelper-D0hzZEyQ.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/describeTrainingJobs",
+  "services": [
+   "getTrainingJobs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/createTrainingJob",
+  "services": [
+   "createTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/describeTrainingJob",
+  "services": [
+   "getTrainingDetail",
+   "getParallelDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/startTrainingJob",
+  "services": [
+   "startTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/stopTrainingJob",
+  "services": [
+   "stopTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/deleteTrainingJob",
+  "services": [
+   "deleteTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/cluster/resource/logs",
+  "services": [
+   "getResourceLog"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/bcProxy/ops/jobTemplate/list",
+  "services": [
+   "getTaskTemplateList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/resource/metric",
+  "services": [
+   "getMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/updateTrainingJob",
+  "services": [
+   "updateTrainingJobAlias"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "parallel-3Ch40J7C.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/list",
+  "services": [
+   "getArgoList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/detail",
+  "services": [
+   "getArgoDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/create",
+  "services": [
+   "createTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/edit",
+  "services": [
+   "editTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/delete",
+  "services": [
+   "deleteTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/delete/batch",
+  "services": [
+   "batchDeleteTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/manage",
+  "services": [
+   "manageTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/summary",
+  "services": [
+   "getJobSummaryInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/pod/container/list",
+  "services": [
+   "getContainerList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/job/pod/event/list",
+  "services": [
+   "getEventsList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/k8s/:_/api/v1/namespaces/:_/events",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "t",
+   "r"
+  ],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "GET",
+  "baseURL": "/bc/v1",
+  "path": "/k8s/:_/apis/autoscaling/v2beta1/namespaces/:_/horizontalpodautoscalers/:_",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [
+   "t",
+   "r",
+   "u"
+  ],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ },
+ {
+  "verb": "POST",
+  "baseURL": "/bc/v1",
+  "path": "/job/metric/pull",
+  "services": [
+   "getPrometheusMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tplExprs": [],
+  "chunks": [
+   "task-BQv2E8pD.js"
+  ]
+ }
+]

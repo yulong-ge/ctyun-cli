@@ -1,0 +1,8237 @@
+[
+ {
+  "domain": "account",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/account/type",
+  "url": "/bc/v1/account/type",
+  "services": [
+   "getUserType"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "accountType",
+    "originChannel",
+    "isAdminGroup",
+    "auditStatus"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/config/frontend",
+  "url": "/bc/v1/config/frontend",
+  "services": [
+   "getFrontendConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "config"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/permission/business",
+  "url": "/bc/v1/permission/business",
+  "services": [
+   "getPermissionBusiness"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "isAccess"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/permission/user/policy",
+  "url": "/bc/v1/permission/user/policy",
+  "services": [
+   "getUserPolicy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "allowPolicyList",
+    "denyPolicyList"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/serviceAuthorization/create",
+  "url": "/bc/v1/serviceAuthorization/create",
+  "services": [
+   "authorizeService"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：[CreateServiceAuthorization] ctyunUserId and AuthorizeService parameters contain empty values. Please check and try",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/serviceAuthorization/verify",
+  "url": "/bc/v1/serviceAuthorization/verify",
+  "services": [
+   "verifyAuthority"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：[VerifyServiceAuthorization] ctyunUserId and AuthorizeService parameters contain empty values. Please check and try",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/userFavor/get",
+  "url": "/bc/v2/userFavor/get",
+  "services": [
+   "getUserFavor"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "lastLoadVersion",
+    "isPopup",
+    "userFavorInfoList"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "account",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/userFavor/set",
+  "url": "/bc/v2/userFavor/set",
+  "services": [
+   "setUserFavor"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/bindUsers",
+  "url": "/bc/v1/bs/activity/bindUsers",
+  "services": [
+   "bindUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/createActivity",
+  "url": "/bc/v1/bs/activity/createActivity",
+  "services": [
+   "createActivity"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/createBatchResources",
+  "url": "/bc/v1/bs/activity/createBatchResources",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/describeActivityDetail",
+  "url": "/bc/v1/bs/activity/describeActivityDetail",
+  "services": [
+   "describeActivityDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "没有权限：当前用户不是活动成员",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/describeMultiChildAccount",
+  "url": "/bc/v1/bs/activity/describeMultiChildAccount",
+  "services": [
+   "describeMultiChildAccount"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/describeTemplateDetail",
+  "url": "/bc/v1/bs/activity/describeTemplateDetail",
+  "services": [
+   "describeTemplateDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/listActivities",
+  "url": "/bc/v1/bs/activity/listActivities",
+  "services": [
+   "listActivities"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "items",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/listActivityUsers",
+  "url": "/bc/v1/bs/activity/listActivityUsers",
+  "services": [
+   "listActivityUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "items",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/listResources",
+  "url": "/bc/v1/bs/activity/listResources",
+  "services": [
+   "listResources"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：activity uuid is required",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/listTemplates",
+  "url": "/bc/v1/bs/activity/listTemplates",
+  "services": [
+   "listTemplates"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/publishTemplate",
+  "url": "/bc/v1/bs/activity/publishTemplate",
+  "services": [
+   "publishTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/queryFailedTaskDetail",
+  "url": "/bc/v1/bs/activity/queryFailedTaskDetail",
+  "services": [
+   "queryFailedTaskDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/queryOperationLogs",
+  "url": "/bc/v1/bs/activity/queryOperationLogs",
+  "services": [
+   "queryOperationLogs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/removeActivity",
+  "url": "/bc/v1/bs/activity/removeActivity",
+  "services": [
+   "removeActivity"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/removeLog",
+  "url": "/bc/v1/bs/activity/removeLog",
+  "services": [
+   "removeLog"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/removeTemplate",
+  "url": "/bc/v1/bs/activity/removeTemplate",
+  "services": [
+   "removeTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/removeUsers",
+  "url": "/bc/v1/bs/activity/removeUsers",
+  "services": [
+   "removeUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/retryFailedTask",
+  "url": "/bc/v1/bs/activity/retryFailedTask",
+  "services": [
+   "retryFailedTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/updateActivity",
+  "url": "/bc/v1/bs/activity/updateActivity",
+  "services": [
+   "updateActivity"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "activity",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bs/activity/updateTemplate",
+  "url": "/bc/v1/bs/activity/updateTemplate",
+  "services": [
+   "updateTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/agent/chat",
+  "url": "/bc/v1/agent/chat",
+  "services": [
+   "sendMessage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 500,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/agent/conversation/delete",
+  "url": "/bc/v1/agent/conversation/delete",
+  "services": [
+   "deleteConversation"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/agent/conversation/detail",
+  "url": "/bc/v1/agent/conversation/detail",
+  "services": [
+   "getConversationDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/agent/conversation/list",
+  "url": "/bc/v1/agent/conversation/list",
+  "services": [
+   "getHistoryConversations"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/agent/conversation/stop",
+  "url": "/bc/v1/agent/conversation/stop",
+  "services": [
+   "stopConversation"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/agent/conversation/top",
+  "url": "/bc/v1/agent/conversation/top",
+  "services": [
+   "topConversation"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "agent",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/agent/conversation/updateTitle",
+  "url": "/bc/v1/agent/conversation/updateTitle",
+  "services": [
+   "updateConversationTitle"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/cluster/getTenantQuotaInfo",
+  "url": "/bc/v1/cluster/getTenantQuotaInfo",
+  "services": [
+   "getTenantQuotaInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "totalQuota",
+    "ext"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/cluster/resource/events",
+  "url": "/bc/v1/cluster/resource/events",
+  "services": [
+   "getEventsList",
+   "getInferEvents"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到ide资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/cluster/resource/logs",
+  "url": "/bc/v1/cluster/resource/logs",
+  "services": [
+   "getResourceLog"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：instance type ",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/cluster/shared_quota",
+  "url": "/bc/v1/cluster/shared_quota",
+  "services": [
+   "getSharedClusterRegion"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "sharedCluster",
+    "tenantQuota"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/cluster/storage_quota",
+  "url": "/bc/v1/cluster/storage_quota",
+  "services": [
+   "getClusterStorageQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ResourceExhausted",
+   "msg": "可用存储配额不足，请联系运营人员。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/check/login",
+  "url": "/bc/v1/crs/check/login",
+  "services": [
+   "checkCRSLogin"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "page",
+    "data",
+    "login"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/cluster/page",
+  "url": "/bc/v1/crs/cluster/page",
+  "services": [
+   "getGroupCluster"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "page",
+    "data",
+    "harborInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/image/page",
+  "url": "/bc/v1/crs/image/page",
+  "services": [
+   "searchImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "镜像分发服务错误，请登录镜像分发服务后重试或联系工作人员",
+   "dataKeys": [
+    "requestId",
+    "contents"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/imagetag/page",
+  "url": "/bc/v1/crs/imagetag/page",
+  "services": [
+   "searchImageTag"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "page",
+    "data",
+    "imageInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/project/page",
+  "url": "/bc/v1/crs/project/page",
+  "services": [
+   "searchProject"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "page",
+    "data",
+    "projectInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/project/usage",
+  "url": "/bc/v1/crs/project/usage",
+  "services": [
+   "checkCRSUsage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "page",
+    "projectInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/crs/register/user",
+  "url": "/bc/v1/crs/register/user",
+  "services": [
+   "registerUser"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "镜像分发服务错误，请登录镜像分发服务后重试或联系工作人员",
+   "dataKeys": [
+    "requestId",
+    "contents"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eck/k8sCluster/get",
+  "url": "/bc/v1/eck/k8sCluster/get",
+  "services": [
+   "getK8sClusterInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eck/k8sCluster/getK8s",
+  "url": "/bc/v1/eck/k8sCluster/getK8s",
+  "services": [
+   "getK8sCluster"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eck/k8sCluster/list",
+  "url": "/bc/v1/eck/k8sCluster/list",
+  "services": [
+   "getK8sClusterList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eck/k8sCluster/listRegions",
+  "url": "/bc/v1/eck/k8sCluster/listRegions",
+  "services": [
+   "getRegionClusters"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ecx/clusterList",
+  "url": "/bc/v1/ecx/clusterList",
+  "services": [
+   "getClusterList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "data"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "cluster",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/cluster/storage_quota",
+  "url": "/bc/v2/cluster/storage_quota",
+  "services": [
+   "getClusterStorageQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ResourceExhausted",
+   "msg": "可用存储配额不足，请联系运营人员。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/batch/create",
+  "url": "/bc/v1/ide/batch/create",
+  "services": [
+   "batchCreateDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：instance number",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/batchLaunch",
+  "url": "/bc/v1/ide/batchLaunch",
+  "services": [
+   "batchLaunchDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "batchLaunchList"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/batchStop",
+  "url": "/bc/v1/ide/batchStop",
+  "services": [
+   "batchStopDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "batchStopList"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/calculate/dindQuota",
+  "url": "/bc/v1/ide/calculate/dindQuota",
+  "services": [
+   "getDockerResourceQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field SpecId: 规格{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/changeQueueForIDE",
+  "url": "/bc/v1/ide/changeQueueForIDE",
+  "services": [
+   "changeQueueForIDE"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Uuid: 开发机{uuid}值需要非空",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/create",
+  "url": "/bc/v1/ide/create",
+  "services": [
+   "createDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: 开发环境名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/createTrial",
+  "url": "/bc/v1/ide/createTrial",
+  "services": [
+   "createTrialDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: 开发环境名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "DELETE",
+  "base": "/bc/v1",
+  "path": "/ide/delete/:_",
+  "url": "/bc/v1/ide/delete/:_",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "t"
+  ],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到ide资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/get",
+  "url": "/bc/v1/ide/get",
+  "services": [
+   "getDevelopEnvInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境的id{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/launch",
+  "url": "/bc/v1/ide/launch",
+  "services": [
+   "launchDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/list",
+  "url": "/bc/v1/ide/list",
+  "services": [
+   "getDevelopEnvList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "ides",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/listIDEPublicKeyBind",
+  "url": "/bc/v1/ide/listIDEPublicKeyBind",
+  "services": [
+   "getPublicKeyBindList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "ideId必须为正整数，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/overview/recommendedImage/list",
+  "url": "/bc/v1/ide/overview/recommendedImage/list",
+  "services": [
+   "getRecommendedImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "imageInfo",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/preCheckLocalStorageIDELaunch",
+  "url": "/bc/v1/ide/preCheckLocalStorageIDELaunch",
+  "services": [
+   "preCheckLocalStorageIDELaunch"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Uuid: 开发机{uuid}值需要非空",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/publicKey/create",
+  "url": "/bc/v1/ide/publicKey/create",
+  "services": [
+   "createPublicKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "公钥格式不正确，请重新输入",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/publicKey/delete",
+  "url": "/bc/v1/ide/publicKey/delete",
+  "services": [
+   "deletePublicKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 公钥管理{id}值需大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/publicKey/email",
+  "url": "/bc/v1/ide/publicKey/email",
+  "services": [
+   "getEmailSuggestions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "emails"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/publicKey/list",
+  "url": "/bc/v1/ide/publicKey/list",
+  "services": [
+   "getPublicKeyList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "publicKeyInfo",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/refundPeriod",
+  "url": "/bc/v1/ide/refundPeriod",
+  "services": [
+   "refundPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/regionInfo/list",
+  "url": "/bc/v1/ide/regionInfo/list",
+  "services": [
+   "getIdeRegionOptions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "regionInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/renewPeriod",
+  "url": "/bc/v1/ide/renewPeriod",
+  "services": [
+   "renewPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/servicePortIPs/update",
+  "url": "/bc/v1/ide/servicePortIPs/update",
+  "services": [
+   "updateServicePortIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/sshClientIPs/update",
+  "url": "/bc/v1/ide/sshClientIPs/update",
+  "services": [
+   "updateSSHClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/stop",
+  "url": "/bc/v1/ide/stop",
+  "services": [
+   "stopDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/stopSavingImage",
+  "url": "/bc/v1/ide/stopSavingImage",
+  "services": [
+   "stopSavingDevelopEnvImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发机id{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/submitPeriod",
+  "url": "/bc/v1/ide/submitPeriod",
+  "services": [
+   "submitPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/summary",
+  "url": "/bc/v1/ide/summary",
+  "services": [
+   "getIdeSummary"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "demandSummary",
+    "periodSummary"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/toRemove",
+  "url": "/bc/v1/ide/toRemove",
+  "services": [
+   "getAboutToBeDeletedIde"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "ideInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/trialIdeParams",
+  "url": "/bc/v1/ide/trialIdeParams",
+  "services": [
+   "getTrialIdeParams"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "params"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateActiveTime",
+  "url": "/bc/v1/ide/updateActiveTime",
+  "services": [
+   "updateActiveTime"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateAlias",
+  "url": "/bc/v1/ide/updateAlias",
+  "services": [
+   "updateIdeAlias"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateIDEConfig",
+  "url": "/bc/v1/ide/updateIDEConfig",
+  "services": [
+   "updateIDEConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Uuid: 开发机{uuid}值需要非空",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateImage",
+  "url": "/bc/v1/ide/updateImage",
+  "services": [
+   "updateImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateSpecific",
+  "url": "/bc/v1/ide/updateSpecific",
+  "services": [
+   "updateSpecific"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateSSHKey",
+  "url": "/bc/v1/ide/updateSSHKey",
+  "services": [
+   "updateSSHKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 公钥{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateSSHKeys",
+  "url": "/bc/v1/ide/updateSSHKeys",
+  "services": [
+   "updatePublicKey"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateVisibility",
+  "url": "/bc/v1/ide/updateVisibility",
+  "services": [
+   "updateVisibility"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/updateVolume",
+  "url": "/bc/v1/ide/updateVolume",
+  "services": [
+   "updateVolume"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/create",
+  "url": "/bc/v2/ide/create",
+  "services": [
+   "createDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/delay",
+  "url": "/bc/v2/ide/delay",
+  "services": [
+   "delayStop"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "DELETE",
+  "base": "/bc/v2",
+  "path": "/ide/delete/:_",
+  "url": "/bc/v2/ide/delete/:_",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "t"
+  ],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/get",
+  "url": "/bc/v2/ide/get",
+  "services": [
+   "getDevelopEnvInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/launch",
+  "url": "/bc/v2/ide/launch",
+  "services": [
+   "launchDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/list",
+  "url": "/bc/v2/ide/list",
+  "services": [
+   "getDevelopEnvList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/overview/recommendedImage/list",
+  "url": "/bc/v2/ide/overview/recommendedImage/list",
+  "services": [
+   "getRecommendedImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/refundPeriod",
+  "url": "/bc/v2/ide/refundPeriod",
+  "services": [
+   "refundPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/renewPeriod",
+  "url": "/bc/v2/ide/renewPeriod",
+  "services": [
+   "renewPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/resource/metric",
+  "url": "/bc/v2/ide/resource/metric",
+  "services": [
+   "getIdeResourceMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/stop",
+  "url": "/bc/v2/ide/stop",
+  "services": [
+   "stopDevelopEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/submitPeriod",
+  "url": "/bc/v2/ide/submitPeriod",
+  "services": [
+   "submitPeriod"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/summary",
+  "url": "/bc/v2/ide/summary",
+  "services": [
+   "getIdeSummary"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "demandSummary",
+    "periodSummary"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/toRemove",
+  "url": "/bc/v2/ide/toRemove",
+  "services": [
+   "getAboutToBeDeletedIde"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "ideInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/updateActiveTime",
+  "url": "/bc/v2/ide/updateActiveTime",
+  "services": [
+   "updateActiveTime"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/updateImage",
+  "url": "/bc/v2/ide/updateImage",
+  "services": [
+   "updateImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "ide",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/updateSpecific",
+  "url": "/bc/v2/ide/updateSpecific",
+  "services": [
+   "updateSpecific"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/image/featLabels/get",
+  "url": "/bc/v1/ide/image/featLabels/get",
+  "services": [
+   "getFeatLabelsById"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ImageId: 镜像id{imageId}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/image/featLabels/list",
+  "url": "/bc/v1/ide/image/featLabels/list",
+  "services": [
+   "getFeatLabels"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "features",
+    "labels"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/image/list",
+  "url": "/bc/v1/ide/image/list",
+  "services": [
+   "getImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "images",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/image/pushProgress",
+  "url": "/bc/v1/ide/image/pushProgress",
+  "services": [
+   "getImagePushProgress"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field UserImageId: 镜像id{user_image_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/image/recommendedSpec",
+  "url": "/bc/v1/ide/image/recommendedSpec",
+  "services": [
+   "getImageSpec"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ImageId: 镜像id{imageId}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/image/share",
+  "url": "/bc/v1/ide/image/share",
+  "services": [
+   "shareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ShareUserId: 分享对象用户ID{id}的长度值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/image/shareImage/list",
+  "url": "/bc/v1/ide/image/shareImage/list",
+  "services": [
+   "imageShareImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "imageInfos",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/image/shareRecord",
+  "url": "/bc/v1/ide/image/shareRecord",
+  "services": [
+   "imageShareRecord"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "shareInfos",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/image/unshare",
+  "url": "/bc/v1/ide/image/unshare",
+  "services": [
+   "unshareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ShareImageId: 分享镜像id{share_image_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/saveImage",
+  "url": "/bc/v1/ide/saveImage",
+  "services": [
+   "saveDevelopEnvImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 开发环境{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/ide/user_image/delete",
+  "url": "/bc/v1/ide/user_image/delete",
+  "services": [
+   "deleteUserImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 私有镜像id{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/ide/user_image/list",
+  "url": "/bc/v1/ide/user_image/list",
+  "services": [
+   "getUserImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "images",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/image/featLabels/list",
+  "url": "/bc/v2/ide/image/featLabels/list",
+  "services": [
+   "getFeatLabels"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "features",
+    "labels"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/image/list",
+  "url": "/bc/v2/ide/image/list",
+  "services": [
+   "getImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/image/share",
+  "url": "/bc/v2/ide/image/share",
+  "services": [
+   "shareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ShareUserId: 分享对象用户ID{id}的长度值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/image/shareImage/list",
+  "url": "/bc/v2/ide/image/shareImage/list",
+  "services": [
+   "imageShareImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/image/shareRecord",
+  "url": "/bc/v2/ide/image/shareRecord",
+  "services": [
+   "imageShareRecord"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "shareInfos",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/image/unshare",
+  "url": "/bc/v2/ide/image/unshare",
+  "services": [
+   "unshareImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ShareImageId: 分享镜像id{share_image_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/saveImage",
+  "url": "/bc/v2/ide/saveImage",
+  "services": [
+   "saveDevelopEnvImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/ide/user_image/delete",
+  "url": "/bc/v2/ide/user_image/delete",
+  "services": [
+   "deleteUserImage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "image",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/ide/user_image/list",
+  "url": "/bc/v2/ide/user_image/list",
+  "services": [
+   "getUserImageList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/infer_service/cert/sync",
+  "url": "/bc/v1/infer_service/cert/sync",
+  "services": [
+   "syncCert"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field UserKey: 科研服务私钥{user_key}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/infer_service/create",
+  "url": "/bc/v1/infer_service/create",
+  "services": [
+   "createInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: 科研服务的名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "DELETE",
+  "base": "/bc/v1",
+  "path": "/infer_service/delete/:_",
+  "url": "/bc/v1/infer_service/delete/:_",
+  "services": [
+   "deleteInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "e.id"
+  ],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到inferService资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/infer_service/detail",
+  "url": "/bc/v1/infer_service/detail",
+  "services": [
+   "getInferDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到inferService资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/infer_service/framework/list",
+  "url": "/bc/v1/infer_service/framework/list",
+  "services": [
+   "getInferFrames"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "infos",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/infer_service/launch",
+  "url": "/bc/v1/infer_service/launch",
+  "services": [
+   "startInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 科研服务id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/infer_service/list",
+  "url": "/bc/v1/infer_service/list",
+  "services": [
+   "getInferList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "info",
+    "paging",
+    "isFreeze"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/infer_service/secret",
+  "url": "/bc/v1/infer_service/secret",
+  "services": [
+   "getInferSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 科研服务id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/infer_service/stop",
+  "url": "/bc/v1/infer_service/stop",
+  "services": [
+   "stopInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 科研服务id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/infer_service/summary",
+  "url": "/bc/v1/infer_service/summary",
+  "services": [
+   "summaryInfer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "inferServiceTotalCount",
+    "inferServiceUsingCount",
+    "inferServiceSummary"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/model_repo/create",
+  "url": "/bc/v1/model_repo/create",
+  "services": [
+   "createModel"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: 模型的名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "DELETE",
+  "base": "/bc/v1",
+  "path": "/model_repo/delete/:_",
+  "url": "/bc/v1/model_repo/delete/:_",
+  "services": [
+   "deleteModel"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "e.id"
+  ],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到model_repo资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/model_repo/detail",
+  "url": "/bc/v1/model_repo/detail",
+  "services": [
+   "getModelDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到model_repo资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/model_repo/framework/list",
+  "url": "/bc/v1/model_repo/framework/list",
+  "services": [
+   "getModelFrameList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "infos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/model_repo/list",
+  "url": "/bc/v1/model_repo/list",
+  "services": [
+   "getModelList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "modelRepos",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/model/checkModelUpload",
+  "url": "/bc/v1/model/checkModelUpload",
+  "services": [
+   "checkModelVersionUpload"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 模型版本id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/model/create",
+  "url": "/bc/v1/model/create",
+  "services": [
+   "createModelVersion"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Version: 模型的版本{version}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "DELETE",
+  "base": "/bc/v1",
+  "path": "/model/delete/:_",
+  "url": "/bc/v1/model/delete/:_",
+  "services": [
+   "deleteModelVersion"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "e.id"
+  ],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到model资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/model/finishModelUpload",
+  "url": "/bc/v1/model/finishModelUpload",
+  "services": [
+   "finishModelUpload"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 模型版本id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "inference",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/model/list",
+  "url": "/bc/v1/model/list",
+  "services": [
+   "getModelVersionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：modelRepoId should not be empty",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/arguments",
+  "url": "/bc/v1/job/arguments",
+  "services": [
+   "getJobArguments"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/create",
+  "url": "/bc/v1/job/create",
+  "services": [
+   "createTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueueId: 队列的id{queue_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/createTrainingJob",
+  "url": "/bc/v1/job/createTrainingJob",
+  "services": [
+   "createTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: 任务名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/delete",
+  "url": "/bc/v1/job/delete",
+  "services": [
+   "deleteTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field JobId: 作业id{job_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/delete/batch",
+  "url": "/bc/v1/job/delete/batch",
+  "services": [
+   "batchDeleteTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field JobIds: 批量作业ids{job_ids}的数量需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/deleteTrainingJob",
+  "url": "/bc/v1/job/deleteTrainingJob",
+  "services": [
+   "deleteTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unauthenticated",
+   "msg": "没有权限：no permission",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/describeTrainingJob",
+  "url": "/bc/v1/job/describeTrainingJob",
+  "services": [
+   "getTrainingDetail",
+   "getParallelDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unauthenticated",
+   "msg": "没有权限：no permission",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/describeTrainingJobs",
+  "url": "/bc/v1/job/describeTrainingJobs",
+  "services": [
+   "getTrainingJobs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "paging",
+    "trainingJobs",
+    "isFreeze"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/detail",
+  "url": "/bc/v1/job/detail",
+  "services": [
+   "getArgoDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field JobId: 作业id{job_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/edit",
+  "url": "/bc/v1/job/edit",
+  "services": [
+   "editTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field JobId: 作业id{job_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/list",
+  "url": "/bc/v1/job/list",
+  "services": [
+   "getArgoList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "jobs",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/manage",
+  "url": "/bc/v1/job/manage",
+  "services": [
+   "manageTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field JobId: 作业id{job_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/metric/pull",
+  "url": "/bc/v1/job/metric/pull",
+  "services": [
+   "getPrometheusMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "metricDataInfo"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/pod/container/list",
+  "url": "/bc/v1/job/pod/container/list",
+  "services": [
+   "getContainerList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ClusterId: 集群id{cluster_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/pod/event/list",
+  "url": "/bc/v1/job/pod/event/list",
+  "services": [
+   "getEventsList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ClusterId: 集群id{cluster_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/resource/metric",
+  "url": "/bc/v1/job/resource/metric",
+  "services": [
+   "getMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到training_job资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/startTrainingJob",
+  "url": "/bc/v1/job/startTrainingJob",
+  "services": [
+   "startTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unauthenticated",
+   "msg": "没有权限：no permission",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/stopTrainingJob",
+  "url": "/bc/v1/job/stopTrainingJob",
+  "services": [
+   "stopTrainingJob"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unauthenticated",
+   "msg": "没有权限：no permission",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/summary",
+  "url": "/bc/v1/job/summary",
+  "services": [
+   "getJobSummaryInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "summary"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/template/create",
+  "url": "/bc/v1/job/template/create",
+  "services": [
+   "createJobTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field TemplateName: 模板名称{template_name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/template/delete",
+  "url": "/bc/v1/job/template/delete",
+  "services": [
+   "deleteJobTemplate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field TemplateId: 模板id{template_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/template/detail",
+  "url": "/bc/v1/job/template/detail",
+  "services": [
+   "getJobTemplateDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field TemplateId: 模板id{template_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/job/template/list",
+  "url": "/bc/v1/job/template/list",
+  "services": [
+   "getJobTemplateList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "runtime error: invalid memory address or nil pointer dereference",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "job",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/job/updateTrainingJob",
+  "url": "/bc/v1/job/updateTrainingJob",
+  "services": [
+   "updateTrainingJobAlias"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unknown",
+   "msg": "record not found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/k8s/:_/api/v1/namespaces/:_/events",
+  "url": "/bc/v1/k8s/:_/api/v1/namespaces/:_/events",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "t",
+   "r"
+  ],
+  "probe": null,
+  "skipped": true
+ },
+ {
+  "domain": "misc",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/k8s/:_/apis/autoscaling/v2beta1/namespaces/:_/horizontalpodautoscalers/:_",
+  "url": "/bc/v1/k8s/:_/apis/autoscaling/v2beta1/namespaces/:_/horizontalpodautoscalers/:_",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [
+   "t",
+   "r",
+   "u"
+  ],
+  "probe": null,
+  "skipped": true
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project/list",
+  "url": "/bc/v1/project/list",
+  "services": [
+   "getProjectlist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/user/listCreator",
+  "url": "/bc/v1/user/listCreator",
+  "services": [
+   "getCreatorInfoList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "为非空字符串，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/v1/ops/tenant/region/list",
+  "url": "/bc/v1/v1/ops/tenant/region/list",
+  "services": [
+   "getRegionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/idleRule/get",
+  "url": "/bc/v2/idleRule/get",
+  "services": [
+   "getIdleConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/idleRule/off",
+  "url": "/bc/v2/idleRule/off",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/idleRule/on",
+  "url": "/bc/v2/idleRule/on",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/idleRule/policy/list",
+  "url": "/bc/v2/idleRule/policy/list",
+  "services": [
+   "getIdlePolicyList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field RuleId: 规则id{rule_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/idleRule/policy/save",
+  "url": "/bc/v2/idleRule/policy/save",
+  "services": [
+   "saveIdleExcludePolicy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "misc",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/idleRule/save",
+  "url": "/bc/v2/idleRule/save",
+  "services": [
+   "saveIdleRule"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "monitor",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/monitor/getMultipleResourceMetrics",
+  "url": "/bc/v1/monitor/getMultipleResourceMetrics",
+  "services": [
+   "getMultipleResourceMetrics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：start time must be less than end time, start: 0, end: 0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "monitor",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/monitor/getResourceMetrics",
+  "url": "/bc/v1/monitor/getResourceMetrics",
+  "services": [
+   "getResourceMetric"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：start time must be less than end time, start: 0, end: 0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "monitor",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/monitor/getResourceUsageRateGraph",
+  "url": "/bc/v1/monitor/getResourceUsageRateGraph",
+  "services": [
+   "getResourceUsageRateGraph"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：request params is invalid",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "monitor",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/monitor/getResourceUsageRateMetrics",
+  "url": "/bc/v1/monitor/getResourceUsageRateMetrics",
+  "services": [
+   "getResourceUsageRateMetrics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：request params is invalid",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/eip/create",
+  "url": "/bc/v1/eip/create",
+  "services": [
+   "create"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/eip/delete",
+  "url": "/bc/v1/eip/delete",
+  "services": [
+   "unsubscribe"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eip/get",
+  "url": "/bc/v1/eip/get",
+  "services": [
+   "get"
+  ],
+  "params": [
+   "uuid"
+  ],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Uuid: EIP的UUID{uuid}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eip/list",
+  "url": "/bc/v1/eip/list",
+  "services": [
+   "getList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "eips",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/eip/regionInfo/list",
+  "url": "/bc/v1/eip/regionInfo/list",
+  "services": [
+   "getRegionInfoList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "regionInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/eip/updateClientIPs",
+  "url": "/bc/v1/eip/updateClientIPs",
+  "services": [
+   "updateClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/predefClientIPs/getClientIP",
+  "url": "/bc/v1/predefClientIPs/getClientIP",
+  "services": [
+   "detectClientIP"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "clientIp"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/predefClientIPs/getPredefClientIPs",
+  "url": "/bc/v1/predefClientIPs/getPredefClientIPs",
+  "services": [
+   "getPredefClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到project_space资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/predefClientIPs/setPredefClientIPs",
+  "url": "/bc/v1/predefClientIPs/setPredefClientIPs",
+  "services": [
+   "setPredefClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到project_space资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/predefClientIPs/unsetPredefClientIPs",
+  "url": "/bc/v1/predefClientIPs/unsetPredefClientIPs",
+  "services": [
+   "closePredefClientIPs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到project_space资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/secret/create",
+  "url": "/bc/v1/secret/create",
+  "services": [
+   "createEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: secret名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/secret/delete",
+  "url": "/bc/v1/secret/delete",
+  "services": [
+   "deleteEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: secret名称{name}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/secret/ecr/check",
+  "url": "/bc/v1/secret/ecr/check",
+  "services": [
+   "getEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueueId: 队列id{queue_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/secret/list",
+  "url": "/bc/v1/secret/list",
+  "services": [
+   "getSecretList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueueId: 队列id{queue_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "network",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/secret/ecr/check",
+  "url": "/bc/v2/secret/ecr/check",
+  "services": [
+   "getEcrSecret"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueueId: 队列id{queue_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "packages",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/packages/billing/download",
+  "url": "/bc/v1/packages/billing/download",
+  "services": [
+   "exportBilling"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "packages",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/packages/billing/list",
+  "url": "/bc/v1/packages/billing/list",
+  "services": [
+   "getBillinglist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "paging",
+    "data"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "packages",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/packages/purchasable/list",
+  "url": "/bc/v1/packages/purchasable/list",
+  "services": [
+   "getPurchasableList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "packages"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "packages",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/packages/purchased/delete",
+  "url": "/bc/v1/packages/purchased/delete",
+  "services": [
+   "deletePackageOrder"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 套餐包订单{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "packages",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/packages/purchased/list",
+  "url": "/bc/v1/packages/purchased/list",
+  "services": [
+   "getPurchasedList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "packageOrder",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "packages",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/packages/purchased/updateAlias",
+  "url": "/bc/v1/packages/purchased/updateAlias",
+  "services": [
+   "updateAlias"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 套餐包订单{id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bc/ops/advert/list",
+  "url": "/bc/v1/bc/ops/advert/list",
+  "services": [
+   "getAdvertList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "adverts",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bc/ops/claimCustomer",
+  "url": "/bc/v1/bc/ops/claimCustomer",
+  "services": [
+   "claimCustomer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：ClaimCustomer req.Uuid is empty",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bc/ops/getGrayFeature",
+  "url": "/bc/v1/bc/ops/getGrayFeature",
+  "services": [
+   "getGrayFeature"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：<no value>",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/bc/ops/region/list",
+  "url": "/bc/v1/bc/ops/region/list",
+  "services": [
+   "getRegionOptions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "opsRegionInfo"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bc/project/list",
+  "url": "/bc/v1/bc/project/list",
+  "services": [
+   "getProjectList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "projects"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/dataset/typeList",
+  "url": "/bc/v1/bcProxy/ops/dataset/typeList",
+  "services": [
+   "getDatasetTypeList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "bcDatasetTypeList",
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/dict/list",
+  "url": "/bc/v1/bcProxy/ops/dict/list",
+  "services": [
+   "getDictList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 400,
+   "code": "100002",
+   "msg": "参数错误 ,error: type mismatch for field dictTypeCodeList",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/displayItem/list",
+  "url": "/bc/v1/bcProxy/ops/displayItem/list",
+  "services": [
+   "getImageWallAttr"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "list",
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/eventlog/list",
+  "url": "/bc/v1/bcProxy/ops/eventlog/list",
+  "services": [
+   "getOperationLogs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "opLogs",
+    "paging",
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/imagewall/detail",
+  "url": "/bc/v1/bcProxy/ops/imagewall/detail",
+  "services": [
+   "getImageDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 400,
+   "code": "100002",
+   "msg": "参数错误 ,field id is not set",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/imagewall/list",
+  "url": "/bc/v1/bcProxy/ops/imagewall/list",
+  "services": [
+   "getImageWallList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "imageWallList",
+    "paging",
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/jobTemplate/list",
+  "url": "/bc/v1/bcProxy/ops/jobTemplate/list",
+  "services": [
+   "getTaskTemplateList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "data",
+    "paging",
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/productSpec/availableList",
+  "url": "/bc/v1/bcProxy/ops/productSpec/availableList",
+  "services": [
+   "getSpecAvailableList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "acceleratorInfoList",
+    "list",
+    "modelNameList",
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/bcProxy/ops/region/user/list",
+  "url": "/bc/v1/bcProxy/ops/region/user/list",
+  "services": [
+   "getRegionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "regionList",
+    "requestId",
+    "request_id"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/util/baidu/accessToken",
+  "url": "/bc/v1/util/baidu/accessToken",
+  "services": [
+   "getAccessToken"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "GenAccessToken error: HttpStatusCode is not equal to 200, httpStatusCode[400], respBody[{\"error\":\"invalid_request\",\"erro",
+   "dataKeys": [
+    "requestId",
+    "contents"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/bc/ops/region/filter",
+  "url": "/bc/v2/bc/ops/region/filter",
+  "services": [
+   "getRegionListNew"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field SpecType: 规格类型{spec_type}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "platform",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/bc/ops/region/list",
+  "url": "/bc/v2/bc/ops/region/list",
+  "services": [
+   "getRegionOptions"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "opsRegionInfo"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "portal",
+  "verb": "GET",
+  "base": "",
+  "path": "https://esx.ctyun.cn/v1/auth/login?rd=%2Fbc%2Foverview",
+  "url": "https://esx.ctyun.cn/v1/auth/login?rd=%2Fbc%2Foverview",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "probe": {
+   "http": 302,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "portal",
+  "verb": "GET",
+  "base": "",
+  "path": "https://esx.ctyun.cn/xrops/auth-srv/tenant/v1/webResource/listAuthorized",
+  "url": "https://esx.ctyun.cn/xrops/auth-srv/tenant/v1/webResource/listAuthorized",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "probe": {
+   "http": 404,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "portal",
+  "verb": "GET",
+  "base": "",
+  "path": "https://www.ctyun.cn/gw/auth/Current",
+  "url": "https://www.ctyun.cn/gw/auth/Current",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "probe": {
+   "http": 200,
+   "code": "core.ok",
+   "msg": "",
+   "dataKeys": [
+    "duration",
+    "reason",
+    "code",
+    "data",
+    "serial",
+    "advise",
+    "host"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "portal",
+  "verb": "GET",
+  "base": "",
+  "path": "https://www.ctyun.cn/gw/v1/portal/menu/GetTree?productId=18391",
+  "url": "https://www.ctyun.cn/gw/v1/portal/menu/GetTree?productId=18391",
+  "services": [],
+  "params": [],
+  "bodyKeys": [],
+  "probe": {
+   "http": 200,
+   "code": "clnt.e2000",
+   "msg": "",
+   "dataKeys": [
+    "duration",
+    "reason",
+    "code",
+    "serial",
+    "host"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/attach_project_to_group",
+  "url": "/bc/v1/project_space/attach_project_to_group",
+  "services": [
+   "postAttachProjectToGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/attach_user_to_group",
+  "url": "/bc/v1/project_space/attach_user_to_group",
+  "services": [
+   "postAttachUserToGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/check_delegate",
+  "url": "/bc/v1/project_space/check_delegate",
+  "services": [
+   "checkDelegate"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "isDelegated"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/create",
+  "url": "/bc/v1/project_space/create",
+  "services": [
+   "createProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/create_delegate_role",
+  "url": "/bc/v1/project_space/create_delegate_role",
+  "services": [
+   "createDelegateRole"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "项目空间请求CTIAM失败：[requestID: 6a4763d1-448c-4881-9bac-1b4d6ff7eac1] get unexpected status code: CTIAM_0120, body: {\"statusCo",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/delete",
+  "url": "/bc/v1/project_space/delete",
+  "services": [
+   "deleteProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/delete_project_bill_record",
+  "url": "/bc/v1/project_space/delete_project_bill_record",
+  "services": [
+   "deleteFile"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "没有对应项目权限，请联系管理员添加",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/download_user_bill_detail",
+  "url": "/bc/v1/project_space/download_user_bill_detail",
+  "services": [
+   "exportBilling",
+   "downloadUserBillDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 500,
+   "msg": "",
+   "dataKeys": []
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/edit",
+  "url": "/bc/v1/project_space/edit",
+  "services": [
+   "editProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/export_user_bill_detail",
+  "url": "/bc/v1/project_space/export_user_bill_detail",
+  "services": [
+   "exportUserBillDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：文件导出仅支持xlsx和csv格式",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/get",
+  "url": "/bc/v1/project_space/get",
+  "services": [
+   "getProjectSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field SpaceId: 项目空间ID{space_id}值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/get_all_users",
+  "url": "/bc/v1/project_space/get_all_users",
+  "services": [
+   "getProjectUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/getConfig",
+  "url": "/bc/v1/project_space/getConfig",
+  "services": [
+   "getConfig"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目ID{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/GetUserExclusivePoolGpuSpecEnum ",
+  "url": "/bc/v1/project_space/GetUserExclusivePoolGpuSpecEnum ",
+  "services": [
+   "getExclusivePoolGpuSpecEnum"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": -1
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/getUserExclusivePoolQuota",
+  "url": "/bc/v1/project_space/getUserExclusivePoolQuota",
+  "services": [
+   "getUserExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目ID{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/group_users",
+  "url": "/bc/v1/project_space/group_users",
+  "services": [
+   "getGroupUsers"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：groupID is empty",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/ide/duration",
+  "url": "/bc/v1/project_space/ide/duration",
+  "services": [
+   "updateAutoStop"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/list",
+  "url": "/bc/v1/project_space/list",
+  "services": [
+   "getProjectSpacelist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "paging",
+    "spaces"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/list_project_bill_record",
+  "url": "/bc/v1/project_space/list_project_bill_record",
+  "services": [
+   "getProjectBillList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "没有对应项目权限，请联系管理员添加",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/list_project_group",
+  "url": "/bc/v1/project_space/list_project_group",
+  "services": [
+   "getProjectGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目ID{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/list_un_sync_project",
+  "url": "/bc/v1/project_space/list_un_sync_project",
+  "services": [
+   "checkProjectSpaceSync"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "projects"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/list_user_bill_detail",
+  "url": "/bc/v1/project_space/list_user_bill_detail",
+  "services": [
+   "getUserBillList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field AccountPeriod: 账期{account_period}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/project_users",
+  "url": "/bc/v1/project_space/project_users",
+  "services": [
+   "getProjectUserList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目ID{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/query_budget_trend_metrics",
+  "url": "/bc/v1/project_space/query_budget_trend_metrics",
+  "services": [
+   "getComsumeTrend"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ProjectId: 企业项目ID{project_id}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/queryProjectUsageStatistics",
+  "url": "/bc/v1/project_space/queryProjectUsageStatistics",
+  "services": [
+   "queryProjectUsageStatistics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：起始时间或起始时间输入不合法, startTime: 0, endTime: 0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/queryUserUsageStatistics",
+  "url": "/bc/v1/project_space/queryUserUsageStatistics",
+  "services": [
+   "queryUserUsageStatistics"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：起始时间或起始时间输入不合法, startTime: 0, endTime: 0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/remove_project_from_group",
+  "url": "/bc/v1/project_space/remove_project_from_group",
+  "services": [
+   "postRemoveProjectFromGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/remove_user_out_group",
+  "url": "/bc/v1/project_space/remove_user_out_group",
+  "services": [
+   "postRemoveUserOutGroup"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/set_user_policy",
+  "url": "/bc/v1/project_space/set_user_policy",
+  "services": [
+   "setUserPolicy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/project_space/setUserExclusivePoolQuota",
+  "url": "/bc/v1/project_space/setUserExclusivePoolQuota",
+  "services": [
+   "setUserExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/user_groups",
+  "url": "/bc/v1/project_space/user_groups",
+  "services": [
+   "getUserGroups"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "userGroups",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "project",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/project_space/users",
+  "url": "/bc/v1/project_space/users",
+  "services": [
+   "getUserList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "users"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/createExclusivePool",
+  "url": "/bc/v1/createExclusivePool",
+  "services": [
+   "create"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/createProjectDeserveQuota",
+  "url": "/bc/v1/exclusivePool/createProjectDeserveQuota",
+  "services": [
+   "createProjectQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/deleteExclusivePool",
+  "url": "/bc/v1/exclusivePool/deleteExclusivePool",
+  "services": [
+   "deleteExclusivePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/describeExclusivePoolDetail",
+  "url": "/bc/v1/exclusivePool/describeExclusivePoolDetail",
+  "services": [
+   "getDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/describeExclusivePoolUsage",
+  "url": "/bc/v1/exclusivePool/describeExclusivePoolUsage",
+  "services": [
+   "getResourceUsage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/describeExclusivePoolWorkload",
+  "url": "/bc/v1/exclusivePool/describeExclusivePoolWorkload",
+  "services": [
+   "getWorkload"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ExclusivePoolUuid: 专属资源池uuid{uuid}长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/describeMultiExclusivePools",
+  "url": "/bc/v1/exclusivePool/describeMultiExclusivePools",
+  "services": [
+   "getList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "exclusivePools",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/describeProjectDeserveQuota",
+  "url": "/bc/v1/exclusivePool/describeProjectDeserveQuota",
+  "services": [
+   "getProjectExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/getExclusivePoolQuota",
+  "url": "/bc/v1/exclusivePool/getExclusivePoolQuota",
+  "services": [
+   "getSharedExclusivePoolQuota",
+   "getExclusivePoolQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/listOrderItems",
+  "url": "/bc/v1/exclusivePool/listOrderItems",
+  "services": [
+   "listOrderItems"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/listProjectDeserveQuota",
+  "url": "/bc/v1/exclusivePool/listProjectDeserveQuota",
+  "services": [
+   "getProjectQuotaList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/purchaseOrderItem",
+  "url": "/bc/v1/exclusivePool/purchaseOrderItem",
+  "services": [
+   "purchaseOrderItem"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/refundOrderItem",
+  "url": "/bc/v1/exclusivePool/refundOrderItem",
+  "services": [
+   "refundOrderItem"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/renewOrderItem",
+  "url": "/bc/v1/exclusivePool/renewOrderItem",
+  "services": [
+   "renewOrderItem"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/exclusivePool/updateProjectDeserveQuota",
+  "url": "/bc/v1/exclusivePool/updateProjectDeserveQuota",
+  "services": [
+   "updateProjectDeserveQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/queue/check/share",
+  "url": "/bc/v1/queue/check/share",
+  "services": [
+   "checkQueueQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueueId: 队列id{queue_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/queue/create",
+  "url": "/bc/v1/queue/create",
+  "services": [
+   "createQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/queue/delete",
+  "url": "/bc/v1/queue/delete",
+  "services": [
+   "deleteQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/queue/delete/batch",
+  "url": "/bc/v1/queue/delete/batch",
+  "services": [
+   "batchDeleteQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/queue/get",
+  "url": "/bc/v1/queue/get",
+  "services": [
+   "getQueueInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueueId: 队列id{queue_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/queue/list",
+  "url": "/bc/v1/queue/list",
+  "services": [
+   "getList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "queues",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/queue/update",
+  "url": "/bc/v1/queue/update",
+  "services": [
+   "updateQueue"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/batchCheckQuota",
+  "url": "/bc/v1/resource/batchCheckQuota",
+  "services": [
+   "batchCheckQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "Not Found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/billing/access",
+  "url": "/bc/v1/resource/billing/access",
+  "services": [
+   "billingAccess"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "demandAccess",
+    "periodAccess",
+    "packageAccess"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/eip/inquiry",
+  "url": "/bc/v1/resource/eip/inquiry",
+  "services": [
+   "inquiry"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unknown",
+   "msg": "EIPInquiry CycleType[0] is not supported",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/getSpecLocalStorageInventory",
+  "url": "/bc/v1/resource/getSpecLocalStorageInventory",
+  "services": [
+   "getSpecLocalStorageInventory"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "查询失败，请联系运营人员或稍后重试。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/pool/az/init",
+  "url": "/bc/v1/resource/pool/az/init",
+  "services": [
+   "initPoolAz"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "当前租户无该可用区权限，请联系客户经理申请开通。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/az/init/list",
+  "url": "/bc/v1/resource/pool/az/init/list",
+  "services": [
+   "getInitProcess"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "initInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/pool/create",
+  "url": "/bc/v1/resource/pool/create",
+  "services": [
+   "createProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/pool/delete",
+  "url": "/bc/v1/resource/pool/delete",
+  "services": [
+   "deleteProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/pool/delete/batch",
+  "url": "/bc/v1/resource/pool/delete/batch",
+  "services": [
+   "batchDeleteProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/detail",
+  "url": "/bc/v1/resource/pool/detail",
+  "services": [
+   "getProprietaryResourcePoolInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/pool/edit",
+  "url": "/bc/v1/resource/pool/edit",
+  "services": [
+   "getProprietaryResourcePoolEditInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/init/info",
+  "url": "/bc/v1/resource/pool/init/info",
+  "services": [
+   "getInitLogs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/inquiry",
+  "url": "/bc/v1/resource/pool/inquiry",
+  "services": [
+   "getResourcePoolInquiry"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "查询失败，请联系运营人员或稍后重试。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/list",
+  "url": "/bc/v1/resource/pool/list",
+  "services": [
+   "getProprietaryResourcePoolList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "resources",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/list/weight",
+  "url": "/bc/v1/resource/pool/list/weight",
+  "services": [
+   "getProprietaryResourcePoolWeightList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "resources"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/oneclick",
+  "url": "/bc/v1/resource/pool/oneclick",
+  "services": [
+   "oneClickCreateResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/spec/list",
+  "url": "/bc/v1/resource/pool/spec/list",
+  "services": [
+   "getResourcePoolSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/pool/spec/sellout",
+  "url": "/bc/v1/resource/pool/spec/sellout",
+  "services": [
+   "checkSellout"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "sellout"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/pool/update",
+  "url": "/bc/v1/resource/pool/update",
+  "services": [
+   "updateProprietaryResourcePool"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/refund/package",
+  "url": "/bc/v1/resource/refund/package",
+  "services": [
+   "unsubscribePackage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "查询失败，请联系运营人员或稍后重试。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/research/storage/inquiry",
+  "url": "/bc/v1/resource/research/storage/inquiry",
+  "services": [
+   "getAssistStorageInquiry"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "storagePrices"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/storage/spec/list",
+  "url": "/bc/v1/resource/storage/spec/list",
+  "services": [
+   "getStorageSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到ResourcePool资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/submit/nonOrder/open",
+  "url": "/bc/v1/resource/submit/nonOrder/open",
+  "services": [
+   "submitBCOrder"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "只能主账号开通，子账号无法开通，请切换主账号操作",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/submit/package",
+  "url": "/bc/v1/resource/submit/package",
+  "services": [
+   "submitPackage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unauthenticated",
+   "msg": "存在授权问题,请联系运营人员处理。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/submit/trial_order",
+  "url": "/bc/v1/resource/submit/trial_order",
+  "services": [
+   "submitTrialBCOrder"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "只能主账号开通，子账号无法开通，请切换主账号操作",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/resource/submit/trialPackage",
+  "url": "/bc/v1/resource/submit/trialPackage",
+  "services": [
+   "submitTrialPackage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unauthenticated",
+   "msg": "存在授权问题,请联系运营人员处理。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/summary",
+  "url": "/bc/v1/resource/summary",
+  "services": [
+   "getResourcePoolSummaryInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "summary"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/resource/welfare",
+  "url": "/bc/v1/resource/welfare",
+  "services": [
+   "getWelfare"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "freeInfo",
+    "isTrial"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/scheduling/action/list",
+  "url": "/bc/v1/scheduling/action/list",
+  "services": [
+   "getSchedulingActionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "actions"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/scheduling/create",
+  "url": "/bc/v1/scheduling/create",
+  "services": [
+   "createSchedulingStategy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Name: 调度策略名称{name}的长度需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/scheduling/delete",
+  "url": "/bc/v1/scheduling/delete",
+  "services": [
+   "deleteSchedulingStategy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 调度策略id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/scheduling/get",
+  "url": "/bc/v1/scheduling/get",
+  "services": [
+   "getSchedulingInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 调度策略id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/scheduling/list",
+  "url": "/bc/v1/scheduling/list",
+  "services": [
+   "getSchedulingList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "schedule",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/scheduling/plugin/list",
+  "url": "/bc/v1/scheduling/plugin/list",
+  "services": [
+   "getSchedulingPluginList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "plugins"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/scheduling/update",
+  "url": "/bc/v1/scheduling/update",
+  "services": [
+   "updateSchedulingStategy"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field Id: 调度策略id{id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/resource/compute/spec/enum",
+  "url": "/bc/v2/resource/compute/spec/enum",
+  "services": [
+   "getSpecTypeList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "modelInfo"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/resource/compute/spec/list",
+  "url": "/bc/v2/resource/compute/spec/list",
+  "services": [
+   "getComputeSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Internal",
+   "msg": "查询失败，请联系运营人员或稍后重试。",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/resource/enumGpuModels",
+  "url": "/bc/v2/resource/enumGpuModels",
+  "services": [
+   "enumGpuModels"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "specs"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/resource/listGpuSpecs",
+  "url": "/bc/v2/resource/listGpuSpecs",
+  "services": [
+   "listGpuSpecs"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "specs"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/resource/pool/az/init",
+  "url": "/bc/v2/resource/pool/az/init",
+  "services": [
+   "initPoolAz"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "FailedPrecondition",
+   "msg": "可用区已初始化，请勿重复操作",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/resource/pool/az/init/list",
+  "url": "/bc/v2/resource/pool/az/init/list",
+  "services": [
+   "getInitProcess"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "initInfos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/resource/pool/oneclick",
+  "url": "/bc/v2/resource/pool/oneclick",
+  "services": [
+   "initEnv"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/resource/pool/spec/list",
+  "url": "/bc/v2/resource/pool/spec/list",
+  "services": [
+   "getResourcePoolSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/resource/pool/spec/sellout",
+  "url": "/bc/v2/resource/pool/spec/sellout",
+  "services": [
+   "checkSellout"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "sellout"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/resource/pool/task/list",
+  "url": "/bc/v2/resource/pool/task/list",
+  "services": [
+   "getInitEnvFlow"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "infos"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "resource",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/resource/storage/spec/list",
+  "url": "/bc/v2/resource/storage/spec/list",
+  "services": [
+   "getStorageSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到ResourcePool资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/network/create",
+  "url": "/bc/v1/storage/network/create",
+  "services": [
+   "creatNetwork"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/network/list",
+  "url": "/bc/v1/storage/network/list",
+  "services": [
+   "getNetworkList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "networks",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/public/dataset/list",
+  "url": "/bc/v1/storage/public/dataset/list",
+  "services": [
+   "getPublicDatasetList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "publicDatasets",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/pvc/create",
+  "url": "/bc/v1/storage/pvc/create",
+  "services": [
+   "createPVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/pvc/delete",
+  "url": "/bc/v1/storage/pvc/delete",
+  "services": [
+   "deletePVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StoragePvcId: 数据集id{storage_pvc_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/pvc/list",
+  "url": "/bc/v1/storage/pvc/list",
+  "services": [
+   "getPVCList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：resourceId and queueId can't be empty in the sametime",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/pvc/resize",
+  "url": "/bc/v1/storage/pvc/resize",
+  "services": [
+   "resizePVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field PvcId: 数据集id值{pvc_id}需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/region/list",
+  "url": "/bc/v1/storage/region/list",
+  "services": [
+   "getClusterRegionList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field QueryType: 查询类型{query_type}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/resource/create",
+  "url": "/bc/v1/storage/resource/create",
+  "services": [
+   "createStorageResource"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/resource/delete",
+  "url": "/bc/v1/storage/resource/delete",
+  "services": [
+   "deleteStorageResource"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StorageResourceId: 存储源id值{storage_id}需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/resource/get",
+  "url": "/bc/v1/storage/resource/get",
+  "services": [
+   "getStorageDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StorageId: 存储源id值{storage_id}需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v1",
+  "path": "/storage/resource/list",
+  "url": "/bc/v1/storage/resource/list",
+  "services": [
+   "getStorageSourceList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "storageResources",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/resource/resize",
+  "url": "/bc/v1/storage/resource/resize",
+  "services": [
+   "expandStorage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StorageId: 存储源id值{storage_id}需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v1",
+  "path": "/storage/sfs/precheck",
+  "url": "/bc/v1/storage/sfs/precheck",
+  "services": [
+   "SFSpreCheck"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResourceId: 资源池id{resource_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/createDataSyncTask",
+  "url": "/bc/v2/storage/createDataSyncTask",
+  "services": [
+   "createMigrationTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "参数错误：名称不符合规则",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/deleteDataSyncTask",
+  "url": "/bc/v2/storage/deleteDataSyncTask",
+  "services": [
+   "deleteMigrationTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field TaskId: 同步任务id{task_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/describeDataSyncTask",
+  "url": "/bc/v2/storage/describeDataSyncTask",
+  "services": [
+   "getMigrationTasInfo"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field TaskId: 同步任务ID{task_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/getDataSyncConfig",
+  "url": "/bc/v2/storage/getDataSyncConfig",
+  "services": [
+   "getMigrationQuota"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "totalQuota",
+    "usedQuota",
+    "resetTime"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/listDataSyncTasks",
+  "url": "/bc/v2/storage/listDataSyncTasks",
+  "services": [
+   "getMigrationTaskList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "没有对应项目权限，请联系管理员添加",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/listLocalStorage",
+  "url": "/bc/v2/storage/listLocalStorage",
+  "services": [
+   "getMigrationDevList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "storages",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/pvc/create",
+  "url": "/bc/v2/storage/pvc/create",
+  "services": [
+   "createPVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/pvc/delete",
+  "url": "/bc/v2/storage/pvc/delete",
+  "services": [
+   "deletePVC"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/pvc/list",
+  "url": "/bc/v2/storage/pvc/list",
+  "services": [
+   "getPVCList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/create",
+  "url": "/bc/v2/storage/research/create",
+  "services": [
+   "createAssist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/delete",
+  "url": "/bc/v2/storage/research/delete",
+  "services": [
+   "deleteAssist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/research/describe",
+  "url": "/bc/v2/storage/research/describe",
+  "services": [
+   "getAssistStorageDetail"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StorageId: 科研存储ID{storage_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/describeBindingResource",
+  "url": "/bc/v2/storage/research/describeBindingResource",
+  "services": [
+   "getBindingResourceList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field ResearchStorageId: 科研文件id{research_storage_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/research/list",
+  "url": "/bc/v2/storage/research/list",
+  "services": [
+   "getAssistList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "ok",
+   "msg": "操作成功",
+   "dataKeys": [
+    "requestId",
+    "storageResearches",
+    "paging"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/releaseStorageBinding",
+  "url": "/bc/v2/storage/research/releaseStorageBinding",
+  "services": [
+   "releaseStorageBinding"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/renew",
+  "url": "/bc/v2/storage/research/renew",
+  "services": [
+   "renewAssist"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StorageId: 科研存储ID{storage_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/resize",
+  "url": "/bc/v2/storage/research/resize",
+  "services": [
+   "expandStorage"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "PermissionDenied",
+   "msg": "权限不足，请联系管理员授权后重试!",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/space/create",
+  "url": "/bc/v2/storage/research/space/create",
+  "services": [
+   "createExclusiveSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unknown",
+   "msg": "record not found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/space/delete",
+  "url": "/bc/v2/storage/research/space/delete",
+  "services": [
+   "deleteExclusiveSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field SpaceId: 空间id{space_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/space/edit",
+  "url": "/bc/v2/storage/research/space/edit",
+  "services": [
+   "updateExclusiveSpace"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field SpaceId: 空间id{space_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/research/space/list",
+  "url": "/bc/v2/storage/research/space/list",
+  "services": [
+   "getExclusiveSpaces"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "Unknown",
+   "msg": "record not found",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/research/spec/list",
+  "url": "/bc/v2/storage/research/spec/list",
+  "services": [
+   "getAssistSpecList"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "NotFound",
+   "msg": "未找到ResourcePool资源，请检查后重试",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "GET",
+  "base": "/bc/v2",
+  "path": "/storage/research/summary",
+  "url": "/bc/v2/storage/research/summary",
+  "services": [
+   "getAssistStorageSummary"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field RegionId: 可用区ID{region_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/research/upgradeFSServer",
+  "url": "/bc/v2/storage/research/upgradeFSServer",
+  "services": [
+   "upgradeFSServer"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field StorageId: 科研文件id{storage_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ },
+ {
+  "domain": "storage",
+  "verb": "POST",
+  "base": "/bc/v2",
+  "path": "/storage/stopDataSyncTask",
+  "url": "/bc/v2/storage/stopDataSyncTask",
+  "services": [
+   "stopMigrationTask"
+  ],
+  "params": [],
+  "bodyKeys": [],
+  "tpl": [],
+  "probe": {
+   "http": 200,
+   "code": "InvalidArgument",
+   "msg": "invalid field TaskId: 同步任务id{task_id}的值需要大于0",
+   "dataKeys": [
+    "requestId"
+   ]
+  },
+  "skipped": false
+ }
+]
