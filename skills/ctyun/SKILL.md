@@ -22,7 +22,8 @@ ctyun --json status # 机器可读版 (cli-creator 契约)
 ## Auth (two channels, auto-selected per command)
 
 - **official** (preferred): AK/SK, never expires. Setup once: `ctyun aksk` (interactive, SK hidden). Or env `CTYUN_AK`/`CTYUN_SK`. Covers env lifecycle, jobs, images, keys, storage, quotas, bill.
-- **console**: username/password session (~1h expiry). `ctyun login` (interactive). Covers create (space-level storage mount), queues used-GPU, pool, pvc, rename, inference services, summary, events, raw.
+- **console**: username/password session (~1h expiry). `ctyun login` (interactive). Covers create (space-level storage mount), pool, pvc, rename, inference services, summary, events, raw.
+- Defaults for create/pool live in `~/.ctyun/config` (never in the repo). `ctyun config` shows them.
 - Force one channel for debugging: any command `--channel official|console`.
 
 ## Discovery → stable IDs
@@ -47,7 +48,7 @@ ctyun envs ; ctyun env <id> ; ctyun jobs ; ctyun metrics <uuid>
 
 ```sh
 ctyun start/stop <id>                     # lifecycle (state-guarded)
-ctyun create --dry-run → create --yes     # dev env (defaults = monitor 抢卡 config)
+ctyun create --dry-run → create --yes     # dev env (defaults from ~/.ctyun/config)
 ctyun job-logs <jobId>                    # training logs (official-only)
 ctyun jexec <id> "print('hi')"            # run Python via Jupyter (no SSH needed)
 ```
