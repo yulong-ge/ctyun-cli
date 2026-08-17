@@ -1,0 +1,28 @@
+{
+  "name": "ctyun-cli",
+  "version": "2.0.0",
+  "description": "天翼云科研助手 (esx.ctyun.cn) 命令行 — 官方 OpenAPI (AK/SK) 优先，控制台通道补充",
+  "type": "module",
+  "bin": {
+    "ctyun": "bin/ctyun.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "docs/api/README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
+  },
+  "keywords": [
+    "ctyun",
+    "cli",
+    "gpu"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,54 +1,67 @@
 # ctyun-cli — 天翼云科研助手命令行
 
-esx.ctyun.cn（息壤·科研助手）网页版的 CLI 封装。**认证完全自包含**（账号密码直登，无需浏览器）。经独立代码审查修复：凭据脱敏、会话文件权限、状态护栏。
+esx.ctyun.cn（息壤·科研助手）CLI。**2.0 起双通道**：官方 OpenAPI（AK/SK 签名，不过期、无风控）为主，控制台逆向通道（账密登录）为辅，按命令自动选择。
 
-📖 **完整 API 文档见 [docs/api/](docs/api/README.md)** —— 369 个端点全量逆向（SPA 153 个 JS chunk 静态提取 + 2026-08-17 逐端点实测探测），含认证流程、响应信封、分域详解与机器可读原始数据，是本 CLI 的接口权威参考。
+📖 **完整 API 文档见 [docs/api/](docs/api/README.md)** —— 369 个控制台端点全量逆向 + 46 个官方 OpenAPI 本地化，含认证流程、响应信封、分域详解与机器可读原始数据。
 
-📚 **官方 OpenAPI 文档已本地化到 [docs/api/official/](docs/api/official/README.md)** —— 46 个官方 API（`bc-global.ctapi.ctyun.cn`，AK/SK 签名）+ 与逆向 API 的逐条对照 + CLI 双通道选型建议。
+📚 **官方 OpenAPI 文档 [docs/api/official/](docs/api/official/README.md)** —— `bc-global.ctapi.ctyun.cn`，AK/SK + Eop-Authorization 签名，与逆向 API 的逐条对照见 [docs/api/README.md](docs/api/README.md#官方-api-与逆向-api对照与选型建议)。
 
 ## 安装
 
-零 npm 依赖（Node ≥ 18 + curl；`jexec`/`ssh-setup` 走原生 WebSocket 需 **Node ≥ 22**）。入口 `~/.local/bin/ctyun`。
-
-## 认证（自包含）
-
 ```sh
-ctyun login              # 交互式输入账号密码（密码不回显），或读取 ~/.ctyun/credentials
-ctyun status             # 会话状态 + 业务验证（失败退出码非 0，可用于脚本健康检查）
-ctyun logout             # 清除会话与凭据
+# 从 GitHub 仓库安装（任意机器）
+npm install -g git+https://github.com/Long-louis/ctyun-cli.git
+# 私有仓库需凭据: git+ssh://git@github.com/Long-louis/ctyun-cli.git (需配 SSH key)
+# 或克隆后本地安装
+git clone https://github.com/Long-louis/ctyun-cli.git && npm install -g ./ctyun-cli
 ```
 
-- 凭据：`~/.ctyun/credentials`（**明文**，600 权限——风险自担；也可用 `CTYUN_USERNAME`/`CTYUN_PASSWORD` 环境变量）
-- 会话：`~/.ctyun/session/`（700 目录，cookies.txt/token.txt 600 权限）
-- 登录流程（与网页一致，纯 HTTP 无浏览器）：登录页拿风控 cookie → `POST /gw/auth/Login`（密码 3DES-ECB 加密）→ `accessToken` → SSO 交换 → 控制台 cookie（实测仅 3 个）→ **登录后自动做一次业务 API 验证**（防 cookie-less 风控假成功）
-- `--user`/`--password` 参数仍可用于脚本，但密码会进 shell history，帮助文本不再宣传
-- 迁移：`ctyun login --import-monitor` 从 gpu-platform-monitor 会话一次性导入（不再共享）
+依赖：Node ≥ 18 + curl（`jexec`/`ssh-setup` 走原生 WebSocket 需 **Node ≥ 22**）；npm 依赖仅 `commander`。
+
+## 认证（双通道）
+
+```sh
+ctyun aksk                # 官方 OpenAPI AK/SK（门户 我的→个人中心→安全设置→用户AccessKey 新建；SK 输入不回显）
+ctyun login               # 控制台通道账密直登（密码不回显），或读取 ~/.ctyun/credentials
+ctyun status              # 双通道体检（全失败退出码非 0，可用于脚本健康检查）
+ctyun logout              # 清除控制台会话与凭据；官方密钥用 ctyun aksk --clear
+```
+
+| 通道 | 凭据 | 特点 |
+|---|---|---|
+| official（默认优先） | `~/.ctyun/aksk` 或 `CTYUN_AK`/`CTYUN_SK` | 不过期、无风控、官方契约 |
+| console | `~/.ctyun/credentials` → 会话 `~/.ctyun/session/` | 覆盖官方没有的端点；会话约 1 小时 |
+
+- AK/SK：`ctyun aksk` 保存后立即做一次 `listIdes` 业务验证
+- 控制台登录流程与网页一致（纯 HTTP 无浏览器，密码 3DES 加密），登录后自动业务验证；`login --import-monitor` 可从 gpu-platform-monitor 一次性导入会话
+- 每个命令接受 `--channel official|console` 强制指定通道（排障用）
 
 ## 命令
 
 ```
+ctyun aksk [--ak|--sk|--clear]  # 官方 API 密钥配置/验证
 ctyun envs [--json] [--perPage N] # 开发机列表（默认上限 100 条）
 ctyun env <id> [--ssh] [--json] # 详情；--ssh 只打印 SSH 命令 + Jupyter 链接
-ctyun start <id> [--cpu-only] [--dry-run] # 启动（仅已停止/失败/异常态；--dry-run 只打印提交体）
+ctyun start <id> [--cpu-only] [--dry-run] # 启动（仅已停止/失败态；--dry-run 只打印提交体）
 ctyun stop <id> [--dry-run]    # 停止（--dry-run 只打印请求体）
 ctyun rename <id> <alias>      # 别名（--json）
 ctyun delete <id> --yes        # 删除（必须显式 --yes）
-ctyun queues                   # 各区域队列 GPU 占用
-ctyun pool [--json]            # 监控目标队列快照
+ctyun queues                   # 各区域队列 GPU 占用 〔console〕
+ctyun pool [--json]            # 监控目标队列快照 〔console〕
 ctyun images [--region r] [kw] # 公共镜像
-ctyun specs [--region r]       # 开发机规格
+ctyun specs [--region r]       # 开发机规格 〔console〕
 ctyun keys [--json]            # SSH 公钥
 ctyun jobs [--json]            # 训练作业列表
-ctyun pvc <ideId> [--json]     # 开发机存储卷
-ctyun metrics <uuid> [--json]  # CPU/内存/GPU 利用率快照
-ctyun create [选项] [--dry-run|--yes] # 创建开发机（默认复制监控配置，全参数可覆盖）
+ctyun pvc <ideId> [--json]     # 开发机存储卷 〔console〕
+ctyun metrics <uuid> [--json]  # CPU/内存/GPU 利用率（官方通道 --minutes N 时间窗）
+ctyun create [选项] [--dry-run|--yes] # 创建开发机（默认复制监控配置）〔console〕
 ctyun jexec <ideId> <代码|文件.py|cmd:...> # 经 Jupyter kernel 免 SSH 执行代码
 ctyun ssh-setup <ideId> [--key <公钥>]     # 注入 SSH 公钥（幂等）
-ctyun raw METHOD path [json]   # 任意端点（退出码反映业务码）
-ctyun whoami                   # 项目信息
+ctyun raw METHOD path [json]   # 任意控制台端点（退出码反映业务码）〔console〕
+ctyun whoami                   # 项目信息 〔console〕
 ```
 
-`--json` 支持于：envs / env / status(doctor) / queues / pool / keys / jobs / pvc / metrics（其余命令为表格/文本输出）。
+`--json` 支持于：envs / env / status(doctor) / queues / pool / keys / jobs / pvc / metrics（其余命令为表格/文本输出）。〔console〕= 仅控制台通道（官方 API 无对应端点或字段），其余命令官方优先、无 AK/SK 时自动回退控制台。
 
 ### create 选项（全部可选，缺省=监控项目的抢卡配置）
 
@@ -90,19 +103,19 @@ ctyun ssh-setup 10030973 --key /tmp/other.pub  # 指定公钥文件
 ## JSON 策略
 
 **Pass-through vs CLI envelope**：
-- `envs --json` / `env --json` / `keys --json` / `raw`：**原样透传** API 返回的 JSON 对象/数组（stdout 纯 JSON，进度/诊断走 stderr）
+- `envs --json` / `env --json` / `keys --json` / `raw`：API 原始对象（官方通道的 ide 对象会做**最小归一化**：`states` 数字、`regionNameEng`、`statesString` 与控制台口径对齐，原始字段全部保留）
 - `status --json` / `queues --json` / `pool --json`：**CLI 构造** 的稳定 shape（字段见下）
 
 **Success shape**（exit 0）：
 - 透传类：API 原始对象（如 envs 为 `[{id, ideName, states, ...}]`）
-- envelope 类示例——`status --json`：
+- envelope 类示例——`status --json`（2.0 起）：
   ```json
-  {"version":"1.1.0","session":{"source":"credentials","mintedAt":"…","cookieMtime":"…"},
-   "auth":{"available":true,"source":"config","missing_step":null},
-   "api":{"reachable":true,"ok":true,"error":null}}
+  {"version":"2.0.0",
+   "channels":{"official":{"configured":true,"source":"file","probed":true,"ok":true,"error":null},
+               "console":{"session":{"source":"credentials","mintedAt":"…"},"auth":{"available":true,"source":"config"},"probed":true,"ok":true,"error":null}}}
   ```
 
-**Error shape**（exit 1，任何命令）：`{"ok": false, "error": "<人类可读原因>"}` 输出到 **stderr**；不含凭据（token/密码已脱敏）。stdout 无输出。
+**Error shape**（exit 1，任何命令）：`{"ok": false, "error": "<人类可读原因>"}` 输出到 **stderr**；不含凭据（token/密码/AK/SK 已脱敏）。stdout 无输出。
 
 **每命令族示例**：
 ```sh
