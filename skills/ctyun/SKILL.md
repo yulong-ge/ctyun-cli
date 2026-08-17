@@ -33,9 +33,9 @@ ctyun envs                     # dev env IDs (first column)
 ctyun env <id> --json          # details incl. uuid (for metrics) and openLink
 ctyun whoami                   # enterprise project ID
 ctyun specs / queues / pools   # specId / queueId / resourcePoolId
-ctyun images [kw] / images --custom   # imageId (public / custom)
-ctyun storages                 # storageId + regionId
-ctyun keys                     # SSH key ids
+ctyun image list [kw] [--custom]     # imageId (public / custom)
+ctyun storage list              # storageId + regionId
+ctyun key list                 # SSH key ids
 ```
 
 ## Safe read path (start here)
@@ -49,7 +49,7 @@ ctyun envs ; ctyun env <id> ; ctyun jobs ; ctyun metrics <uuid>
 ```sh
 ctyun start/stop <id>                     # lifecycle (state-guarded)
 ctyun create --dry-run → create --yes     # dev env (defaults from ~/.ctyun/config)
-ctyun job-logs <jobId>                    # training logs (official-only)
+ctyun job logs <jobId>                    # training logs (official-only)
 ctyun jexec <id> "print('hi')"            # run Python via Jupyter (no SSH needed)
 ```
 

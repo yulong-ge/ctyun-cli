@@ -78,37 +78,41 @@ ctyun whoami [--verbose]       # 项目信息；-v 附账号类型+权限码全�
 
 `--json` 支持于：envs / env / status(doctor) / queues / pool / keys / jobs / pvc / metrics / storages / storage / infers / infer / events / summary / pools / quotas / bill（其余命令为表格/文本输出）。〔console〕= 仅控制台通道（官方 API 无对应端点或字段），其余命令官方优先、无 AK/SK 时自动回退控制台。
 
-### 2.1 新增命令族（官方 46 API 全量 + 逆向常用域）
+### 命令族（名词父命令 + 子命令，`ctyun <族> --help` 查看）
+
+设计约定：**主资源（开发机）用平铺动词**（`start/stop/delete`，如 `docker run` 的地位）；**二级资源用名词子命令组**。`images`/`keys`/`jobs` 保留为 `image list`/`key list`/`job list` 的等价别名。
 
 ```
 # 训练作业（官方 OpenAPI 全生命周期 + 日志；Argo 作业经控制台回退）
-ctyun job <id>                 # 详情（podList 是查日志的 podName 来源）
-ctyun job-create --name --region --spec-id --image [--mode MPI|PyTorch] [--count] [--cmd] [--storage-id] [--env JSON]
-ctyun job-start|job-stop <id> ; ctyun job-delete <id> --yes
-ctyun job-logs <id> [--pod p] [--minutes 60]   # 日志（官方独有能力）
+ctyun job list                 # = jobs
+ctyun job get <id>             # 详情（podList 是查日志的 podName 来源）
+ctyun job create --name --region --spec-id --image [--mode MPI|PyTorch] [--count] [--cmd] [--storage-id] [--env JSON]
+ctyun job start|stop <id> ; ctyun job delete <id> --yes
+ctyun job logs <id> [--pod p] [--minutes 60]   # 日志（官方独有能力）
 
 # 镜像全生命周期
-ctyun images --custom [kw]     # 自定义/私有镜像列表（含保存进度 state）
-ctyun image-save <ideId> --name n --tag v      # 运行中开发机 → 自定义镜像（异步）
-ctyun image-set <ideId> --image-id N [--image-type 0|1|2]  # 换镜像（须停止态）
-ctyun image-delete <imageId> --yes
+ctyun image list [--custom] [kw]   # = images；--custom 为自定义/私有镜像（含保存进度 state）
+ctyun image save <ideId> --name n --tag v       # 运行中开发机 → 自定义镜像（异步）
+ctyun image set <ideId> --image-id N [--image-type 0|1|2]  # 换镜像（须停止态）
+ctyun image delete <imageId> --yes
 
 # SSH 公钥 / 白名单
-ctyun key-add <name> [--file pub路径] ; ctyun key-delete <id> --yes
+ctyun key list                 # = keys
+ctyun key add <name> [--file pub路径] ; ctyun key delete <id> --yes
 ctyun ssh-ips <ideId> --ips 1.2.3.4/32,...    # 更新 SSH 白名单（须运行中且已开 SSH）
 
 # 科研文件存储（官方 OpenAPI）
-ctyun storages [--region r] ; ctyun storage <id>
-ctyun storage-specs <regionId> ; ctyun storage-create --name --gb --region-id --spec-id
-ctyun storage-resize <id> --gb N ; ctyun storage-delete <id> --yes
+ctyun storage list [--region r] ; ctyun storage get <id>
+ctyun storage specs <regionId> ; ctyun storage create --name --gb --region-id --spec-id
+ctyun storage resize <id> --gb N ; ctyun storage delete <id> --yes
+
+# 推理服务（官方 API 无此域，逆向独占）〔console〕
+ctyun infer list ; ctyun infer get <id> ; ctyun infer start|stop <id> ; ctyun infer delete <id> --yes
 
 # 资源 / 账单 / 总览
 ctyun pools ; ctyun quotas    # 资源池列表；共享集群+租户配额
 ctyun bill [--month 202608]   # 子账号账单明细（需平台加白名单）
 ctyun summary                 # 开发机/作业/资源池状态计数 〔console〕
-
-# 推理服务（官方 API 无此域，逆向独占）〔console〕
-ctyun infers ; ctyun infer <id> ; ctyun infer-start|infer-stop <id> ; ctyun infer-delete <id> --yes
 
 # 批量与杂项 〔console〕
 ctyun batch-start|batch-stop <id...> ; ctyun my-ip ; ctyun events

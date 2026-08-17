@@ -68,16 +68,25 @@ test("buildBatchCreateRequest 请求体构造", () => {
 test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async () => {
   const program = buildProgram();
   const names = program.commands.map(c => c.name());
-  for (const expected of ["login", "logout", "aksk", "status", "envs", "env", "start", "stop", "delete",
+  for (const expected of ["login", "logout", "aksk", "status", "config", "envs", "env", "start", "stop", "delete",
     "rename", "create", "queues", "pool", "images", "specs", "keys", "jobs", "pvc", "metrics",
     "jexec", "ssh-setup", "api", "raw", "whoami", "summary", "batch-start", "batch-stop", "my-ip",
-    "infers", "infer", "infer-start", "infer-stop", "infer-delete", "events",
-    "job", "job-create", "job-start", "job-stop", "job-delete", "job-logs",
-    "key-add", "key-delete", "image-save", "image-set", "image-delete", "ssh-ips",
-    "storages", "storage", "storage-specs", "storage-create", "storage-resize", "storage-delete",
-    "pools", "quotas", "bill"]) {
+    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "pools", "quotas", "bill"]) {
     assert.ok(names.includes(expected), `缺少命令: ${expected}`);
   }
+  // 旧平铺命令名必须已收敛为名词子命令组
+  for (const removed of ["infers", "infer-start", "infer-stop", "infer-delete", "job-create", "job-start",
+    "job-stop", "job-delete", "job-logs", "key-add", "key-delete", "image-save", "image-set",
+    "image-delete", "storages", "storage-specs", "storage-create", "storage-resize", "storage-delete"]) {
+    assert.ok(!names.includes(removed), `应已移除平铺命令: ${removed}`);
+  }
+  // 子命令组结构（cli-creator: 命令族用名词父命令分组）
+  const subs = name => program.commands.find(c => c.name() === name)?.commands.map(c => c.name()) ?? [];
+  assert.deepEqual(subs("job").sort(), ["create", "delete", "get", "list", "logs", "start", "stop"].sort());
+  assert.deepEqual(subs("infer").sort(), ["delete", "get", "list", "start", "stop"].sort());
+  assert.deepEqual(subs("key").sort(), ["add", "delete", "list"].sort());
+  assert.deepEqual(subs("image").sort(), ["delete", "list", "save", "set"].sort());
+  assert.deepEqual(subs("storage").sort(), ["create", "delete", "get", "list", "resize", "specs"].sort());
   // --help 默认 process.exit —— exitOverride 改抛错 + 捕获输出
   program.exitOverride();
   let out = "";
