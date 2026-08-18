@@ -88,6 +88,7 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
   assert.deepEqual(subs("image").sort(), ["delete", "list", "save", "set"].sort());
   assert.deepEqual(subs("storage").sort(), ["create", "delete", "get", "list", "resize", "specs"].sort());
   assert.deepEqual(subs("env").sort(), ["create", "delete", "get", "list", "rename", "start", "stop"].sort());
+  assert.deepEqual(subs("pool").sort(), ["list"].sort());
   // --help 默认 process.exit —— exitOverride 改抛错 + 捕获输出
   program.exitOverride();
   let out = "";

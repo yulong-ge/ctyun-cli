@@ -110,7 +110,7 @@ ctyun storage resize <id> --gb N ; ctyun storage delete <id> --yes
 ctyun infer list ; ctyun infer get <id> ; ctyun infer start|stop <id> ; ctyun infer delete <id> --yes
 
 # 资源 / 账单 / 总览
-ctyun pools ; ctyun quotas    # 资源池列表（≠ ctyun pool 队列快照）；共享集群+租户配额
+ctyun pool list / pools ; ctyun quotas    # 资源池清单（pools 为 pool list 别名；≠ ctyun pool 队列快照）；共享集群+租户配额
 ctyun bill [--month 202608]   # 子账号账单明细（需平台加白名单）
 ctyun summary                 # 开发机/作业/资源池状态计数 〔console〕
 
