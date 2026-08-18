@@ -81,7 +81,7 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
     assert.ok(!names.includes(removed), `应已移除平铺命令: ${removed}`);
   }
   // 子命令组结构（cli-creator: 命令族用名词父命令分组）
-  const subs = name => program.commands.find(c => c.name() === name)?.commands.map(c => c.name()) ?? [];
+  const subs = name => (program.commands.find(c => c.name() === name)?.commands ?? []).filter(c => !c._hidden).map(c => c.name());
   assert.deepEqual(subs("job").sort(), ["create", "delete", "get", "list", "logs", "start", "stop"].sort());
   assert.deepEqual(subs("infer").sort(), ["delete", "get", "list", "start", "stop"].sort());
   assert.deepEqual(subs("key").sort(), ["add", "delete", "list"].sort());
