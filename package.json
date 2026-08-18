@@ -1,6 +1,6 @@
 {
   "name": "ctyun-cli",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "天翼云科研助手 (esx.ctyun.cn) 命令行 — 官方 OpenAPI (AK/SK) 优先，控制台通道补充",
   "type": "module",
   "bin": {
