@@ -48,7 +48,7 @@ ctyun config          # 查看生效配置与来源 (env/file)
 `CTYUN_IMAGE` `CTYUN_STORAGE` `CTYUN_SPACE` `CTYUN_LOCAL_GB` `CTYUN_LOCAL_MOUNT`
 `CTYUN_SSH_KEY` `CTYUN_USED_GPU_THRESHOLD` `CTYUN_AUTO_STOP`
 
-新机器安装后：复制一份你的 config（或手填需要的键），`ctyun pool` / `ctyun create` 即恢复抢卡默认值。
+新机器安装后：复制一份你的 config（或手填需要的键），`ctyun preflight` / `ctyun create` 即恢复抢卡默认值。
 
 ## 命令
 
@@ -61,7 +61,7 @@ ctyun stop <id> [--dry-run]    # 停止（--dry-run 只打印请求体）
 ctyun rename <id> <alias>      # 别名（--json）
 ctyun delete <id> --yes        # 删除（必须显式 --yes）
 ctyun queues                   # 各区域队列 GPU 占用 〔console〕
-ctyun pool [--json]            # 监控目标队列快照 〔console〕
+ctyun preflight [--json]       # 抢卡预检：监控目标队列快照 〔console〕（旧名 pool 已废弃）
 ctyun images [--region r] [kw] # 公共镜像
 ctyun specs [--region r]       # 开发机规格 〔console〕
 ctyun keys [--json]            # SSH 公钥
@@ -110,9 +110,11 @@ ctyun storage resize <id> --gb N ; ctyun storage delete <id> --yes
 ctyun infer list ; ctyun infer get <id> ; ctyun infer start|stop <id> ; ctyun infer delete <id> --yes
 
 # 资源 / 账单 / 总览
-ctyun pools ; ctyun quotas    # 资源池列表；共享集群+租户配额
+ctyun pools ; ctyun quotas    # 资源池列表（注意不是 preflight）；共享集群+租户配额
 ctyun bill [--month 202608]   # 子账号账单明细（需平台加白名单）
 ctyun summary                 # 开发机/作业/资源池状态计数 〔console〕
+
+开发机生命周期同时支持平铺（`ctyun start <id>`）与组形式（`ctyun env start <id>`、`ctyun env <id>`=详情、`ctyun envs`=列表），二者等价。
 
 # 批量与杂项 〔console〕
 ctyun batch-start|batch-stop <id...> ; ctyun my-ip ; ctyun events

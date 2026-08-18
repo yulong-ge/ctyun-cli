@@ -71,7 +71,7 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
   for (const expected of ["login", "logout", "aksk", "status", "config", "envs", "env", "start", "stop", "delete",
     "rename", "create", "queues", "pool", "images", "specs", "keys", "jobs", "pvc", "metrics",
     "jexec", "ssh-setup", "api", "raw", "whoami", "summary", "batch-start", "batch-stop", "my-ip",
-    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "pools", "quotas", "bill"]) {
+    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "pools", "quotas", "bill", "preflight"]) {
     assert.ok(names.includes(expected), `缺少命令: ${expected}`);
   }
   // 旧平铺命令名必须已收敛为名词子命令组
@@ -87,6 +87,7 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
   assert.deepEqual(subs("key").sort(), ["add", "delete", "list"].sort());
   assert.deepEqual(subs("image").sort(), ["delete", "list", "save", "set"].sort());
   assert.deepEqual(subs("storage").sort(), ["create", "delete", "get", "list", "resize", "specs"].sort());
+  assert.deepEqual(subs("env").sort(), ["create", "delete", "get", "list", "rename", "start", "stop"].sort());
   // --help 默认 process.exit —— exitOverride 改抛错 + 捕获输出
   program.exitOverride();
   let out = "";
