@@ -69,7 +69,7 @@ ctyun raw GET /ide/summary                # any console endpoint (369 documented
 ## Copy-pasteable examples
 
 ```sh
-ctyun preflight                                   # 抢卡预检: 队列空闲/售罄/可提交
+ctyun pool                                        # 队列快照: 空闲/售罄/可提交
 ctyun env 10031883 --ssh                          # SSH 命令 + Jupyter 链接
 ctyun jexec 10031883 cmd:nvidia-smi               # 免 SSH 查 GPU
 ctyun metrics $(ctyun env 10031883 --json | jq -r .uuid)   # CPU/内存/GPU 利用率

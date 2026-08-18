@@ -71,7 +71,7 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
   for (const expected of ["login", "logout", "aksk", "status", "config", "envs", "env", "start", "stop", "delete",
     "rename", "create", "queues", "pool", "images", "specs", "keys", "jobs", "pvc", "metrics",
     "jexec", "ssh-setup", "api", "raw", "whoami", "summary", "batch-start", "batch-stop", "my-ip",
-    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "pools", "quotas", "bill", "preflight"]) {
+    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "pools", "quotas", "bill", "pool"]) {
     assert.ok(names.includes(expected), `缺少命令: ${expected}`);
   }
   // 旧平铺命令名必须已收敛为名词子命令组
