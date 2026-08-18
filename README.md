@@ -54,18 +54,18 @@ ctyun config          # 查看生效配置与来源 (env/file)
 
 ```
 ctyun aksk [--ak|--sk|--clear]  # 官方 API 密钥配置/验证
-ctyun envs [--json] [--perPage N] # 开发机列表（默认上限 100 条）
-ctyun env <id> [--ssh] [--json] # 详情；--ssh 只打印 SSH 命令 + Jupyter 链接
+ctyun env list [--json] [--perPage N] # 开发机列表（默认上限 100 条）
+ctyun env <id> [--ssh] [--json] # 详情（= env 的默认动作）；--ssh 只打印 SSH/Jupyter 链接
 ctyun start <id> [--cpu-only] [--dry-run] # 启动（仅已停止/失败态；--dry-run 只打印提交体）
 ctyun stop <id> [--dry-run]    # 停止（--dry-run 只打印请求体）
 ctyun rename <id> <alias>      # 别名（--json）
 ctyun delete <id> --yes        # 删除（必须显式 --yes）
 ctyun queues                   # 各区域队列 GPU 占用 〔console〕
 ctyun pool [--json]            # 监控目标队列快照（GPU 占用/售罄/配额/可提交）〔console〕
-ctyun images [--region r] [kw] # 公共镜像
+ctyun image list [--region r] [kw] # 公共镜像
 ctyun specs [--region r]       # 开发机规格 〔console〕
-ctyun keys [--json]            # SSH 公钥
-ctyun jobs [--json]            # 训练作业列表
+ctyun key list [--json]         # SSH 公钥
+ctyun job list [--json]         # 训练作业列表
 ctyun pvc <ideId> [--json]     # 开发机存储卷 〔console〕
 ctyun metrics <uuid> [--json]  # CPU/内存/GPU 利用率（官方通道 --minutes N 时间窗）
 ctyun create [选项] [--dry-run|--yes] # 创建开发机（默认=用户配置 ~/.ctyun/config）〔console〕
@@ -76,7 +76,7 @@ ctyun api <action> [json]      # 任意官方 OpenAPI action（逃生舱，覆�
 ctyun whoami [--verbose]       # 项目信息；-v 附账号类型+权限码全集 〔console〕
 ```
 
-`--json` 支持于：envs / env / status(doctor) / queues / pool / keys / jobs / pvc / metrics / storages / storage / infers / infer / events / summary / pools / quotas / bill（其余命令为表格/文本输出）。〔console〕= 仅控制台通道（官方 API 无对应端点或字段），其余命令官方优先、无 AK/SK 时自动回退控制台。
+`--json` 支持于：env list / env / status(doctor) / queues / pool / key list / job list / pvc / metrics / storage list / storage / infer list / infer / events / summary / pool list / quotas / bill（其余命令为表格/文本输出）。〔console〕= 仅控制台通道（官方 API 无对应端点或字段），其余命令官方优先、无 AK/SK 时自动回退控制台。
 
 ### 命令族（名词父命令 + 子命令，`ctyun <族> --help` 查看）
 
@@ -110,11 +110,11 @@ ctyun storage resize <id> --gb N ; ctyun storage delete <id> --yes
 ctyun infer list ; ctyun infer get <id> ; ctyun infer start|stop <id> ; ctyun infer delete <id> --yes
 
 # 资源 / 账单 / 总览
-ctyun pool list / pools ; ctyun quotas    # 资源池清单（pools 为 pool list 别名；≠ ctyun pool 队列快照）；共享集群+租户配额
+ctyun pool list ; ctyun quotas    # 资源池清单（≠ ctyun pool 队列快照）；共享集群+租户配额
 ctyun bill [--month 202608]   # 子账号账单明细（需平台加白名单）
 ctyun summary                 # 开发机/作业/资源池状态计数 〔console〕
 
-开发机生命周期同时支持平铺（`ctyun start <id>`）与组形式（`ctyun env start <id>`、`ctyun env <id>`=详情、`ctyun envs`=列表），二者等价。
+开发机（主资源）用平铺动词：`ctyun env <id>` 详情、`ctyun env list` 列表、`ctyun start/stop/delete/rename/create`；二级资源（job/infer/key/image/storage/pool）用名词子命令组。一个操作只有一个名字，无别名。
 
 # 批量与杂项 〔console〕
 ctyun batch-start|batch-stop <id...> ; ctyun my-ip ; ctyun events
@@ -176,7 +176,7 @@ ctyun ssh-setup 10030973 --key /tmp/other.pub  # 指定公钥文件
 
 **每命令族示例**：
 ```sh
-ctyun envs --json | jq '.[0].id'        # 透传: 直接取 API 字段
+ctyun env list --json | jq '.[0].id'    # 透传: 直接取 API 字段
 ctyun status --json | jq '.auth.source' # envelope: 取 CLI 字段
 ctyun env 99999999 --json; echo $?      # → stderr {"ok":false,"error":"…"} , exit 1
 ```

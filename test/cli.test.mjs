@@ -68,16 +68,17 @@ test("buildBatchCreateRequest 请求体构造", () => {
 test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async () => {
   const program = buildProgram();
   const names = program.commands.map(c => c.name());
-  for (const expected of ["login", "logout", "aksk", "status", "config", "envs", "env", "start", "stop", "delete",
-    "rename", "create", "queues", "pool", "images", "specs", "keys", "jobs", "pvc", "metrics",
+  for (const expected of ["login", "logout", "aksk", "status", "config", "env", "start", "stop", "delete",
+    "rename", "create", "queues", "pool", "specs", "pvc", "metrics",
     "jexec", "ssh-setup", "api", "raw", "whoami", "summary", "batch-start", "batch-stop", "my-ip",
-    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "pools", "quotas", "bill", "pool"]) {
+    "events", "job", "infer", "key", "image", "storage", "ssh-ips", "quotas", "bill", "pool"]) {
     assert.ok(names.includes(expected), `缺少命令: ${expected}`);
   }
-  // 旧平铺命令名必须已收敛为名词子命令组
+  // 已移除的别名/旧平铺命令名必须不存在（一个操作只有一个名字）
   for (const removed of ["infers", "infer-start", "infer-stop", "infer-delete", "job-create", "job-start",
     "job-stop", "job-delete", "job-logs", "key-add", "key-delete", "image-save", "image-set",
-    "image-delete", "storages", "storage-specs", "storage-create", "storage-resize", "storage-delete"]) {
+    "image-delete", "storages", "storage-specs", "storage-create", "storage-resize", "storage-delete",
+    "envs", "jobs", "keys", "images", "pools"]) {
     assert.ok(!names.includes(removed), `应已移除平铺命令: ${removed}`);
   }
   // 子命令组结构（cli-creator: 命令族用名词父命令分组）
@@ -87,12 +88,12 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
   assert.deepEqual(subs("key").sort(), ["add", "delete", "list"].sort());
   assert.deepEqual(subs("image").sort(), ["delete", "list", "save", "set"].sort());
   assert.deepEqual(subs("storage").sort(), ["create", "delete", "get", "list", "resize", "specs"].sort());
-  assert.deepEqual(subs("env").sort(), ["create", "delete", "get", "list", "rename", "start", "stop"].sort());
+  assert.deepEqual(subs("env").sort(), ["list"].sort());
   assert.deepEqual(subs("pool").sort(), ["list"].sort());
   // --help 默认 process.exit —— exitOverride 改抛错 + 捕获输出
   program.exitOverride();
   let out = "";
   program.configureOutput({ writeOut: s => { out += s; } });
   await assert.rejects(() => program.parseAsync(["node", "ctyun", "--help"]));
-  assert.ok(out.includes("envs"), "help 含 envs");
+  assert.ok(out.includes("开发机:"), "help 含开发机组");
 });

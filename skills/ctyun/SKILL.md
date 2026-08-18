@@ -29,7 +29,7 @@ ctyun --json status # 机器可读版 (cli-creator 契约)
 ## Discovery → stable IDs
 
 ```sh
-ctyun envs                     # dev env IDs (first column)
+ctyun env list                 # dev env IDs (first column)
 ctyun env <id> --json          # details incl. uuid (for metrics) and openLink
 ctyun whoami                   # enterprise project ID
 ctyun specs / queues / pools   # specId / queueId / resourcePoolId
@@ -41,7 +41,7 @@ ctyun key list                 # SSH key ids
 ## Safe read path (start here)
 
 ```sh
-ctyun envs ; ctyun env <id> ; ctyun jobs ; ctyun metrics <uuid>
+ctyun env list ; ctyun env <id> ; ctyun job list ; ctyun metrics <uuid>
 ```
 
 ## Intended write path (always preview first)
