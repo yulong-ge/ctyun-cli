@@ -1,6 +1,6 @@
 ---
 name: ctyun
-description: "Use when operating 天翼云科研助手 (esx.ctyun.cn) GPU dev environments, training jobs, inference services, or research storage — list/start/stop/delete dev envs, grab free GPUs, run code via Jupyter, manage SSH keys and custom images. Install: npm install -g git+https://github.com/yulong-ge/ctyun-cli.git"
+description: "Use when operating 天翼云科研助手 (esx.ctyun.cn) GPU dev environments, training jobs, inference services, or research storage — list/start/stop dev envs, probe queues and grab free GPUs, run code on a dev env via Jupyter without SSH, manage SSH keys, custom images, quotas and billing. Trigger on 天翼云 / ctyun / esx.ctyun.cn / GPU 开发机 / 算力队列 / 抢卡 / 训练任务 / 推理服务 / 科研存储, even when the user only mentions an A100 node or a numeric env ID."
 ---
 
 # ctyun — 天翼云科研助手 CLI
@@ -72,7 +72,6 @@ ctyun raw GET /ide/summary                # any console endpoint (369 documented
 ctyun queue probe                                 # 目标队列快照: 空闲/售罄/可提交
 ctyun env get 10031883 --ssh                      # SSH 命令 + Jupyter 链接
 ctyun env exec 10031883 cmd:nvidia-smi            # 免 SSH 查 GPU
-ctyun env metrics 10031883                        # CPU/内存/GPU 利用率（数字 ID 自动解析 uuid）
 ctyun env stop 10031883 10031884                  # 多台批量停止
 ```
 
