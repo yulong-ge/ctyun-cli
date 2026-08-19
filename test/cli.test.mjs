@@ -106,3 +106,34 @@ test("命令面完整（cli-creator 契约: help 覆盖全部能力）", async (
   assert.ok(out.includes("开发机:"), "help 含开发机组");
   assert.ok(out.includes("队列与资源池:"), "help 含队列与资源池组");
 });
+
+test("全局与子命令选项透传 (cli-creator 契约: --json 与 --channel 任意位置生效)", async () => {
+  let captured = null;
+  const program = buildProgram();
+  const envCmd = program.commands.find(c => c.name() === "env");
+  const listCmd = envCmd.commands.find(c => c.name() === "list");
+  listCmd.action(opts => { captured = opts; });
+
+  // 1. 命令后 --json
+  await program.parseAsync(["node", "ctyun", "env", "list", "--json"]);
+  assert.equal(captured?.json, true, "env list --json");
+
+  // 2. 命令前 --json
+  captured = null;
+  await program.parseAsync(["node", "ctyun", "--json", "env", "list"]);
+  assert.equal(captured?.json, true, "--json env list");
+
+  // 3. 子命令组间 --json
+  captured = null;
+  await program.parseAsync(["node", "ctyun", "env", "--json", "list"]);
+  assert.equal(captured?.json, true, "env --json list");
+
+  // 4. --channel 传递
+  captured = null;
+  await program.parseAsync(["node", "ctyun", "env", "list", "--channel", "console"]);
+  assert.equal(captured?.channel, "console", "env list --channel console");
+
+  // 5. doctor 作为 status 别名
+  const statusCmd = program.commands.find(c => c.name() === "status");
+  assert.ok(statusCmd.aliases().includes("doctor"), "doctor 为 status 别名");
+});
