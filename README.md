@@ -17,7 +17,7 @@
 
 ## 环境要求
 
-- Node.js ≥ 18（`jexec`、`ssh-setup` 需要 Node ≥ 22）
+- Node.js ≥ 18（`env exec`、`env ssh-setup` 需要 Node ≥ 22）
 - curl
 
 ## 安装
@@ -40,7 +40,7 @@ ctyun --version
 
 配置完成后运行 `ctyun status` 验证两类凭据。
 
-以下命令仅使用控制台凭据：`create`、`pool`、`pvc`、`rename`、`whoami`、`raw`、`summary`、`events`、`infer *`、`key list`（子账号）。
+以下命令仅使用控制台凭据：`env create`、`queue probe`、`env pvc`、`env rename`、`whoami`、`raw`、`summary`、`events`、`infer *`、`key list`（子账号）。
 
 ## 快速开始
 
@@ -52,13 +52,13 @@ ctyun status                  # 验证
 ctyun env list                # 开发机列表
 ctyun env <id>                # 开发机详情（SSH 命令、Jupyter 链接）
 ctyun env <id> --ssh          # 只输出 SSH 命令与 Jupyter 链接
-ctyun queues                  # 队列 GPU 占用
-ctyun specs                   # 开发机规格（含售罄状态）
-ctyun pool                    # 监控目标队列快照（目标来自 ~/.ctyun/config）
+ctyun queue list              # 队列 GPU 占用
+ctyun spec list               # 开发机规格（含售罄状态）
+ctyun queue probe             # 监控目标队列快照（目标来自 ~/.ctyun/config）
 
-ctyun metrics <uuid>          # 利用率（uuid 从 ctyun env <id> --json 获取）
-ctyun jexec <id> "print(1)"   # 在开发机内执行 Python 代码
-ctyun jexec <id> cmd:nvidia-smi
+ctyun env metrics <id>        # 利用率（可直接传开发机数字 ID，自动解析 uuid）
+ctyun env exec <id> "print(1)"   # 在开发机内执行 Python 代码
+ctyun env exec <id> cmd:nvidia-smi
 ```
 
 ## 命令一览
@@ -68,33 +68,35 @@ ctyun jexec <id> cmd:nvidia-smi
 | 分类 | 命令 |
 |---|---|
 | 凭据与诊断 | `config` `login` `logout` `aksk` `status` |
-| 开发机 | `env <id>` `env list` `start` `stop` `delete` `rename` `create` `pvc` `metrics` `jexec` `ssh-setup` `batch-start` `batch-stop` `ssh-ips` |
+| 开发机 | `env <id>` `env get` `env list` `env create` `env start`（接受多台）`env stop`（接受多台）`env delete` `env rename` `env set-image` `env pvc` `env metrics` `env exec` `env ssh-setup` `env ssh-ips` |
 | 训练作业 | `job list` `job get` `job create` `job start` `job stop` `job delete` `job logs` |
 | 推理服务 | `infer list` `infer get` `infer start` `infer stop` `infer delete` |
 | 科研存储 | `storage list` `storage get` `storage specs` `storage create` `storage resize` `storage delete` |
-| 镜像 | `image list` `image save` `image set` `image delete` |
-| SSH 公钥 | `key list` `key add` `key delete` |
-| 资源与账单 | `queues` `specs` `pool list` `quotas` `bill` |
-| 监控与审计 | `pool` `summary` `my-ip` `events` `whoami` |
+| 镜像 | `image list` `image save` `image delete`（更换开发机镜像用 `env set-image`） |
+| SSH 公钥 | `key list` `key create` `key delete` |
+| 队列与资源池 | `queue list` `queue probe` `pool list` `spec list` `quota list` `bill` |
+| 监控与审计 | `summary` `my-ip` `events` `whoami` |
 | 通用接口调用 | `api`（官方 OpenAPI）`raw`（控制台接口） |
 
-破坏性操作（`delete`、`job delete`、`infer delete`、`image delete`、`storage delete`、`key delete`）需要显式 `--yes`；`create` 与 `job create` 支持 `--dry-run` 预览提交内容。
+3.0 为破坏性重构，旧入口全部移除、无别名无兼容：顶层动词 `start`/`stop`/`delete`/`rename`/`create` 与散命令 `pvc`/`metrics`/`jexec`/`ssh-setup`/`ssh-ips` 并入 `env` 组；`pool`（队列快照）→ `queue probe`，`pool`/`pool list` 专指资源池；`queues`/`specs`/`quotas`/`pools` 复数命令并入 `queue list`/`spec list`/`quota list`/`pool list`；`image set` → `env set-image`；`key add` → `key create`；`batch-start`/`batch-stop` 并入 `env start`/`env stop`（接受多个 ID）；选项统一 kebab-case（`--project-name`、`--per-page`，旧 camelCase 写法不再接受）；`env metrics` 可直接传开发机数字 ID。
+
+破坏性操作（`env delete`、`job delete`、`infer delete`、`image delete`、`storage delete`、`key delete`）需要显式 `--yes`；`env create`、`env start`、`env stop` 与 `job create` 支持 `--dry-run` 预览提交内容。
 
 ## 用户默认配置
 
-`create` 与 `pool` 的默认参数来自 `~/.ctyun/config`（KEY=VALUE 格式，权限 600）。`ctyun config` 查看当前生效值与来源。优先级：命令行参数 > 环境变量 > 配置文件。
+`env create` 与 `queue probe` 的默认参数来自 `~/.ctyun/config`（KEY=VALUE 格式，权限 600）。`ctyun config` 查看当前生效值与来源。优先级：命令行参数 > 环境变量 > 配置文件。
 
 | 配置键 | 说明 |
 |---|---|
 | `CTYUN_PROJECT_NAME` | 企业项目名 |
 | `CTYUN_REGION` | 可用区 |
-| `CTYUN_QUEUE` | 队列名（`pool` 的监控目标） |
+| `CTYUN_QUEUE` | 队列名（`queue probe` 的监控目标） |
 | `CTYUN_GPU_MODEL` / `CTYUN_GPU_CARDS` | GPU 型号与卡数 |
 | `CTYUN_IMAGE` | 公共镜像名 |
 | `CTYUN_STORAGE` / `CTYUN_SPACE` | 科研存储名与空间名 |
 | `CTYUN_LOCAL_GB` / `CTYUN_LOCAL_MOUNT` | 本地盘扩容容量与挂载点 |
 | `CTYUN_SSH_KEY` | SSH 公钥名 |
-| `CTYUN_USED_GPU_THRESHOLD` | `pool` 的队列占用上限 |
+| `CTYUN_USED_GPU_THRESHOLD` | `queue probe` 的队列占用上限 |
 | `CTYUN_AUTO_STOP` | 自动停止时长（小时） |
 
 ## JSON 输出约定
