@@ -78,8 +78,6 @@ ctyun env exec <id> cmd:nvidia-smi
 | 监控与审计 | `summary` `my-ip` `events` `whoami` |
 | 通用接口调用 | `api`（官方 OpenAPI）`raw`（控制台接口） |
 
-3.0 为破坏性重构，旧入口全部移除、无别名无兼容：顶层动词 `start`/`stop`/`delete`/`rename`/`create` 与散命令 `pvc`/`metrics`/`jexec`/`ssh-setup`/`ssh-ips` 并入 `env` 组；`pool`（队列快照）→ `queue probe`，`pool`/`pool list` 专指资源池；`queues`/`specs`/`quotas`/`pools` 复数命令并入 `queue list`/`spec list`/`quota list`/`pool list`；`image set` → `env set-image`；`key add` → `key create`；`batch-start`/`batch-stop` 并入 `env start`/`env stop`（接受多个 ID）；选项统一 kebab-case（`--project-name`、`--per-page`，旧 camelCase 写法不再接受）；`env metrics` 可直接传开发机数字 ID。
-
 破坏性操作（`env delete`、`job delete`、`infer delete`、`image delete`、`storage delete`、`key delete`）需要显式 `--yes`；`env create`、`env start`、`env stop` 与 `job create` 支持 `--dry-run` 预览提交内容。
 
 ## 用户默认配置
@@ -121,5 +119,4 @@ ctyun env list --json | jq '.[0].id'
 
 ## 相关项目
 
-- [ctyun-monitor](../ctyun-monitor)：基于本工具的队列资源监视与开发机自动创建服务（systemd 部署）
 - 接口文档：`docs/api/`（官方 OpenAPI 与控制台接口的本地化文档）
